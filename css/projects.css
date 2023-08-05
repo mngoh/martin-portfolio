@@ -76,10 +76,8 @@
   }
   .box h3{
     text-align: left;
-    text-decoration: underline;
     margin-bottom: 0%;
     margin-top: 4%;
-    text-underline-offset: .4rem;
     
 }
 
@@ -113,6 +111,9 @@
   box-shadow: none;
   cursor: pointer;
   border: none;
+  background-color: white;
+  height: 2.1rem;
+  border-radius: 2rem;
 }
 /* Icon */
 button i.fa-2xl {
@@ -121,9 +122,16 @@ button i.fa-2xl {
   display: flex;
   font-size: 2rem;
   z-index: 999;
-  color: rgb(39, 255, 16);
-}
-
+  color: rgb(0, 0, 0);
+  }
+  /* Button Hover */
+  button i.fa-2xl:hover {
+  color: white;
+  }
+  /* Button Hover */
+  button:hover {
+    background-color: var(--primary-color);
+  }
 /* Target the buttons individually by their aria-label attribute */
 #button-left {
   display: none;
@@ -137,6 +145,13 @@ button i.fa-2xl {
   right: 2%;
 } 
 
-#button-right:hover{
-  color: rgb(196, 128, 39);
+/* Text Line */
+.text-line-project {
+  /* border-bottom:4px solid white; */
+  max-width: 20%;
+  margin-top: 0%;
+  }
+  /* Text Line Hover */
+  .box:hover .text-line-project{
+  border-bottom:4px solid white;
 }
