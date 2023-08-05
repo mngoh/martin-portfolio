@@ -57,6 +57,10 @@
   /* background-color: rgb(49, 84, 112); */
   /* box-shadow: 10px 10px 30px rgb(39, 47, 107); */
   }
+  /* Boxes */
+.box:hover {
+  background-color: var(--second-color);
+  }
 
   .box h2 {
     margin-top: -6%;
