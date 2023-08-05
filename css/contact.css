@@ -1,0 +1,98 @@
+/* Contact Container */
+.contact-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+/* Submission Form */
+form{
+  /* box-shadow: 10px 10px 50px rgb(116, 116, 120); */
+  background-color: rgb(41, 40, 40);
+  display: flex;
+  flex-direction: column;
+  padding: 5vw 4vw;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 1.5rem;
+
+  }
+  form h3{
+    margin-top: -10%;
+    color: rgb(249, 249, 249);
+    font-weight: 90px;
+    margin-bottom: 20px;
+    display: flex;
+    font-size: 1rem;
+  }
+  form input, form textarea{
+    border: 0;
+    margin: 7px 0;
+    padding: 20px;
+    outline: none;
+    background: rgb(250, 250, 250);
+    font-size: 17px;
+    font-family: 'Falling Sky', sans-serif;
+  }
+
+  #name , #email, #phone{
+    padding: 17px;
+  }
+
+  #subject{
+    margin-bottom: 0%;
+    padding: 12px;
+  }
+  .subject-label{
+    font-family: "Falling Sky", 'sans';
+  }
+  form label {
+    margin-top: 5%;
+  }
+  form button{
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: .5rem;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Falling Sky', 'sans';
+  }
+  button:hover{
+    background-color:rgb(94, 114, 216);
+    transform: scale(1.05);
+    color: #fff;
+  }
+
+/* Linkedin Icon */
+  form i.fa-2xl {
+    justify-content: flex-start; 
+    align-items: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    font-size: 3rem;
+    z-index: 999;
+  }
+ form i.fa-2xl:hover{
+    color:rgb(94, 114, 216);
+    }
+
+/* Linkedin */
+#linkedin{
+  margin-left: 12%;
+  margin-top: -5%;
+}
+#mail{
+  margin-left: 0%;
+  margin-top: -5%;
+  }
+a {
+  text-decoration: none;
+}
