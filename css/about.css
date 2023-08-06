@@ -71,6 +71,8 @@ h2 {
   }
   .card li {
       list-style-type: circle;
+      margin-bottom: 4px;
+      max-width: 85%;
   }
 
 /* Text Line */
