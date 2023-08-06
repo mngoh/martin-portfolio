@@ -155,7 +155,7 @@ body {
 
 /* Media Container for NAV bar and Body Text */
 @media(max-width:650px){
-  
+
   /* Nav Bar Styling */
   .toggle-button{
     display: flex;
@@ -169,7 +169,7 @@ body {
     align-items: flex-start;
   }
   .navbar .name{
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
   .navbar-links ul {
     width: 100%;
