@@ -125,8 +125,9 @@ button i.fa-2xl {
   color: var(--white-color);
   }
   /* Button Hover */
-  button:hover {
+  button:hover, i.fa-2xl:hover {
     background-color: var(--primary-color);
+    color: var(--white-color);
   }
 /* Target the buttons individually by their aria-label attribute */
 #button-left {
@@ -150,4 +151,15 @@ button i.fa-2xl {
   /* Text Line Hover */
   .box:hover .text-line-project{
   border-bottom:4px solid var(--white-color);
+}
+
+
+/* Media Container For Projects Section */
+@media (max-width: 650px) {
+  /* Projects Section */
+  #projects {
+    text-align: center;
+    align-items: center;
+    z-index: 0; 
+  }
 }

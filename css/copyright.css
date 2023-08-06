@@ -2,27 +2,47 @@
 #copyright { 
   margin-top: -8%;
   color: var(--white-color);
-  font-size: 1.2rem;
-  text-align: center;
   font-size: 1.5rem;
-  }
+  text-align: center;
+}
 
 /* Footer Links */
-  #copyright ul {
+.footer-links {
   list-style-type: none; 
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  }
-  #copyright ul li {
+}
+
+/* Footer Links Items */
+.footer-links li {
   position: relative; 
   margin-right: 20px; 
   color: var(--white-color);
+}
+
+/* Footer Links Anchor */
+.footer-links li a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+/* Footer Links Anchor Hover */
+.footer-links li a:hover {
+  color: var(--primary-color);
+}
+
+/* Media Container For Footer Links */
+@media (max-width: 650px) {
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  #copyright ul li a{
-    color: var(--white-color);
+
+  /* Add some spacing between the stacked items */
+  .footer-links li {
+    margin-bottom: 10px;
   }
-  #copyright ul li a:hover{
-    color:var(--primary-color);
-  }
+}

@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/contact.css">
   <link rel="stylesheet" type="text/css" href="css/projects.css">
   <link rel="stylesheet" type="text/css" href="css/about.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
   <link rel="stylesheet" type="text/css" href="css/copyright.css">
   <script src="js/script.js"></script>
   <script src="js/navbar.js"></script>
@@ -196,25 +197,25 @@
       <label for="subject" class="subject-label">Subject:</label>
       <input type="text" id="subject" name="_subject" placeholder="Subject" required>
       <textarea id="message" name="message" rows="4" placeholder="Send me a message!" required></textarea>
-      <button type="submit">Send</button>
-      <a href="https://www.linkedin.com/in/mngoh" target="_blank">
-        <i class="fa-brands fa-linkedin fa-2xl" id="linkedin"></i>
-      </a>
-      <a href="mailto:mngoh8@gmail.com" target="_blank">
-        <i class="fa-regular fa-envelope fa-2xl" id="mail"></i>
-      </a>
+      <div class="form-bot">
+        <button type="submit">Send</button>
+        <a href="https://www.linkedin.com/in/mngoh" target="_blank"><i class="fa-brands fa-linkedin fa-2xl" id="linkedin"></i></a>
+        <a href="mailto:mngoh8@gmail.com" target="_blank"><i class="fa-regular fa-envelope fa-2xl" id="mail"></i></a>
+      </div>
     </form>
   </div>
 </section>
 
  <!-- Copyright -->
  <section id="copyright">
-  <ul class="footer-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="pages/articles.html">Articles</a></li>
-    <li><a href="pages/websites.html">My Websites</a></li>
-  </ul>
-  <p>Copyright Martin Ngoh 2023. All Rights Reserved</p>
+  <div class="copyright-container">
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="pages/articles.html">Articles</a></li>
+      <li><a href="resume/Martin_Ngoh_Resume.pdf" download="Martin_Ngoh_Resume.pdf">Resume</a></li>
+    </ul>
+    <p>Copyright Martin Ngoh 2023. All Rights Reserved</p>
+  </div>
 </section>
-  </body>
+</body>
 </html>
