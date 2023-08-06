@@ -159,6 +159,7 @@ body {
   /* Nav Bar Styling */
   .toggle-button{
     display: flex;
+    top: .7rem;
   }
   .navbar-links{
     display: none;
@@ -167,24 +168,25 @@ body {
   .navbar{
     flex-direction: column;
     align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.95);
   }
   .navbar .name{
     font-size: 1.6rem;
   }
   .navbar-links ul {
     width: 100%;
-    flex-direction: column;
+    flex-direction: column;   
   }
   .navbar-links li {
     text-align: center;
   }
   .navbar-links li a {
     padding: .5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.95);
   }
   .navbar-links.active {
     display: flex;
   }
-
   /* Body Styling */
   section h1{
     font-size: var(--h1-shrink);
@@ -192,5 +194,4 @@ body {
   section h2{
     font-size: var(--h2-shrink);
   }
-
 }
