@@ -99,13 +99,22 @@ h2 {
   }
   .grid-right-about {
     display: block;
-    margin-bottom: 600px;
+    margin-bottom: 60rem;
   }
   #profile-pic {
     height: 28rem;
+  }
+  #profile-pic , .card{
+    width: 15rem;
   }
   .card h2{
     font-size: 1.5rem;
     margin-bottom: -2%;
     }
+  .card{
+    height: auto;
+  }
+  .card ul, .card p{
+    margin-left: 1%;
+  }
 }
