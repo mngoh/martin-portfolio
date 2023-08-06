@@ -28,7 +28,6 @@
   margin-left: 6%;
   gap: 0%;
   min-width: 3000px; 
-
  }
   .grid-container img {
     display: grid;
@@ -179,7 +178,7 @@ button i.fa-2xl {
   }
   .box p {
     text-align: left;
-    font-size: .9rem;
+    font-size: .8rem;
     margin-bottom: 0%;
     margin-top: 1%;
     word-break: break-all;
@@ -187,6 +186,7 @@ button i.fa-2xl {
   }
   .box h3{
     text-align: left;
+    font-size: 1rem;
     margin-bottom: 0%;
     margin-top: 4%;
   }
@@ -198,5 +198,9 @@ button i.fa-2xl {
     height: 1rem;
     width: 1rem;
   }
-
+  .text-line-project {
+    border-bottom:4px solid white;
+    max-width: 20%;
+    margin-top: 0%;
+    }
   }
