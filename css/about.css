@@ -87,7 +87,7 @@ h2 {
   }
 
 
-  /* Media Container */
+/* Media Container */
 @media (max-width: 650px) {
   .grid-container-about {
     grid-template-columns: 1fr; 
