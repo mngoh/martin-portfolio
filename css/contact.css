@@ -107,6 +107,11 @@ button:hover{
 
 /* Media Container For Buttons and Icons*/
 @media (max-width: 650px) {
+  form{
+    width: 80%;
+    height: auto;
+    margin-bottom: -20%;
+  }
   .form-bot {
     display: flex;
     flex-direction: column; 
