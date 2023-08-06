@@ -44,8 +44,6 @@
 /* Boxes */
 .box {
   position: relative;
-  /* background-color: rgb(41, 40, 40); */
-  background-color: var(--black-color);
   color: var(--white-color);
   padding: 40px;
   height: 40rem;
@@ -54,8 +52,6 @@
   transition: transform 0.3s ease;
   margin-bottom: 5%;
   margin-right: 5%;
-  /* background-color: rgb(49, 84, 112); */
-  /* box-shadow: 10px 10px 30px rgb(39, 47, 107); */
   }
   /* Boxes */
 .box:hover {
