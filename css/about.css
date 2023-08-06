@@ -45,7 +45,7 @@ h2 {
 .card {
   padding: 2rem;
   border-radius: 1rem;
-  color: #fff;
+  color: var(--white-color);
   text-align: center;
   height: 20rem;
   width: 30rem;
@@ -53,13 +53,13 @@ h2 {
   }
   /* Card Hover */
   .card:hover {
-    background-color: var(--second-color);
+    background-color: var(--box-color);
   }
   .card 
   /* card H2 */
   .card h2{
   font-size: 2rem;
-  font-family: "Roboto" 'sans';
+  font-family: var(--main-font);
   margin-bottom: -2%;
   }
   /* Grid Container Skills */
@@ -72,7 +72,7 @@ h2 {
 /* Text Line */
 .text-line {
   /* border-bottom: 5px solid rgb(255, 255, 255); */
-  border-bottom:6px solid white;
+  border-bottom:6px solid var(--white-color);
   max-width: 70%;
   margin: 0 auto;
   margin-top: 4%;
@@ -86,18 +86,18 @@ h2 {
   /* Media Container */
 @media (max-width: 600px) {
   .grid-container-about {
-    grid-template-columns: 1fr; /* Change to one column layout */
-    grid-template-rows: min-content 1fr; /* Adjust rows for the new layout */
-    height: auto; /* Allow the height to be determined by content */
+    grid-template-columns: 1fr; 
+    grid-template-rows: min-content 1fr; 
+    height: auto; 
   }
 
   .grid-right-about {
-    grid-template-columns: 1fr; /* Change to one column layout */
+    grid-template-columns: 1fr; 
     margin-bottom: 120%;
   }
 
   #profile-pic {
-    width: 100%; /* Adjust the width of the picture to fit the container */
-    height: auto; /* Allow the height to be determined by aspect ratio */
+    width: 100%; 
+    height: auto; 
   }
 }

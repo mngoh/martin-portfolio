@@ -1,14 +1,14 @@
 /* Body Background */
 body {
     margin-top: 5%;
-    background-color: rgb(18, 18, 18);
-    color: rgba(255, 255, 255, 0.999);
+    background-color: var(--black-color);
+    color: var(--box-color);
 }
 
 /* Div Container */
 .thanks h1 {
     font-size: 4rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
     justify-content: center;
     display: flex;
     margin: 0 auto;
@@ -16,7 +16,7 @@ body {
 }
 .thanks h2{
     font-size: 3rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--primary-font);
     justify-content: center;
     display: flex;
     margin: 0 auto;
@@ -27,22 +27,22 @@ body {
 .button-home {
     margin-bottom: 10%;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: var(--white-color);
+    color: var(--black-color);
     font-size: 25px;
     cursor: pointer;
     width: 15rem;
     border-radius: .5rem;
     text-decoration: none;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     display: block;
     margin: 0 auto;
 }
 
 .button-home:hover {
-    background-color: rgb(94, 114, 216);
-    color: #fff;
+    background-color:var(--primary-color);
+    color: var(--white-color);
 }
 
 /* ID Quote Box */
@@ -50,8 +50,8 @@ body {
     /* background-color: rgb(87, 96, 141); */
     width: 40%; 
     height: 35%; 
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
+    color: var(--white-color);
+    font-family: var(--button-font);
     margin: 0 auto;
     margin-top: 5%;
     border-radius: 2%;
@@ -61,5 +61,5 @@ body {
 #quote-text {
     font-size: 3rem;
     font-weight: bold;
-    color: rgb(94, 114, 216);
+    color: var(--primary-color);
 }

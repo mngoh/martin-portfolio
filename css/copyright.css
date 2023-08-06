@@ -1,7 +1,7 @@
 /* Copyright */
 #copyright { 
   margin-top: -8%;
-  color: rgb(255, 255, 255);
+  color: var(--white-color);
   font-size: 1.2rem;
   text-align: center;
   font-size: 1.5rem;
@@ -12,17 +12,17 @@
   list-style-type: none; 
   padding: 0;
   margin: 0;
-  display: flex; /* Add flex display to align links in a row */
-  justify-content: center; /* Center the links horizontally */
+  display: flex;
+  justify-content: center;
   }
   #copyright ul li {
   position: relative; 
   margin-right: 20px; 
-  color: white;
+  color: var(--white-color);
   }
   #copyright ul li a{
-    color: white;
+    color: var(--white-color);
   }
   #copyright ul li a:hover{
-    color:rgb(94, 114, 216);
+    color:var(--primary-color);
   }

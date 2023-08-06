@@ -11,7 +11,7 @@
 /* Submission Form */
 form{
   /* box-shadow: 10px 10px 50px rgb(116, 116, 120); */
-  background-color: rgb(41, 40, 40);
+  background-color: var(--box-color);
   display: flex;
   flex-direction: column;
   padding: 5vw 4vw;
@@ -22,7 +22,7 @@ form{
   }
   form h3{
     margin-top: -10%;
-    color: rgb(249, 249, 249);
+    color: var(--white-color);
     font-weight: 90px;
     margin-bottom: 20px;
     display: flex;
@@ -33,9 +33,9 @@ form{
     margin: 7px 0;
     padding: 20px;
     outline: none;
-    background: rgb(250, 250, 250);
+    background: var(--white-color);
     font-size: 17px;
-    font-family: 'Falling Sky', sans-serif;
+    font-family: var(--button-font)
   }
 
   #name , #email, #phone{
@@ -47,14 +47,14 @@ form{
     padding: 12px;
   }
   .subject-label{
-    font-family: "Falling Sky", 'sans';
+    font-family: var(--button-font);
   }
   form label {
     margin-top: 5%;
   }
   form button{
     padding: 15px;
-    color: rgb(0, 0, 0);
+    color: var(--black-color);
     font-size: 26px;
     border: 0;
     outline: none;
@@ -62,26 +62,26 @@ form{
     width: 150px;
     margin: 20px auto 0;
     border-radius: .5rem;
-    background-color: rgb(255, 255, 255);
-    font-family: 'Falling Sky', 'sans';
+    background-color: var(--white-color);
+    font-family: var(--button-font);
   }
   button:hover{
-    background-color:rgb(94, 114, 216);
+    background-color: var(--main-color);
     transform: scale(1.05);
-    color: #fff;
+    color:var(--white-color);
   }
 
 /* Linkedin Icon */
   form i.fa-2xl {
     justify-content: flex-start; 
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: var(--white-color);
     display: flex;
     font-size: 3rem;
     z-index: 999;
   }
  form i.fa-2xl:hover{
-    color:rgb(94, 114, 216);
+    color: var(--primary-color)
     }
 
 /* Linkedin */

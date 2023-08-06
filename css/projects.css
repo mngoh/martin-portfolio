@@ -34,7 +34,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(240px, 3fr));
     margin-top: 5%;
-    background-color: rgb(249, 249, 249);
+    background-color: var(--white-color);
     height: 15rem;
     width: 100%;
     z-index: 0;
@@ -45,8 +45,8 @@
 .box {
   position: relative;
   /* background-color: rgb(41, 40, 40); */
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  background-color: var(--black-color);
+  color: var(--white-color);
   padding: 40px;
   height: 40rem;
   width: 32rem;
@@ -59,7 +59,7 @@
   }
   /* Boxes */
 .box:hover {
-  background-color: var(--second-color);
+  background-color: var(--box-color);
   }
 
   .box h2 {
@@ -85,21 +85,21 @@
   .button-project {
     margin-bottom: 10%;
     padding: 20px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
+    background-color: var(--white-color);
+    color: var(--black-color);
     font-size:25px;
     cursor: pointer;
     width: 15rem;
     border-radius: .5rem;
     text-decoration: none;
     text-align: center;
-    font-family: 'Falling Sky', 'sans';
+    font-family: var(--button-font);
     display: block; 
     margin: 0 auto; 
   }
       .button-project:hover{
-        background-color:rgb(94, 114, 216);
-        color: #fff;
+        background-color:var(--primary-color);
+        color: var(--white-color);
   }
 
 /* Icon Chevron
@@ -111,7 +111,7 @@
   box-shadow: none;
   cursor: pointer;
   border: none;
-  background-color: white;
+  background-color: var(--white-color);
   height: 2.1rem;
   border-radius: 2rem;
 }
@@ -122,11 +122,11 @@ button i.fa-2xl {
   display: flex;
   font-size: 2rem;
   z-index: 999;
-  color: rgb(0, 0, 0);
+  color: var(--black-color);
   }
   /* Button Hover */
   button i.fa-2xl:hover {
-  color: white;
+  color: var(--white-color);
   }
   /* Button Hover */
   button:hover {
@@ -153,5 +153,5 @@ button i.fa-2xl {
   }
   /* Text Line Hover */
   .box:hover .text-line-project{
-  border-bottom:4px solid white;
+  border-bottom:4px solid var(--white-color);
 }
