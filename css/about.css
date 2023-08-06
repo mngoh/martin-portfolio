@@ -28,10 +28,14 @@ h2 {
 /* About Picture */
 #profile-pic {
   height: 40rem;
-  width: rem; 
+  width: 30rem; 
   object-fit: cover; 
   z-index: 1000;
   /* margin-top: 20%; */
+}
+/* About Picture */
+#profile-pic:hover {
+  box-shadow: 0 0 10px var(--primary-color); /* Example box shadow value */
 }
 
 /* Grid RIGHT  */
@@ -84,20 +88,21 @@ h2 {
 
 
   /* Media Container */
-@media (max-width: 600px) {
+@media (max-width: 650px) {
   .grid-container-about {
     grid-template-columns: 1fr; 
     grid-template-rows: min-content 1fr; 
     height: auto; 
   }
-
   .grid-right-about {
     grid-template-columns: 1fr; 
-    margin-bottom: 120%;
+    margin-bottom: 600px;
   }
-
   #profile-pic {
-    width: 100%; 
-    height: auto; 
+    width: 50%; 
+    height: auto;
+  }
+  .card{
+    width: 80%;
   }
 }
