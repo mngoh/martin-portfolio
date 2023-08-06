@@ -40,9 +40,11 @@
     flex-direction: column;
     align-items: center;
   }
-
   /* Add some spacing between the stacked items */
   .footer-links li {
     margin-bottom: 10px;
+  }
+  #copyright, .footer-links{
+    font-size: 1.2rem;
   }
 }

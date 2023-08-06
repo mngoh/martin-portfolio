@@ -63,6 +63,7 @@ h2 {
   font-size: 2rem;
   font-family: var(--main-font);
   margin-bottom: -2%;
+  color:var(--white-color);
   }
   .card ul, .card p{
     text-align: left;

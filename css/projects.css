@@ -60,6 +60,7 @@
   .box h2 {
     margin-top: -6%;
     margin-bottom: 0%;
+    color: var(--white-color);
   }
   .box p {
     text-align: left;
