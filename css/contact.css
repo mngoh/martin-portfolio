@@ -90,6 +90,7 @@ button:hover{
   color: var(--white-color);
   align-items: center;
   font-size: 3rem;
+  margin-right: 10px;
 }
 
 /* Linkedin/Mail Icon */
@@ -112,10 +113,12 @@ button:hover{
     justify-content: center;
     align-items: center;
   }
-
-  /* Add some spacing between the stacked items */
+  form h3{
+    margin-top: .5%;
+  }
   form button {
     margin-bottom: 40px;
+    font-size: 1rem;
   }
   #linkedin {
     margin-bottom: 50px;

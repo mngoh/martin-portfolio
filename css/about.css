@@ -64,12 +64,14 @@ h2 {
   font-family: var(--main-font);
   margin-bottom: -2%;
   }
-  /* Grid Container Skills */
-  .grid-section-about .card p{
-    font-size: 1.3rem;
-    margin-top: 2%;
-    text-align: center;
-}
+  .card ul, .card p{
+    text-align: left;
+    font-size: 1rem;
+    margin-left: 10%;
+  }
+  .card li {
+      list-style-type: circle;
+  }
 
 /* Text Line */
 .text-line {
@@ -97,9 +99,7 @@ h2 {
     margin-bottom: 600px;
   }
   #profile-pic {
-    width: 80%; 
-    height: auto;
-    margin-left: 10%
+    height: 28rem;
   }
   .card h2{
     font-size: 1.5rem;
