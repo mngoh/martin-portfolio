@@ -59,9 +59,13 @@
   background: rgb(0,0,0);
   background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgb(32, 32, 33) 35%, rgb(46, 46, 46) 100%);
 }
-  /* .boxHove{
-    border: 1px solid var(--primary-color);
+
+/* TRY HOVER - IT WAS BEHIND GRID */
+  /* .box:hover{
+    transform: scale(1.01); 
+
   } */
+
   .box h2 {
     margin-top: -6%;
     margin-bottom: 0%;
@@ -97,6 +101,7 @@
     font-family: var(--button-font);
     display: block; 
     margin: 0 auto; 
+    transition: transform 0.3s ease; 
   }
       .button-project:hover{
         background-color:var(--primary-color);
