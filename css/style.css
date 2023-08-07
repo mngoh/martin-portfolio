@@ -1,5 +1,12 @@
 /* Set Color Variables */
 :root {
+
+  /* --primary-color: #252746; */
+  /* --profile-text: #464866; */
+  /* --white-color: #AAABB8; */
+  /* --black-color: #2E9CCA; */
+  /* --box-color: #29648A; */
+
   --primary-color: rgb(94, 114, 216);
   --box-color: rgb(41, 40, 40);
   --black-color: black;
