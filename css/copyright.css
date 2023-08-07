@@ -42,8 +42,9 @@
 }
 
 /* Footer Links Anchor Hover */
-.footer-links li a:hover, .footer-links i.fa-2xl:hover {
+.footer-text li a:hover, .footer-links i.fa-2xl:hover {
   color: var(--primary-color);
+  background-color: transparent;
 }
 
 /* Media Container For Footer Links */
