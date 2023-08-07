@@ -33,16 +33,19 @@ h2 {
   z-index: 1000;
   /* margin-top: 20%; */
 }
-/* About Picture */
+/* About Picture 
 #profile-pic:hover {
-  box-shadow: 0 0 10px var(--primary-color); /* Example box shadow value */
-}
+  box-shadow: 0 0 10px var(--primary-color); 
+} 
+*/
 
 /* Grid RIGHT  */
 .grid-right-about {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 40rem;
+  background: rgb(0,0,0);
+  background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgb(32, 32, 33) 35%, rgb(46, 46, 46) 100%);
 }
 
 /* Card Styles */

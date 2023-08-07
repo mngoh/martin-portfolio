@@ -146,7 +146,7 @@ body {
     text-align: center;
     margin-top: 0%;
     margin-bottom: 3%;
-    /* color: var(--primary-color); */
+    color: var(--primary-color);
 }
 
 /* Media Container for NAV bar and Body Text */
