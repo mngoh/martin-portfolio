@@ -15,7 +15,7 @@ h2 {
   margin: 0 auto;
 }
 
-/* Grid MAIN*/
+/* Grid Container About*/
 .grid-container-about {
   display: grid; 
   grid-template-columns: min-content 1fr; 
