@@ -63,7 +63,8 @@
 @media(max-width:850px){
     .profile-text .hi{
       font-size: 4.2rem;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
+      max-width: 100%;
     }
     .profile-text .name{
       font-size: 4.2rem;
