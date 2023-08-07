@@ -85,8 +85,8 @@ h2 {
   }
   /* Text Line Hover */
   .card:hover .text-line{
-    border-bottom:6px solid var(--primary-color);
-  }
+    border-bottom: 6px solid var(--primary-color);
+    }
 
 
 /* Media Container */
