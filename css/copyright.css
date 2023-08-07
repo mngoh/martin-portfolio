@@ -1,3 +1,6 @@
+:root{
+  --margin-bottom: 2%
+}
 /* Copyright */
 #copyright { 
   margin-top: -8%;
@@ -6,8 +9,13 @@
   text-align: center;
 }
 
+/* Footer Container */
+.footer-container{
+  margin-bottom: var(--margin-bottom);
+}
+
 /* Footer Links */
-.footer-links {
+.footer-links, .footer-text {
   list-style-type: none; 
   padding: 0;
   margin: 0;
@@ -15,21 +23,26 @@
   justify-content: center;
 }
 
+/* Footer Links */
+.footer-links {
+  margin-bottom: var(--margin-bottom);
+}
+
 /* Footer Links Items */
-.footer-links li {
+.footer-links li, .footer-text li {
   position: relative; 
   margin-right: 20px; 
   color: var(--white-color);
 }
 
 /* Footer Links Anchor */
-.footer-links li a {
+.footer-links li a, .footer-text li a {
   color: var(--white-color);
   text-decoration: none;
 }
 
 /* Footer Links Anchor Hover */
-.footer-links li a:hover {
+.footer-links li a:hover, .footer-links i.fa-2xl:hover {
   color: var(--primary-color);
 }
 
@@ -41,19 +54,19 @@
     align-items: center;
   }
   #copyright, .footer-links{
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 
 /* Media Container For Footer Links */
-@media (max-width: 400px) {
-  .footer-links {
+@media (max-width: 350px) {
+  .footer-links, .footer-text {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   /* Add some spacing between the stacked items */
   .footer-links li {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
