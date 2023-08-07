@@ -10,64 +10,90 @@ window.addEventListener("scroll", () => {
   lastScrollY = window.scrollY;
 });
 
-// // Function to scroll content to the left
+
+// Function to scroll content to the left
 // function scrollContentLeft() {
 //   const scrollmenu = document.getElementById('scrollmenu');
-//   var width = document.getElementById('box1').offsetWidth;
+//   const scrollAmount = 150; 
 
-//   scrollmenu.scroll({
-//     left: scrollmenu.scrollLeft - width - 250, 
-//     behavior: 'smooth'
-//     });
-//   }
+//   scrollmenu.scrollBy({
+//     left: -scrollAmount,
+//     behavior: 'smooth',
+//   });
+
+//   checkIfBox1Showing(); 
+// }
+
+// // Function to scroll content to the right
 // function scrollContentRight() {
 //   const scrollmenu = document.getElementById('scrollmenu');
-//   var width = document.getElementById('box1').offsetWidth;
-//   scrollmenu.scroll({
-//     left: scrollmenu.scrollLeft + width + 250,
-//     behavior: 'smooth'
-//     });
+//   const scrollAmount = 150; 
+
+//   scrollmenu.scrollBy({
+//     left: scrollAmount,
+//     behavior: 'smooth',
+//   });
+
+//   checkIfBox1Showing();
+// }
+
+// // Function to check if box1 is showing and hide the left button if necessary
+// function checkIfBox1Showing() {
+//   const scrollmenu = document.getElementById('scrollmenu');
+//   const box1 = document.getElementById('box1');
+
+//   // If box1 is at the beginning (leftmost position), hide the left button
+//   if (scrollmenu.scrollLeft === 0 || scrollmenu.scrollLeft < box1.offsetWidth) {
+//     document.getElementById('button-left').style.display = 'none';
+//   } else {
 //     document.getElementById('button-left').style.display = 'block';
 //   }
-
-let isScrolling = false; // Flag to prevent double-clicks
+// }
 
 // Function to scroll content to the left
 function scrollContentLeft() {
-  if (isScrolling) return; // Ignore if scrolling is already in progress
   const scrollmenu = document.getElementById('scrollmenu');
-  const width = document.getElementById('box1').offsetWidth;
-  const newPosition = scrollmenu.scrollLeft - width - 251;
-  
-  isScrolling = true;
-  scrollmenu.scroll({
-    left: newPosition,
+  const scrollAmount = 150;
+
+  scrollmenu.scrollBy({
+    left: -scrollAmount,
     behavior: 'smooth',
   });
 
-  // Reset the flag after the scrolling animation is complete (approx. 500ms)
-  setTimeout(() => {
-    isScrolling = false;
-  }, 500);
+  checkIfButtonsVisibility();
 }
 
 // Function to scroll content to the right
 function scrollContentRight() {
-  if (isScrolling) return; // Ignore if scrolling is already in progress
   const scrollmenu = document.getElementById('scrollmenu');
-  const width = document.getElementById('box1').offsetWidth;
-  const newPosition = scrollmenu.scrollLeft + width + 250;
+  const scrollAmount = 150;
 
-  isScrolling = true;
-  scrollmenu.scroll({
-    left: newPosition,
+  scrollmenu.scrollBy({
+    left: scrollAmount,
     behavior: 'smooth',
   });
 
-  // Reset the flag after the scrolling animation is complete (approx. 500ms)
-  setTimeout(() => {
-    isScrolling = false;
-  }, 500);
-   document.getElementById('button-left').style.display = 'block';
+  checkIfButtonsVisibility();
+}
 
+// Function to check if buttons should be visible or hidden
+function checkIfButtonsVisibility() {
+  const scrollmenu = document.getElementById('scrollmenu');
+  const box1 = document.getElementById('box1');
+  const containerWidth = scrollmenu.offsetWidth;
+  const contentWidth = scrollmenu.scrollWidth;
+
+  // If box1 is at the beginning (leftmost position), hide the left button
+  if (scrollmenu.scrollLeft === 0 || scrollmenu.scrollLeft < box1.offsetWidth / 2) {
+    document.getElementById('button-left').style.display = 'none';
+  } else {
+    document.getElementById('button-left').style.display = 'block';
+  }
+
+  // If the end of the content is reached, hide the right button
+  if (scrollmenu.scrollLeft >= contentWidth - containerWidth) {
+    document.getElementById('button-right').style.display = 'none';
+  } else {
+    document.getElementById('button-right').style.display = 'block';
+  }
 }
