@@ -85,13 +85,16 @@ form button{
   background-color: var(--white-color);
   font-family: var(--button-font);
 }
+
+/* form button:first-letter {
+  color: var(--primary-color);
+} */
+
 button:hover{
   background-color: var(--main-color);
   transform: scale(1.05);
   color:var(--white-color);
 }
-
-
 
 /* Media Container For Buttons and Icons*/
 @media (max-width: 650px) {
