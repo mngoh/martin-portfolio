@@ -63,16 +63,23 @@
 @media(max-width:850px){
     .profile-text .hi{
       font-size: 4.2rem;
-      margin-bottom: 50px;
+      margin-bottom: 70px;
       max-width: 100%;
+      text-align: center;
+      margin-right: 6%;
+      margin-top: 20%;
     }
     .profile-text .name{
-      font-size: 4.2rem;
+      font-size: 5rem;
       margin-bottom: 100px;
+      text-align: center;
     }
     .profile-text .bot{
       font-size: 1.2rem;
       margin-bottom: 50px;
+      max-width: 300px;
+      text-align: center;
+      margin-left: 16%;
     }
     .profile .button-link{
         padding: 16px;
