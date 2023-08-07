@@ -96,7 +96,7 @@ button:hover{
 }
 
 /* Media Container For Buttons and Icons*/
-@media (max-width: 650px) {
+@media (max-width: 850px) {
   form{
     width: 80%;
     height: auto;

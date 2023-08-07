@@ -48,7 +48,7 @@
 }
 
 /* Media Container For Footer Links */
-@media (max-width: 650px) {
+@media (max-width: 850px) {
   .footer-links {
     display: flex;
     flex-direction: row;

@@ -90,7 +90,7 @@ h2 {
 
 
 /* Media Container */
-@media (max-width: 650px) {
+@media (max-width: 850px) {
   .grid-container-about {
     grid-template-columns: 0fr; 
     grid-template-rows: min-content auto; 
