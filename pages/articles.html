@@ -4,7 +4,10 @@
   <title>Martin N.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" type="text/css" href="../css/home.css">
   <script src="https://kit.fontawesome.com/b2fb9e30a3.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b2fb9e30a3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
 </head>
 <body>
     <nav class="navbar">
@@ -28,7 +31,7 @@
     <div class="gradient-overlay"></div>
     <div class="profile">
       <div class="iframe-container">
-        <img src="../images/giphy (1).gif" alt="Gif" width="550">
+        <img src="../images/giphy (1).gif" alt="Gif" width="550" id="gif">
       </div>
       <style>
         .iframe-container {
@@ -37,27 +40,39 @@
             align-items: flex-start; 
           }
       </style>
-      <a href="../index.html#home" class="button-home">Go Back</a>
+      <a href="../index.html#home" class="button-link" id="button-link">Go Back</a>
       <style>
-        .button-home  {
-            display: flex;
-            justify-content: center; 
-            align-items: flex-start; 
-            color: rgb(0, 0, 0);
-            background-color: rgb(255, 255, 255);
-            width: 10rem;
-            font-size: 2.5rem;
-            margin-left: 45%;
-            margin-top: 5%;
-            border-radius: .5rem;
-            text-decoration: none;
-            font-family: "Falling Sky", 'sans';
-          }
-        .button-home:hover{
-          background-color:rgb(94, 114, 216);
-          transform: scale(1.05);
-          color: #fff;
-        }
+        .button-link {
+        padding: 20px;
+        background-color: var(--profile-text);
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        cursor: pointer;
+        width: 15rem;
+        border-radius: .5rem;
+        text-decoration: none;
+        text-align: center;
+        font-family: var(--button-font);
+        display: block; 
+        margin: 0% auto;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+    .button-link:hover{
+      background-color: var(--primary-color);
+      color: var(--white-color);
+    }
+    @media screen and (max-width: 650px) {
+      #gif {
+        width: 15rem;
+        margin-bottom: 10%;
+      }
+      #button-link {
+      padding: 6px;
+      font-size: .7rem;
+      width: 50%;
+      }
+    }
       </style>
     </div>
   </section>
