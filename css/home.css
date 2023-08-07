@@ -60,7 +60,7 @@
     }
 
 /* Media Container For Profile  */
-@media(max-width:650px){
+@media(max-width:850px){
     .profile-text .hi{
       font-size: 3.2rem;
       margin-bottom: 50px;

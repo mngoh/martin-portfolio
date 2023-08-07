@@ -165,7 +165,7 @@ button i.fa-2xl {
 }
 
 /* Media Container For Projects Section */
-@media (max-width: 600px) {
+@media (max-width: 850px) {
   /* Projects Section */
   #projects {
     text-align: center;

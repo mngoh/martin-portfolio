@@ -157,7 +157,7 @@ body {
   }
 
 /* Media Container for NAV bar and Body Text */
-@media(max-width:650px){
+@media(max-width:850px){
   /* Nav Bar Styling */
   .toggle-button{
     display: flex;
