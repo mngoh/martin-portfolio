@@ -176,6 +176,7 @@ button i.fa-2xl {
  .grid-container {
   display: grid;
   justify-content: center;
+  align-items: center;
   min-width: 200px;
   gap: 5%;
  }
@@ -185,7 +186,7 @@ button i.fa-2xl {
     position: relative;
     color: var(--white-color);
     padding: 10px;
-    width: 300px;
+    width: 250px;
   }
   .box:hover {
     background-color: transparent;

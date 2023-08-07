@@ -62,19 +62,19 @@
 /* Media Container For Profile  */
 @media(max-width:850px){
     .profile-text .hi{
-      font-size: 3.2rem;
-      margin-bottom: 50px;
+      font-size: 4.2rem;
+      margin-bottom: 100px;
     }
     .profile-text .name{
-      font-size: 3.2rem;
-      margin-bottom: 50px;
+      font-size: 4.2rem;
+      margin-bottom: 100px;
     }
     .profile-text .bot{
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-bottom: 50px;
     }
     .profile .button-link{
-        padding: 15px;
+        padding: 16px;
         font-size: 1.3rem;
         width: 12rem;
     }
