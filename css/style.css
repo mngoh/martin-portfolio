@@ -53,10 +53,10 @@ body {
 
 /* Scroll Bar */
 ::-webkit-scrollbar {
-  width: 0.3em;
-  height: .5rem;
+  width: .2em;
+  height: .3rem;
   background-color: transparent;
-  display: none;
+  /* display: none; */
   }
   ::-webkit-scrollbar-thumb:hover {
     background-color: var(--primary-color) 
@@ -64,7 +64,7 @@ body {
   ::-webkit-scrollbar-thumb {
     background-color: var(--white-color)
 }
- 
+
 /* NAV BAR */
 .navbar {
   position: fixed;

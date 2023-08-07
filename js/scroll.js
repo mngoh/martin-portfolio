@@ -53,7 +53,7 @@ window.addEventListener("scroll", () => {
 // Function to scroll content to the left
 function scrollContentLeft() {
   const scrollmenu = document.getElementById('scrollmenu');
-  const scrollAmount = 150;
+  const scrollAmount = 200;
 
   scrollmenu.scrollBy({
     left: -scrollAmount,
@@ -66,7 +66,7 @@ function scrollContentLeft() {
 // Function to scroll content to the right
 function scrollContentRight() {
   const scrollmenu = document.getElementById('scrollmenu');
-  const scrollAmount = 150;
+  const scrollAmount = 200;
 
   scrollmenu.scrollBy({
     left: scrollAmount,
