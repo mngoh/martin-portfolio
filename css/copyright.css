@@ -1,11 +1,11 @@
 :root{
-  --margin-bottom: 2%
+  --margin-bottom: 1%
 }
 /* Copyright */
 #copyright { 
   margin-top: -8%;
   color: var(--white-color);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 

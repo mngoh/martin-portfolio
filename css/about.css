@@ -55,10 +55,6 @@ h2 {
   width: 30rem;
   max-width: 100%;
   }
-  /* Card Hover */
-  .card:hover {
-    background-color: var(--box-color);
-  }
   .card h2{
   font-size: 2rem;
   font-family: var(--main-font);
