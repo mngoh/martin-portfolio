@@ -10,49 +10,64 @@ window.addEventListener("scroll", () => {
   lastScrollY = window.scrollY;
 });
 
-// Get the scrollmenu container and the buttons
-function scrollContentRight() {
-  const scrollmenu = document.getElementById('scrollmenu');
-  scrollmenu.scrollLeft += 600;
-  document.getElementById('button-left').style.display = 'block';
+// // Function to scroll content to the left
+// function scrollContentLeft() {
+//   const scrollmenu = document.getElementById('scrollmenu');
+//   var width = document.getElementById('box1').offsetWidth;
 
-  // Check if the scrollmenu has reached the rightmost end
-  const isAtRightEnd = scrollmenu.scrollLeft + scrollmenu.clientWidth >= scrollmenu.scrollWidth;
+//   scrollmenu.scroll({
+//     left: scrollmenu.scrollLeft - width - 250, 
+//     behavior: 'smooth'
+//     });
+//   }
+// function scrollContentRight() {
+//   const scrollmenu = document.getElementById('scrollmenu');
+//   var width = document.getElementById('box1').offsetWidth;
+//   scrollmenu.scroll({
+//     left: scrollmenu.scrollLeft + width + 250,
+//     behavior: 'smooth'
+//     });
+//     document.getElementById('button-left').style.display = 'block';
+//   }
 
-  // If the scrollmenu has reached the rightmost end, hide the button-right
-  if (isAtRightEnd) {
-    document.getElementById('button-right').style.display = 'none';
-  }
-}
+let isScrolling = false; // Flag to prevent double-clicks
 
-// Get the scrollmenu container and the buttons
+// Function to scroll content to the left
 function scrollContentLeft() {
+  if (isScrolling) return; // Ignore if scrolling is already in progress
   const scrollmenu = document.getElementById('scrollmenu');
-  scrollmenu.scrollLeft -= 600;
-  document.getElementById('button-right').style.display = 'block';
+  const width = document.getElementById('box1').offsetWidth;
+  const newPosition = scrollmenu.scrollLeft - width - 251;
+  
+  isScrolling = true;
+  scrollmenu.scroll({
+    left: newPosition,
+    behavior: 'smooth',
+  });
 
-  // Check if the scrollmenu has reached the leftmost end
-  const isAtLeftEnd = scrollmenu.scrollLeft === 0;
-
-  // If the scrollmenu has reached the leftmost end, hide the button-left
-  if (isAtLeftEnd) {
-    document.getElementById('button-left').style.display = 'none';
-  }
+  // Reset the flag after the scrolling animation is complete (approx. 500ms)
+  setTimeout(() => {
+    isScrolling = false;
+  }, 500);
 }
 
-// Function to handle scroll events
-function handleScroll() {
+// Function to scroll content to the right
+function scrollContentRight() {
+  if (isScrolling) return; // Ignore if scrolling is already in progress
   const scrollmenu = document.getElementById('scrollmenu');
+  const width = document.getElementById('box1').offsetWidth;
+  const newPosition = scrollmenu.scrollLeft + width + 250;
 
-  // Check if the scrollmenu has reached the rightmost end
-  const isAtRightEnd = scrollmenu.scrollLeft + scrollmenu.clientWidth >= scrollmenu.scrollWidth;
+  isScrolling = true;
+  scrollmenu.scroll({
+    left: newPosition,
+    behavior: 'smooth',
+  });
 
-  // Check if the scrollmenu has reached the leftmost end
-  const isAtLeftEnd = scrollmenu.scrollLeft === 0;
+  // Reset the flag after the scrolling animation is complete (approx. 500ms)
+  setTimeout(() => {
+    isScrolling = false;
+  }, 500);
+   document.getElementById('button-left').style.display = 'block';
 
-  // Show/hide the buttons accordingly
-  document.getElementById('button-left').style.display = isAtLeftEnd ? 'none' : 'block';
-  document.getElementById('button-right').style.display = isAtRightEnd ? 'none' : 'block';
 }
-
-
