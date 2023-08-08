@@ -142,7 +142,7 @@ button i.fa-2xl {
   justify-content: flex-start; 
   align-items: center;
   display: flex;
-  font-size: 2rem;
+  font-size: var(--box-text-font-size);
   z-index: 999;
   color: var(--background-color);
   }
