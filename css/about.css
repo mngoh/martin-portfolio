@@ -59,14 +59,13 @@ h2 {
   max-width: 100%;
   }
   .card h2{
-  font-size: var(--box-font-size);
-  font-family: var(--main-font);
+  font-size: var(--box-headers-font-size);
   margin-bottom: -2%;
   color:var(--white-color);
   }
   .card ul, .card p{
     text-align: left;
-    font-size: var();
+    font-size: var(--box-secondary-font-size);
     margin-left: 10%;
   }
   .card li {
@@ -78,7 +77,7 @@ h2 {
 /* Text Line */
 .text-line {
   /* border-bottom: 5px solid rgb(255, 255, 255); */
-  border-bottom:6px solid var(--white-color);
+  border-bottom:6px solid var(--text-color);
   max-width: 70%;
   margin: 0 auto;
   margin-top: 4%;

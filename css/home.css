@@ -41,7 +41,7 @@
       padding: 20px;
       background-color: var(--button-color);
       color: rgb(0, 0, 0);
-      font-size: 25px;
+      font-size: var(--button-font-size);
       cursor: pointer;
       width: 15rem;
       border-radius: .5rem;

@@ -20,7 +20,7 @@ form{
   /* background: rgb(0,0,0); */
   /* background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgb(32, 32, 33) 35%, rgb(46, 46, 46) 100%); */
   /* background-color: var(--box-color); */
-  border: 1px solid var(---color);
+  /* border: 1px solid var(--text-color); */
   font-family: var(--button-font);
   display: flex;
   flex-direction: column;
@@ -32,18 +32,18 @@ form{
   }
   form h3{
     margin-top: -16%;
-    color: var(--white-color);
+    color: var(--text-color);
     font-weight: 90px;
     margin-bottom: 0%;
     display: flex;
-    font-size: 1rem;
+    font-size: var(--thrid-font-size);
   }
   form input, form textarea{
     border: 0;
     margin: 7px 0;
     padding: 20px;
     outline: none;
-    background: var(--white-color);
+    background: var(--text-color);
     font-size: 17px;
     font-family: var(--button-font)
   }
@@ -79,15 +79,15 @@ form{
 /* Form Button */
 form button{
   padding: 15px;
-  color: var(--black-color);
-  font-size: 26px;
+  color: var(--text-color);
+  font-size: var(--button-font-size);
   border: 0;
   outline: none;
   cursor: pointer;
   width: 150px;
   margin: 0 auto;
   border-radius: .5rem;
-  background-color: var(--white-color);
+  background-color: var(--background-color);
   font-family: var(--button-font);
 }
 

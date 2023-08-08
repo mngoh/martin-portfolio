@@ -15,15 +15,16 @@
 
   /* Font Size */
   --primary-font-size: 9rem;
-  --secondary-font-size: 3.5rem;
-  --third-font-size: 1.5rem;
-  --box-headers-font-size: 2rem;
-  --box-second-head-font-size: 2rem;
+  --secondary-font-size: 3rem;
+  --third-font-size: calc(var(--secondary-font-size) / 2);
+  --box-headers-font-size: 1.4rem;
+  --box-secondary-font-size: calc(var(--box-headers-font-size)/1.3);
   --box-text-font-size: 2rem;
-  --button-font-size:2rem;
+  --button-font-size:1.4rem;
 
   /* Colors */
   --primary-color: rgb(94, 114, 216);
+  --secondary-color: red;
   --text-color: rgb(235, 235, 240); 
   --box-color: rgb(41, 40, 40);
   --button-color: white;
@@ -193,7 +194,7 @@ body {
     margin-top: 0%;
     margin-bottom: 3%;
     /* color: var(--primary-color); */
-    font-size: var(--primary-font-size)/2;
+    font-size: var(--thrid-font-size);
   }
 
 /* Media Container for NAV bar and Body Text */
