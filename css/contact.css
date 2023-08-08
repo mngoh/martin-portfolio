@@ -78,16 +78,16 @@ form{
 }
 /* Form Button */
 form button{
-  padding: 15px;
-  color: var(--text-color);
+  padding: 12px;
+  color: var(--background-color);
   font-size: var(--button-font-size);
   border: 0;
   outline: none;
   cursor: pointer;
-  width: 150px;
+  width: 120px;
   margin: 0 auto;
   border-radius: .5rem;
-  background-color: var(--background-color);
+  background-color: var(--button-color);
   font-family: var(--button-font);
 }
 
@@ -96,9 +96,9 @@ form button{
 } */
 
 button:hover{
-  background-color: var(--main-color);
+  background-color: var(--primary-color);
   transform: scale(1.05);
-  color:var(--white-color);
+  color:var(--text-color);
 }
 
 /* Media Container For Buttons and Icons*/
@@ -128,5 +128,6 @@ button:hover{
   form button {
     margin-bottom: 40px;
     font-size: var(--button-font-shrink);
+      color: var(--background-color);
   }
 }
