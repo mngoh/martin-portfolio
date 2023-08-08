@@ -19,9 +19,9 @@ h2 {
 .grid-container-about {
   display: grid; 
   grid-template-columns: min-content 1fr; 
-  width: auto;
+  /* width: auto; */
   height: 50rem; 
-  max-width: 100%;
+  /* max-width: 100%; */
   gap: 5rem;
 }
 
@@ -100,28 +100,30 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 4px; 
+    gap: 10px; 
     margin-bottom: 3rem;
   }
   .grid-profile{
     display: flex;
   }
   #profile-pic {
-    height: 28rem;
+    height: auto;
     margin: 0 auto;
   }
   #profile-pic , .card{
-    width: 20rem;
+    width: 15rem;
   }
   .card h2{
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: -2%;
     }
   .card{
     height: auto;
-    width: 18rem;
+    width: 12rem;
   }
   .card ul, .card p{
-    margin-left: 1%;
+    text-align: left;
+    margin-left: 0%;
+    font-size: .7rem;
   }
 }
