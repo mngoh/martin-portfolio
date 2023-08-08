@@ -103,10 +103,14 @@ button:hover{
 
 /* Media Container For Buttons and Icons*/
 @media (max-width: 850px) {
+  #contact h1{
+    margin-bottom: 6%;
+  }
   form{
     width: 80%;
     height: auto;
     margin-bottom: -20%;
+    margin-top: 2%;
     font-size: var(--third-font-size-shrink);
   }
   .form-bot {
