@@ -107,22 +107,26 @@ button:hover{
     width: 80%;
     height: auto;
     margin-bottom: -20%;
+    font-size: var(--third-font-size-shrink);
   }
   .form-bot {
     display: flex;
     flex-direction: row; 
     justify-content: space-around;
     align-items: center;
+    font-size: var(--third-font-size-shrink);
   }
   form h3{
     margin-top: -2%;
+    font-size: var(--third-font-size-shrink);
   }
   #contact h2{
     margin-top: -4%;
     margin-bottom: 3%;
+    font-size: var(--secondary-font-size-shrink);
   }
   form button {
     margin-bottom: 40px;
-    font-size: 1rem;
+    font-size: var(--button-font-shrink);
   }
 }
