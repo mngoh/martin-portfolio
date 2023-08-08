@@ -94,6 +94,7 @@ h2 {
     grid-template-columns: 0fr; 
     grid-template-rows: min-content auto; 
     height: auto; 
+    margin-bottom: 15%;
   }
   .grid-right-about {
     display: grid;
@@ -113,16 +114,16 @@ h2 {
     width: 15rem;
   }
   .card h2{
-    font-size: 1rem;
-    margin-bottom: -2%;
+    font-size: var(--secondary-font-size-shrink);
+    margin-bottom: -1%;
     }
   .card{
     height: auto;
-    width: 12rem;
+    width: 15rem;
   }
   .card ul, .card p{
     text-align: left;
     margin-left: 0%;
-    font-size: .7rem;
+    font-size: var(--third-font-size-shrink);
   }
 }

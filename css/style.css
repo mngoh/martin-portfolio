@@ -17,6 +17,13 @@
   --third-font-size: calc(var(--secondary-font-size) / 1.5);
   --button-font-size:1.4rem;
 
+  /* Font Size - Shrink*/
+  --home-font-size-shrink: 5rem;
+  --primary-font-size-shrink: 2rem;
+  --secondary-font-size-shrink: 1rem;
+  --third-font-size-shrink: calc(var(--secondary-font-size-shrink) / 1.2);
+  --button-font-size-shrink:1rem;
+
   /* Colors */
   --primary-color: rgb(94, 114, 216);
   --secondary-color: rgb(157, 165, 172);
@@ -27,8 +34,6 @@
 
   /* Other */
   --max-width: 650px;
-  --h1-shrink: 2rem;
-  --h2-shrink: 1rem;
 }
 
 /* Body */
@@ -228,9 +233,9 @@ body {
   section h1{
     margin-top: 2%;
     margin-bottom: 5%;
-    font-size: var(--h1-shrink);
+    font-size: var(--primary-font-size-shrink);
   }
   section h2{
-    font-size: var(--h2-shrink);
+    font-size: var(--secondary-font-size-shrink);
   }
 }
