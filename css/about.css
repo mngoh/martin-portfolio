@@ -97,11 +97,18 @@ h2 {
     height: auto; 
   }
   .grid-right-about {
-    display: block;
-    margin-bottom: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4px; 
+    margin-bottom: 3rem;
+  }
+  .grid-profile{
+    display: flex;
   }
   #profile-pic {
     height: 28rem;
+    margin: 0 auto;
   }
   #profile-pic , .card{
     width: 20rem;
@@ -112,6 +119,7 @@ h2 {
     }
   .card{
     height: auto;
+    width: 18rem;
   }
   .card ul, .card p{
     margin-left: 1%;
