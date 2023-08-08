@@ -25,7 +25,8 @@
   --button-font-size-shrink:1rem;
 
   /* Colors */
-  --primary-color: rgb(94, 114, 216);
+  /* --primary-color: rgb(94, 114, 216); */
+  --primary-color: rgb(36, 62, 127);
   --secondary-color: rgb(157, 165, 172);
   --text-color: rgb(235, 235, 240); 
   --box-color: rgb(41, 40, 40);

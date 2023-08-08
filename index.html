@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/about.css">
   <link rel="stylesheet" type="text/css" href="css/home.css">
   <link rel="stylesheet" type="text/css" href="css/copyright.css">
+  <link rel="stylesheet" type="text/css" href="css/background.css">
   <script src="js/script.js"></script>
   <script src="js/navbar.js"></script>
   <script src="js/scroll.js"></script>
@@ -35,9 +36,7 @@
   </div>
   <!-- Home -->
   <section id="Home">
-    <div class="background-pattern-Home"> 
-      <img src="images/back3.png" alt="home-pic" style="width: 100%; height: 100%;">
-    </div>
+    <div class="center"></div>
     <div class="gradient-overlay"></div>
     <div class="profile">
         <div class='profile-text'>
@@ -50,176 +49,176 @@
   </section>
 
   <!-- ABOUT -->
-<section id="about">
-  <h1>ABOUT</h1> 
-  <h2>Check out some of my skills and interests</h2>
-  <div class="main-cont"> 
-    <div class="grid-container-about">
-      <div class="grid-profile">
-        <img src="images/img2.jpg" alt="home-pic" id="profile-pic">
-      </div>    
-      <div class="grid-right-about">
-        <div class="card" id="card-about">
-          <h2> Background</h2>
-          <div class="text-line"></div>
+  <section id="about">
+    <h1>ABOUT</h1> 
+    <h2>Check out some of my skills and interests</h2>
+    <div class="main-cont"> 
+      <div class="grid-container-about">
+        <div class="grid-profile">
+          <img src="images/img2.jpg" alt="home-pic" id="profile-pic">
+        </div>    
+        <div class="grid-right-about">
+          <div class="card" id="card-about">
+            <h2> Background</h2>
+            <div class="text-line"></div>
+            <ul> 
+              <li> I am a passionate Data Scientist/MLE with experience building and deploying
+                productionalized ML models.
+              </li>
+              <li> Bachelor's Degree in Supply Chain Analytics</li>
+              <li> Master's Degree in Business Analytics</li>
+            </ul>
+          </div>
+        <div class="card" id="card-interests">
+            <h2> Interests</h2>
+            <div class="text-line"></div>
           <ul> 
-            <li> I am a passionate Data Scientist/MLE with experience building and deploying
-              productionalized ML models.
-            </li>
-            <li> Bachelor's Degree in Supply Chain Analytics</li>
-            <li> Master's Degree in Business Analytics</li>
+            <li> Data Science</li>
+            <li> Machine Learning</li>
+            <li> Natural Language Processing</li>
+            <li>Computer Vision</li>
+            <li>Crime Statistics</li>
           </ul>
         </div>
-      <div class="card" id="card-interests">
-          <h2> Interests</h2>
+        <div class="card" id="card-skills">
+          <h2> Skills</h2>
           <div class="text-line"></div>
-        <ul> 
-          <li> Data Science</li>
-          <li> Machine Learning</li>
-          <li> Natural Language Processing</li>
-          <li>Computer Vision</li>
-          <li>Crime Statistics</li>
-        </ul>
+          <ul> 
+            <li> Python, PySpark, PyTorch</li>
+            <li> HTML, JavaScript, CSS</li>
+            <li> Machine Learning</li>
+            <li> Natural Language Processing</li>
+            <li>Computer Vision</li>
+            <li>Crime Statistics</li>
+          </ul>      
+        </div>
+        <div class="card" id="card-facts">
+          <h2> Fun Facts</h2>
+          <div class="text-line"></div>
+          <ul>
+            <li> This is the first website I've built!</li>
+            <li> I played Division 1 Soccer in College</li>
+            <li> I self taught myself Spanish</li>
+            <li> I self taught myself how to cut hair</li>
+            <li> I love challenges</li>
+          </ul>
+        </div>
       </div>
-      <div class="card" id="card-skills">
-        <h2> Skills</h2>
-        <div class="text-line"></div>
-        <ul> 
-          <li> Python, PySpark, PyTorch</li>
-          <li> HTML, JavaScript, CSS</li>
-          <li> Machine Learning</li>
-          <li> Natural Language Processing</li>
-          <li>Computer Vision</li>
-          <li>Crime Statistics</li>
-        </ul>      
       </div>
-      <div class="card" id="card-facts">
-        <h2> Fun Facts</h2>
-        <div class="text-line"></div>
-        <ul>
-          <li> This is the first website I've built!</li>
-          <li> I played Division 1 Soccer in College</li>
-          <li> I self taught myself Spanish</li>
-          <li> I self taught myself how to cut hair</li>
-          <li> I love challenges</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-</section>
+  </section>
 
-<!-- Projects -->
-<section id="projects">
-  <h1>Projects</h1>
-  <h2> Take a look at some of the work I've done</h2>
-  <!-- <div class="background-projects"> -->
-    <div class="scrollmenu" id="scrollmenu">
-      <div class="grid-container" id="grid-container">
-        <button id="button-left" type="button" onclick="scrollContentLeft()" aria-label="next"><i class="fa-solid fa-chevron-left fa-2xl"></i></button>
-        <button id="button-right" type="button" onclick="scrollContentRight()" aria-label="prior"><i class="fa-solid fa-chevron-right fa-2xl"></i></button>
-        <div class="box box1" id="box1">
-          <h2>Soccer Prediction Model (SPM)</h2>
-          <img src="images/soccer_preds.jpg">
-            <h3>Overview</h3>
-            <div class="text-line-project"></div>
-            <p> Scraped web data using Python to generate multiple ML models focused on predicting goals scored within the top 5 soccer leagues in Europe.
-            </p>
-            <h3> Results</h3>
-            <div class="text-line-project"></div>
-            <p> The Linear Regression model outperformed the others with the lowerst root mean squared error (RMSE). 
-            </p>
-            <h3> Tools</h3>
-            <div class="text-line-project"></div>
-            <p> Python, Jupyter Notebook, SQL</p>
-        </div>
-        <div class="box box2">
-          <h2>LA County Crime Statistics</h2>
-          <img src="images/gender_la.jpg">
-            <h3>Overview</h3>
-            <div class="text-line-project"></div>
-            <p>Analyze Los Angeles (LA) County Crime Data.</p>
-            <h3> Results</h3>
-            <div class="text-line-project"></div>
-            <p> Black women face a higher percent of crime against</p>
-            <h3>Tools</h3>
-            <div class="text-line-project"></div>
-            <p>Python, Jupyter Notebook, SQL</p>
-        </div>
-        <div class="box box3">
-          <h2>Financial Customer Segementation</h2>
-          <img src="images/market.png">
-            <h3>Overview</h3>
-            <div class="text-line-project"></div>
-            <p>Worked with a large financial firm to analyze market data of 30,000 individuals to 
-              target financial products to.
-            </p>
-            <h3>Results</h3>
-            <div class="text-line-project"></div>
-            <p>Through Unsupervised machine learning techniques, 5 marketable customer segments were identified and
-              results were presented to senior leadership at the firm.
-            </p>
-            <h3>Tools</h3>
-            <div class="text-line-project"></div>
-            <p>Python, Tableu, Jupyter Notebook</p>
-        </div>
-        <div class="box box4">
-          <h2>This Website</h2>
-          <img src="images/d.png">
-            <h3>Overview</h3>
-            <div class="text-line-project"></div>
-            <p>Worked with
-            </p>
-            <h3>Results</h3>
-            <div class="text-line-project"></div>
-            <p>Through Unsupervised mach
-            </p>
-            <h3>Tools</h3>
-            <div class="text-line-project"></div>
-            <p>Python, Tableu, Jupyter Notebook</p>
+  <!-- Projects -->
+  <section id="projects">
+    <h1>Projects</h1>
+    <h2> Take a look at some of the work I've done</h2>
+    <!-- <div class="background-projects"> -->
+      <div class="scrollmenu" id="scrollmenu">
+        <div class="grid-container" id="grid-container">
+          <button id="button-left" type="button" onclick="scrollContentLeft()" aria-label="next"><i class="fa-solid fa-chevron-left fa-2xl"></i></button>
+          <button id="button-right" type="button" onclick="scrollContentRight()" aria-label="prior"><i class="fa-solid fa-chevron-right fa-2xl"></i></button>
+          <div class="box box1" id="box1">
+            <h2>Soccer Prediction Model (SPM)</h2>
+            <img src="images/soccer_preds.jpg">
+              <h3>Overview</h3>
+              <div class="text-line-project"></div>
+              <p> Scraped web data using Python to generate multiple ML models focused on predicting goals scored within the top 5 soccer leagues in Europe.
+              </p>
+              <h3> Results</h3>
+              <div class="text-line-project"></div>
+              <p> The Linear Regression model outperformed the others with the lowerst root mean squared error (RMSE). 
+              </p>
+              <h3> Tools</h3>
+              <div class="text-line-project"></div>
+              <p> Python, Jupyter Notebook, SQL</p>
           </div>
+          <div class="box box2">
+            <h2>LA County Crime Statistics</h2>
+            <img src="images/gender_la.jpg">
+              <h3>Overview</h3>
+              <div class="text-line-project"></div>
+              <p>Analyze Los Angeles (LA) County Crime Data.</p>
+              <h3> Results</h3>
+              <div class="text-line-project"></div>
+              <p> Black women face a higher percent of crime against</p>
+              <h3>Tools</h3>
+              <div class="text-line-project"></div>
+              <p>Python, Jupyter Notebook, SQL</p>
+          </div>
+          <div class="box box3">
+            <h2>Financial Customer Segementation</h2>
+            <img src="images/market.png">
+              <h3>Overview</h3>
+              <div class="text-line-project"></div>
+              <p>Worked with a large financial firm to analyze market data of 30,000 individuals to 
+                target financial products to.
+              </p>
+              <h3>Results</h3>
+              <div class="text-line-project"></div>
+              <p>Through Unsupervised machine learning techniques, 5 marketable customer segments were identified and
+                results were presented to senior leadership at the firm.
+              </p>
+              <h3>Tools</h3>
+              <div class="text-line-project"></div>
+              <p>Python, Tableu, Jupyter Notebook</p>
+          </div>
+          <div class="box box4">
+            <h2>This Website</h2>
+            <img src="images/d.png">
+              <h3>Overview</h3>
+              <div class="text-line-project"></div>
+              <p>Worked with
+              </p>
+              <h3>Results</h3>
+              <div class="text-line-project"></div>
+              <p>Through Unsupervised mach
+              </p>
+              <h3>Tools</h3>
+              <div class="text-line-project"></div>
+              <p>Python, Tableu, Jupyter Notebook</p>
+            </div>
+        </div>
       </div>
+    <!-- </div> -->
+  </section>
+    
+  <!-- Contact Section -->
+  <section id="contact">
+    <h1>Get in Touch!</h1>
+    <h2>Reach out with any question or feedback!</h2>
+    <div class="contact-container">
+      <form id="ContactForm" action="pages/thankyou.html" method="POST">
+        <h3>Enter your information:</h3>
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="hidden" name="_next" value="thankyou.html">
+        <input type="text" id="email" name="email" placeholder="Email" required>
+        <input type="text" id="phone" name="phone" placeholder="Phone">
+        <label for="subject" class="subject-label">Subject:</label>
+        <input type="text" id="subject" name="_subject" placeholder="Subject" required>
+        <textarea id="message" name="message" rows="4" placeholder="Send me a message!" required></textarea>
+        <div class="form-bot">
+          <button type="submit">Send</button>
+        </div>
+      </form>
     </div>
-  <!-- </div> -->
-</section>
-  
-<!-- Contact Section -->
-<section id="contact">
-  <h1>Get in Touch!</h1>
-  <h2>Reach out with any question or feedback!</h2>
-  <div class="contact-container">
-    <form id="ContactForm" action="pages/thankyou.html" method="POST">
-      <h3>Enter your information:</h3>
-      <input type="text" id="name" name="name" placeholder="Name" required>
-      <input type="hidden" name="_next" value="thankyou.html">
-      <input type="text" id="email" name="email" placeholder="Email" required>
-      <input type="text" id="phone" name="phone" placeholder="Phone">
-      <label for="subject" class="subject-label">Subject:</label>
-      <input type="text" id="subject" name="_subject" placeholder="Subject" required>
-      <textarea id="message" name="message" rows="4" placeholder="Send me a message!" required></textarea>
-      <div class="form-bot">
-        <button type="submit">Send</button>
-      </div>
-    </form>
-  </div>
-</section>
+  </section>
 
- <!-- Copyright -->
-  <!-- Footer section -->
-<section id="copyright">
-    <div class="footer-container">
-      <ul class="footer-links">
-        <li><a href="mailto:mngoh8@gmail.com"><i class="fa-regular fa-envelope fa-2xl" id="mail"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/mngoh"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-        <li><a href="https://github.com/mngoh"><i class="fa-brands fa-github fa-2xl" id="github"></i></a></li>
-        <li><a href="https://www.instagram.com/martinngoh"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
-      </ul>
-      <ul class="footer-text">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="pages/articles.html">Articles</a></li>
-        <li><a href="resume/Martin_Ngoh_Resume.pdf" download="Martin_Ngoh_Resume.pdf" target="_blank">Resume</a></li>
-      </ul>
-    </div>
-    <p>&copy; Martin Ngoh 2023. All Rights Reserved.</p>
-</section>
+  <!-- Copyright -->
+    <!-- Footer section -->
+  <section id="copyright">
+      <div class="footer-container">
+        <ul class="footer-links">
+          <li><a href="mailto:mngoh8@gmail.com"><i class="fa-regular fa-envelope fa-2xl" id="mail"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/mngoh"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+          <li><a href="https://github.com/mngoh"><i class="fa-brands fa-github fa-2xl" id="github"></i></a></li>
+          <li><a href="https://www.instagram.com/martinngoh"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+        </ul>
+        <ul class="footer-text">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/articles.html">Articles</a></li>
+          <li><a href="resume/Martin_Ngoh_Resume.pdf" download="Martin_Ngoh_Resume.pdf" target="_blank">Resume</a></li>
+        </ul>
+      </div>
+      <p>&copy; Martin Ngoh 2023. All Rights Reserved.</p>
+  </section>
 </body>
 </html>

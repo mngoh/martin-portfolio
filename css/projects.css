@@ -191,11 +191,11 @@ button i.fa-2xl {
  }
   /* Project Horizontal Scroll Bar*/
   .scrollmenu::-webkit-scrollbar-track-piece:end{
-    margin-right: 10rem;
+    margin-right: 0rem;
   }
 
   .scrollmenu::-webkit-scrollbar-track-piece:start{
-    margin-left: 10rem;
+    margin-left: 13rem;
 }
  /* Grid Container */
  .grid-container {
@@ -217,6 +217,9 @@ button i.fa-2xl {
     min-width: 100px;
     max-width: 350px;
     margin-bottom: 2%;
+  }
+  #box1{
+    margin-left: -2.5%;
   }
   .box:hover {
     background-color: transparent;
