@@ -1,40 +1,34 @@
 /* Set Color Variables */
 :root {
-
   /* --primary-color: #252746; */
   /* --profile-text: #464866; */
   /* --white-color: #AAABB8; */
   /* --black-color: #2E9CCA; */
   /* --box-color: #29648A; */
-
-
-
+  
   /* Font Style */
   --primary-font: 'Montserrat', 'sans';
   --button-font: 'Montserrat', 'sans';
 
   /* Font Size */
-  --primary-font-size: 9rem;
-  --secondary-font-size: 3rem;
-  --third-font-size: calc(var(--secondary-font-size) / 2);
-  --box-headers-font-size: 1.4rem;
-  --box-secondary-font-size: calc(var(--box-headers-font-size)/1.3);
-  --box-text-font-size: 2rem;
+  --home-font-size: 9rem;
+  --primary-font-size: 3.5rem;
+  --secondary-font-size: 1.5rem;
+  --third-font-size: calc(var(--secondary-font-size) / 1.5);
   --button-font-size:1.4rem;
 
   /* Colors */
   --primary-color: rgb(94, 114, 216);
-  --secondary-color: red;
+  --secondary-color: rgb(157, 165, 172);
   --text-color: rgb(235, 235, 240); 
   --box-color: rgb(41, 40, 40);
   --button-color: white;
-  --background-color: black;
+  --background-color: rgb(0, 0, 0);
 
   /* Other */
   --max-width: 650px;
   --h1-shrink: 2rem;
   --h2-shrink: 1rem;
-
 }
 
 /* Body */
@@ -185,7 +179,7 @@ body {
   }
   section h1 {
     text-align: center;
-    font-size: var(--secondary-font-size);
+    font-size: var(--primary-font-size);
     margin-top: -5rem;
     margin-bottom: 1%;
   }
@@ -194,7 +188,7 @@ body {
     margin-top: 0%;
     margin-bottom: 3%;
     /* color: var(--primary-color); */
-    font-size: var(--thrid-font-size);
+    font-size: var(--secondary-font-size);
   }
 
 /* Media Container for NAV bar and Body Text */

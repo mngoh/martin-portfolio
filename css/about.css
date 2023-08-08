@@ -59,13 +59,13 @@ h2 {
   max-width: 100%;
   }
   .card h2{
-  font-size: var(--box-headers-font-size);
+  font-size: var(--secondary-font-size);
   margin-bottom: -2%;
   color:var(--white-color);
   }
   .card ul, .card p{
     text-align: left;
-    font-size: var(--box-secondary-font-size);
+    font-size: var(--third-font-size);
     margin-left: 10%;
   }
   .card li {

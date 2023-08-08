@@ -21,7 +21,7 @@ form{
   /* background: linear-gradient(360deg, rgba(0,0,0,1) 0%, rgb(32, 32, 33) 35%, rgb(46, 46, 46) 100%); */
   /* background-color: var(--box-color); */
   /* border: 1px solid var(--text-color); */
-  font-family: var(--button-font);
+  font-family: var(--primary-font);
   display: flex;
   flex-direction: column;
   padding: 5vw 4vw;
@@ -44,7 +44,7 @@ form{
     padding: 20px;
     outline: none;
     background: var(--text-color);
-    font-size: 17px;
+    font-size: var(--thrid-font-size);
     font-family: var(--button-font)
   }
 

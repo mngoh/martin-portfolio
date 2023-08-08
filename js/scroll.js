@@ -10,50 +10,10 @@ window.addEventListener("scroll", () => {
   lastScrollY = window.scrollY;
 });
 
-
-// Function to scroll content to the left
-// function scrollContentLeft() {
-//   const scrollmenu = document.getElementById('scrollmenu');
-//   const scrollAmount = 150; 
-
-//   scrollmenu.scrollBy({
-//     left: -scrollAmount,
-//     behavior: 'smooth',
-//   });
-
-//   checkIfBox1Showing(); 
-// }
-
-// // Function to scroll content to the right
-// function scrollContentRight() {
-//   const scrollmenu = document.getElementById('scrollmenu');
-//   const scrollAmount = 150; 
-
-//   scrollmenu.scrollBy({
-//     left: scrollAmount,
-//     behavior: 'smooth',
-//   });
-
-//   checkIfBox1Showing();
-// }
-
-// // Function to check if box1 is showing and hide the left button if necessary
-// function checkIfBox1Showing() {
-//   const scrollmenu = document.getElementById('scrollmenu');
-//   const box1 = document.getElementById('box1');
-
-//   // If box1 is at the beginning (leftmost position), hide the left button
-//   if (scrollmenu.scrollLeft === 0 || scrollmenu.scrollLeft < box1.offsetWidth) {
-//     document.getElementById('button-left').style.display = 'none';
-//   } else {
-//     document.getElementById('button-left').style.display = 'block';
-//   }
-// }
-
 // Function to scroll content to the left
 function scrollContentLeft() {
   const scrollmenu = document.getElementById('scrollmenu');
-  const scrollAmount = 200;
+  const scrollAmount = 20000;
 
   scrollmenu.scrollBy({
     left: -scrollAmount,
@@ -66,7 +26,7 @@ function scrollContentLeft() {
 // Function to scroll content to the right
 function scrollContentRight() {
   const scrollmenu = document.getElementById('scrollmenu');
-  const scrollAmount = 200;
+  const scrollAmount = 20000;
 
   scrollmenu.scrollBy({
     left: scrollAmount,
