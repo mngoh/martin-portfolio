@@ -7,25 +7,42 @@
   /* --black-color: #2E9CCA; */
   /* --box-color: #29648A; */
 
-  --primary-color: rgb(94, 114, 216);
-  --box-color: rgb(41, 40, 40);
-  --black-color: black;
-  --main-font: 'Montserrat', 'sans';
+
+
+  /* Font Style */
+  --primary-font: 'Montserrat', 'sans';
   --button-font: 'Montserrat', 'sans';
-  --white-color: white;
-  --profile-text: rgb(255, 255, 255);
+
+  /* Font Size */
+  --primary-font-size: 9rem;
+  --secondary-font-size: 3.5rem;
+  --third-font-size: 1.5rem;
+  --box-headers-font-size: 2rem;
+  --box-second-head-font-size: 2rem;
+  --box-text-font-size: 2rem;
+  --button-font-size:2rem;
+
+  /* Colors */
+  --primary-color: rgb(94, 114, 216);
+  --text-color: rgb(235, 235, 240); 
+  --box-color: rgb(41, 40, 40);
+  --button-color: white;
+  --background-color: black;
+
+  /* Other */
   --max-width: 650px;
   --h1-shrink: 2rem;
   --h2-shrink: 1rem;
+
 }
 
 /* Body */
 body {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--background-color);
   margin: 0;
   padding: 0;
-  font-family: var(--main-font);
-  color: var(--white-color);
+  font-family: var(--primary-font);
+  color: var(--text-color);
   max-width: 100%;
   max-height: 100%;
 }
@@ -69,6 +86,7 @@ body {
 ::-webkit-scrollbar {
   width: .2rem;
   height: .5rem;
+  overflow:auto;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -77,7 +95,7 @@ body {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(255, 255, 255);
+  background: var(--secondary-color);
   border-radius: 2rem;
 }
 
@@ -92,9 +110,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--main-font);
+  font-family: var(--primary-font);
   /* background-color: rgb(217, 217, 217); */
-  color: var(--white-color);
+  color: var(--text-color);
   width: 100%;
   z-index: 999;
   height: 50px;
@@ -121,7 +139,7 @@ body {
     list-style: none;
   }
   .navbar-links li a {
-    color:var(--white-color);
+    color:var(--text-color);
     text-decoration: none;
     font-size: 25px;
     padding: 1rem;
@@ -134,7 +152,7 @@ body {
     /* background-color: #000000; */
     display: block;
     text-decoration: underline;
-    color: var(--white-color);
+    color: var(--text-color);
   }
   /* Add a class to hide the nav bar when scrolling down */
   .navbar--hidden {
@@ -156,7 +174,7 @@ body {
   .toggle-button .bar{
     height: 3px;
     width: 100%;
-    background-color: var(--white-color);
+    background-color: var(--text-color);
     border-radius: 2rem;
   }
 
@@ -166,7 +184,7 @@ body {
   }
   section h1 {
     text-align: center;
-    font-size: 4.5rem;
+    font-size: var(--secondary-font-size);
     margin-top: -5rem;
     margin-bottom: 1%;
   }
@@ -175,6 +193,7 @@ body {
     margin-top: 0%;
     margin-bottom: 3%;
     /* color: var(--primary-color); */
+    font-size: var(--primary-font-size)/2;
   }
 
 /* Media Container for NAV bar and Body Text */
