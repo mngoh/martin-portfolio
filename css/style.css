@@ -25,12 +25,12 @@
   --button-font-size-shrink:1rem;
 
   /* Colors */
-  --seccondary-color: #01161E;
-  --primary-color: #124559;
+  --primary-color: #242525;
+  --secondary-color: #F4F3EE;
   --text-color: #ffffff;
-  --background-color: #598392;
-  --box-color: #242525;
-  --button-color: ##01161E;
+  --background-color: #424B54;
+  --box-color: #424B54;
+  --button-color: #242525;
 
 
   /* --primary-col  or: rgb(94, 114, 216); */
