@@ -25,13 +25,21 @@
   --button-font-size-shrink:1rem;
 
   /* Colors */
-  /* --primary-color: rgb(94, 114, 216); */
-  --primary-color: rgb(36, 62, 127);
-  --secondary-color: rgb(157, 165, 172);
-  --text-color: rgb(235, 235, 240); 
-  --box-color: rgb(41, 40, 40);
-  --button-color: white;
-  --background-color: rgb(0, 0, 0);
+  --seccondary-color: #01161E;
+  --primary-color: #124559;
+  --text-color: #ffffff;
+  --background-color: #598392;
+  --box-color: #242525;
+  --button-color: ##01161E;
+
+
+  /* --primary-col  or: rgb(94, 114, 216); */
+  /* --primary-color: rgb(36, 62, 127); */
+  /* --secondary-color: rgb(157, 165, 172); */
+  /* --text-color: rgb(235, 235, 240);  */
+  /* --box-color: rgb(41, 40, 40); */
+  /* --button-color: white; */
+  /* --background-color: rgb(0, 0, 0); */
 
   /* Other */
   --max-width: 650px;
