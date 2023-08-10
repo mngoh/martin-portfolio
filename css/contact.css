@@ -106,14 +106,13 @@ form button{
   font-family: var(--button-font);
 }
 
-/* form button:first-letter {
-  color: var(--primary-color);
-} */
+#submit, #resume {
+  /* Other styles */
+  transition: transform 0.3s ease; /* Adjust duration and timing function as needed */
+}
 
-button:hover, #resume:hover{
-  background-color: var(--primary-color);
+#submit:hover, #resume:hover{
   transform: scale(1.05);
-  color:var(--text-color);
 }
 
 /* Media Container For Buttons and Icons*/

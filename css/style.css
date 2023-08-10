@@ -93,8 +93,8 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: .2rem;
-  height: .5rem;
+  width: .1rem;
+  height: .1rem;
   overflow:auto;
 }
 /* Track */
