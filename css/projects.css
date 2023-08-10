@@ -17,6 +17,8 @@
 .scrollmenu {
   overflow-x:auto;
   width: 100%;
+  overflow-y: hidden;
+  white-space: nowrap;
   }
   /* Project Horizontal Scroll Bar*/
   .scrollmenu::-webkit-scrollbar{
@@ -174,7 +176,7 @@ button i.fa-2xl {
 
 /* Text Line */
 .text-line-project {
-  border-bottom:4px solid var(--text-color);
+  border-bottom:2px solid var(--text-color);
   max-width: 20%;
   margin-top: 0%;
   }
@@ -205,20 +207,20 @@ button i.fa-2xl {
   justify-content: space-around;
   align-items: center;
   min-width: 2000px;
-  gap: 2%;
   /* margin-left: -140%; */
  }
   /* Boxes */
   .box {
     flex: 1 1 250px; /* Allow the boxes to grow and shrink to fit the container */
-    margin-top: 1%;
+    margin-top: -8%;
     position: relative;
     color: var(--text-color);
     padding: 10px;
     width: 250px;
     min-width: 20rem;
     max-width: 20rem;
-    margin-bottom: 2%;
+    margin-bottom: -10%;
+    height: 35rem;
   }
   #box1{
     margin-left: -2.5%;
@@ -246,7 +248,6 @@ button i.fa-2xl {
   }
   /* Text */
   .text-line-project {
-    border-bottom:4px solid white;
     max-width: 20%;
     margin-top: 0%;
     }
