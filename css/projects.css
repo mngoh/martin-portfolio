@@ -261,6 +261,6 @@ button i.fa-2xl {
   }
   /* TRY HOVER - IT WAS BEHIND GRID */
   .box:hover{
-    transform: scale(1); 
+    transform: none; 
   }
 }
