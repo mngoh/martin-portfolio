@@ -194,6 +194,7 @@ body {
   section h1 {
     text-align: center;
     font-size: var(--primary-font-size);
+    /* color: var(--primary-color); */
     margin-top: -5rem;
     margin-bottom: 1%;
   }
