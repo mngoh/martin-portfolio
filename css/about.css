@@ -83,7 +83,6 @@ h2 {
   .card li {
       list-style-type: circle;
       margin-bottom: 4px;
-      max-width: 85%;
   }
 
 /* Text Line */
@@ -115,6 +114,7 @@ h2 {
     gap: 10px; 
     margin-bottom: 3rem;
     width: var(--width-right-shrink);
+    /* width: 30rem; */
     height: var(--height-right-shrink);
   }
   .grid-profile{
@@ -125,15 +125,15 @@ h2 {
     margin: 0 auto;
   }
   #profile-pic , .card{
-    width: 25rem;
+    width: var(--width-right-shrink);
   }
   .card h2{
     font-size: var(--secondary-font-size-shrink);
     margin-bottom: -1%;
     }
   .card{
-    height: 10rem;
-    width: .7rem;
+    height: 1rem;
+    width: 12rem;
   }
   .card ul, .card p{
     text-align: left;

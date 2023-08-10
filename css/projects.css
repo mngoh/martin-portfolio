@@ -259,4 +259,8 @@ button i.fa-2xl {
   #button-right{
     display: none;
   }
+  /* TRY HOVER - IT WAS BEHIND GRID */
+  .box:hover{
+    transform: scale(1); 
   }
+}

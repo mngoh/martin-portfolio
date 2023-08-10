@@ -29,7 +29,6 @@ form{
   width: 40rem;
   max-width: 800px;
   border-radius: .8rem;
-  margin-bottom: -1%;
   }
   form h3{
     margin-top: -10%;
@@ -63,7 +62,6 @@ form{
   form label {
     margin-top: 5%;
   }
-
 
 /* Form Bottom */
 .form-bot {
