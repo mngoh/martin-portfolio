@@ -53,8 +53,8 @@
       margin-bottom: 10%;
     }
     .button-link:hover{
-      background-color: var(--primary-color);
-      color: var(--text-color);
+      background-color: var(--text-color);
+      color: var(--primary-color);
   }
     /* lines for text */
     .line {

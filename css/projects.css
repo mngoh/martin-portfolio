@@ -41,16 +41,17 @@
   justify-content: center;
   margin-bottom: 2%;
   margin: 0 auto;
-  min-width: 2540px; 
+  min-width: 2500px; 
   margin-left: 4%;
+  height: 50rem;
  }
   .grid-container img {
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(240px, 3fr));
     margin-top: 5%;
     background-color: var(--text-color);
-    height: 15rem;
-    width: 100%;
+    height: 13rem;
+    width:100%;
     z-index: 0;
     border-radius: .9rem;
 }
@@ -79,9 +80,9 @@
 }
 
 /* TRY HOVER - IT WAS BEHIND GRID */
-  /* .box:hover{
-    transform: scale(1.01); 
-  } */
+  .box:hover{
+    transform: scale(1.08); 
+  }
 
   .box h2 {
     margin-top: -6%;
@@ -215,16 +216,16 @@ button i.fa-2xl {
     color: var(--text-color);
     padding: 10px;
     width: 250px;
-    min-width: 100px;
-    max-width: 350px;
+    min-width: 20rem;
+    max-width: 20rem;
     margin-bottom: 2%;
   }
   #box1{
     margin-left: -2.5%;
   }
-  .box:hover {
-    background-color: transparent;
-  }
+  /* .box:hover {
+    background-color: transparent; 
+  } */
   .box h2 {
     margin-top: 1%;
     font-size: var(--secondary-font-size-shrink);
