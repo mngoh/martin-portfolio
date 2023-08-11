@@ -92,7 +92,7 @@ body{
   }
     .box h2 {
       margin-top: 0%;
-      margin-bottom: 0%;
+      margin-bottom: 3%;
       color: var(--text-color);
       font-size: var(--secondary-font-size);
     }
