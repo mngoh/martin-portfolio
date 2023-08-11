@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/contact.css">
-  <link rel="stylesheet" type="text/css" href="css/projects.css">
+  <link rel="stylesheet" type="text/css" href="css/projects1.css">
   <link rel="stylesheet" type="text/css" href="css/about.css">
   <link rel="stylesheet" type="text/css" href="css/home.css">
   <link rel="stylesheet" type="text/css" href="css/copyright.css">
   <link rel="stylesheet" type="text/css" href="css/background.css">
-  <script src="js/script.js"></script>
-  <script src="js/navbar.js"></script>
-  <script src="js/scroll.js"></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+  <script src="js/scroll.js" defer></script>
   <script src="https://kit.fontawesome.com/b2fb9e30a3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
 </head>
@@ -107,11 +107,10 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects">
+  <!-- <section id="projects">
     <h1>Projects</h1>
     <h2> Take a look at some of the work I've done</h2>
-    <!-- <div class="background-projects"> -->
-      <div class="scrollmenu" id="scrollmenu">
+      <div class="carousel" id="scrollmenu" data-ride="carousel">
         <div class="grid-container" id="grid-container">
           <button id="button-left" type="button" onclick="scrollContentLeft()" aria-label="next"><i class="fa-solid fa-chevron-left fa-2xl"></i></button>
           <button id="button-right" type="button" onclick="scrollContentRight()" aria-label="prior"><i class="fa-solid fa-chevron-right fa-2xl"></i></button>
@@ -177,12 +176,89 @@
             </div>
         </div>
       </div>
-    <!-- </div> -->
+  </section> -->
+
+  <!-- Projects -->
+  <section id="projects">
+    <h1> PROJECTS</h1>
+    <h2> Check out some of my work!</h2>
+    <div class="carousel" data-carousel>
+      <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+      <button class="carousel-button next" data-carousel-button = "next">&#8658;</button>
+    <ul data-slides>
+      <li class="slide" data-active>
+        <div class="box box1" id="box1">
+          <h2>Soccer Prediction Model (SPM)</h2>
+          <img src="images/soccer_preds.jpg">
+            <h3>Overview</h3>
+            <div class="text-line-project"></div>
+            <p> Scraped web data using Python to generate multiple ML models focused on predicting goals scored within the top 5 soccer leagues in Europe.
+            </p>
+            <h3> Results</h3>
+            <div class="text-line-project"></div>
+            <p> The Linear Regression model outperformed the others with the lowerst root mean squared error (RMSE). 
+            </p>
+            <h3> Tools</h3>
+            <div class="text-line-project"></div>
+            <p> Python, Jupyter Notebook, SQL</p>
+        </div>   
+        </li>
+      <li class="slide">
+        <div class="box box2">
+          <h2>LA County Crime Statistics</h2>
+          <img src="images/gender_la.jpg">
+            <h3>Overview</h3>
+            <div class="text-line-project"></div>
+            <p>Analyze Los Angeles (LA) County Crime Data.</p>
+            <h3> Results</h3>
+            <div class="text-line-project"></div>
+            <p> Black women face a higher percent of crime against</p>
+            <h3>Tools</h3>
+            <div class="text-line-project"></div>
+            <p>Python, Jupyter Notebook, SQL</p>
+        </div>      </li>
+      <li class="slide">
+        <div class="box box3">
+          <h2>Financial Customer Segementation</h2>
+          <img src="images/market.png">
+            <h3>Overview</h3>
+            <div class="text-line-project"></div>
+            <p>Worked with a large financial firm to analyze market data of 30,000 individuals to 
+              target financial products to.
+            </p>
+            <h3>Results</h3>
+            <div class="text-line-project"></div>
+            <p>Through Unsupervised machine learning techniques, 5 marketable customer segments were identified and
+              results were presented to senior leadership at the firm.
+            </p>
+            <h3>Tools</h3>
+            <div class="text-line-project"></div>
+            <p>Python, Tableu, Jupyter Notebook</p>
+        </div>      </li>
+      <li class="slide">
+        <div class="box box4">
+          <h2>This Website</h2>
+          <img src="images/market.png">
+            <h3>Overview</h3>
+            <div class="text-line-project"></div>
+            <p>Worked with
+            </p>
+            <h3>Results</h3>
+            <div class="text-line-project"></div>
+            <p>Through Unsupervised mach
+            </p>
+            <h3>Tools</h3>
+            <div class="text-line-project"></div>
+            <p>Python, Tableu, Jupyter Notebook</p>
+          </div>      
+        </li>
+    </ul>
+  </div>
   </section>
     
   <!-- Contact Section -->
   <section id="contact">
-    <h1>Get in Touch!</h1>
+    <h1>CONTACT</h1>
     <h2>Reach Out Below</h2>
     <div class="contact-container">
       <form id="ContactForm" action="pages/thankyou.html" method="POST">

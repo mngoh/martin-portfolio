@@ -70,7 +70,7 @@
 
 /* Change Navbar Background on Click */
 .navbar.black-background {
-  background-color: black;
+  background-color: var(--background-color);
 }
 
 /* Media Container For Profile  */
