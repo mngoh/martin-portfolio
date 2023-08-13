@@ -32,7 +32,6 @@ function scrollContentRight() {
     left: scrollAmount,
     behavior: 'smooth',
   });
-
   checkIfButtonsVisibility();
 }
 

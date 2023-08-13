@@ -1,0 +1,65 @@
+/* Profile Picture */
+#profile-pic{
+    height: 40rem;
+    width: auto;
+}
+
+/* Right Container */
+.grid-container-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+}
+
+/* Right Container */
+.grid-container-about ul{
+    max-width: 50%;
+}
+
+/* Right Container */
+.grid-right-about{
+    background-color: var(--primary-color);
+    height: 40rem;
+    width: 50rem;
+}
+
+/* Add a class for collapsed content */
+.collapsible-content {
+    display: block; 
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    background-color: var(--primary-color);
+  }
+  
+  /* Adjust the button styles as needed */
+  .collapsible-button {
+    background-color: var(--box-color);
+    color: var(--white-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: none;
+  }
+  
+  /* Expand the content when not collapsed */
+  .collapsible-content:not(.collapsed) {
+    max-height: 1000px; /* Set a large value to allow for expansion */
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 850px) {
+    /* Adjustments for smaller screens */
+  
+    /* Hide the collapse button initially */
+    .collapsible-button {
+      display: none;
+    }
+  
+    /* Show the collapsed content when button is toggled */
+    .collapsible-content.collapsed {
+      max-height: 1000px; /* Adjust as needed */
+    }
+  }
