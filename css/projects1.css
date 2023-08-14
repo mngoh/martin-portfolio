@@ -48,7 +48,7 @@ body{
     background: none;
     position: absolute;
     border: none;
-    top: 50%;
+    top: 60%;
     font-size: var(--button-font-size);
     transform: translateY(-20rem);
     z-index: 2;
@@ -71,9 +71,11 @@ body{
 
 .carousel-button.prev{
     left: 1rem;
+    margin-left: 20%;
 }
 .carousel-button.next{
     right: 1rem;
+    margin-right: 20%;
 }
 
 
@@ -117,8 +119,8 @@ body{
 
     @media (max-width: 850px) {
         .box{
-            max-width: 60%;
-            height: 85%;
+            max-width: 75%;
+            height: 90%;
         }
         .box img{
             max-width: 100%;
@@ -128,6 +130,14 @@ body{
         }
         .box h3{
             font-size: var(--secondary-font-size-shrink);
+        }
+        .carousel-button.prev{
+            left: 1rem;
+            margin-left: 2%;
+        }
+        .carousel-button.next{
+            right: 1rem;
+            margin-right: 2%;
         }
     
     }
