@@ -33,7 +33,9 @@
     transition: max-height 0.3s ease-in-out;
     background-color: var(--primary-color);
   }
- 
+  .collapsible-content.active {
+    display: block;
+  }
   /* Adjust the button styles as needed */
   .collapsible-button {
     background-color: var(--text-color);
@@ -42,6 +44,7 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     display: none;
+    cursor: pointer;
   }
   
   /* Expand the content when not collapsed */
@@ -67,13 +70,18 @@
     /* Right Container */
     .grid-right-about{
         background-color: var(--primary-color);
-        height: 70rem;
+        height: 35rem;
         width: 20rem;
     }
     /* Hide the collapse button initially */
     .collapsible-button {
       display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
       align-items: center;
+      max-width: 100%;
+      width: 100%;
+      margin-bottom: 1%;
     }
     /* Show the collapsed content when button is toggled */
     .collapsible-content.collapsed {
@@ -88,4 +96,7 @@
     .grid-right-about .card h2{
         display: none;
     }
+    .card.h2:last-child {
+     border-bottom: none;
+}
 }
