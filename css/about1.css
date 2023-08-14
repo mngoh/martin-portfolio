@@ -51,12 +51,25 @@
   
   /* Media query for smaller screens */
   @media (max-width: 850px) {
+    #about h2{
+        margin-bottom: 27rem;
+    }
     /* Container */
     .grid-container-about{
-        max-width: 50%;
-        
+        max-width: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 30rem;
     }
-
+    /* Right Container */
+    .grid-right-about{
+        background-color: var(--primary-color);
+        height: 70rem;
+        width: 20rem;
+    }
     /* Hide the collapse button initially */
     .collapsible-button {
       display: flex;
@@ -64,6 +77,15 @@
     }
     /* Show the collapsed content when button is toggled */
     .collapsible-content.collapsed {
-      max-height: 1000px; /* Adjust as needed */
+      max-height: 1000px; 
     }
-  }
+        /* Profile Picture */
+    #profile-pic{
+        height: 20rem;
+        width: auto;
+        margin-bottom: 10%;
+    }
+    .grid-right-about .card h2{
+        display: none;
+    }
+}
