@@ -4,7 +4,7 @@
     width: auto;
 }
 
-/* Right Container */
+/* Container */
 .grid-container-about{
     display: flex;
     flex-direction: row;
@@ -37,11 +37,11 @@
   /* Adjust the button styles as needed */
   .collapsible-button {
     background-color: var(--text-color);
-    color: var(--white-color);
+    color: var(--box-color);
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    /* display: none; */
+    display: none;
   }
   
   /* Expand the content when not collapsed */
@@ -51,9 +51,16 @@
   
   /* Media query for smaller screens */
   @media (max-width: 850px) {
+    /* Container */
+    .grid-container-about{
+        max-width: 50%;
+        
+    }
+
     /* Hide the collapse button initially */
     .collapsible-button {
-      display: none;
+      display: flex;
+      align-items: center;
     }
     /* Show the collapsed content when button is toggled */
     .collapsible-content.collapsed {
