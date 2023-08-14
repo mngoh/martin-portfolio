@@ -33,15 +33,15 @@
     transition: max-height 0.3s ease-in-out;
     background-color: var(--primary-color);
   }
-  
+ 
   /* Adjust the button styles as needed */
   .collapsible-button {
-    background-color: var(--box-color);
+    background-color: var(--text-color);
     color: var(--white-color);
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    display: none;
+    /* display: none; */
   }
   
   /* Expand the content when not collapsed */
@@ -51,13 +51,10 @@
   
   /* Media query for smaller screens */
   @media (max-width: 850px) {
-    /* Adjustments for smaller screens */
-  
     /* Hide the collapse button initially */
     .collapsible-button {
       display: none;
     }
-  
     /* Show the collapsed content when button is toggled */
     .collapsible-content.collapsed {
       max-height: 1000px; /* Adjust as needed */
