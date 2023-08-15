@@ -68,11 +68,17 @@
     max-height: 1000px; /* Set a large value to allow for expansion */
   }
   
+  .text-line {
+    /* border-bottom: 5px solid rgb(255, 255, 255); */
+    border-bottom:3px solid var(--text-color);
+    max-width: 50%;
+    margin: 0 auto;
+    margin-top: -2%;
+    }
+
+
   /* Media query for smaller screens */
   @media (max-width: 850px) {
-    #about h2{
-        margin-bottom: 27rem;
-    }
     /* Container */
     .grid-container-about{
         max-width: 5%;
@@ -81,12 +87,12 @@
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        margin-bottom: 30rem;
+        margin-bottom: 25rem;
     }
     /* Right Container */
     .grid-right-about{
       background-color: transparent;
-        height: 35rem;
+        height: 5rem;
         width: 20rem;
         grid-template-columns: none;
         grid-template-rows: none;
@@ -114,12 +120,16 @@
     #profile-pic{
         height: 20rem;
         width: auto;
-        margin-bottom: 10%;
+        margin-bottom: 20%;
+        margin-top: -80%;
     }
     .grid-right-about .card h2{
         display: none;
     }
     .card.h2:last-child {
      border-bottom: none;
-}
+  }
+  .text-line {
+    border-bottom:none;
+    }
 }
