@@ -57,7 +57,6 @@ function checkIfButtonsVisibility() {
   }
 }
 
-
 // Collapsible
 var coll = document.getElementsByClassName("collapsible-button");
 var i;
@@ -73,6 +72,4 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
-
 

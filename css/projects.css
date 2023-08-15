@@ -211,7 +211,7 @@ button i.fa-2xl {
  }
   /* Boxes */
   .box {
-    flex: 1 1 250px; /* Allow the boxes to grow and shrink to fit the container */
+    flex: 1 1 250px;
     margin-top: -8%;
     position: relative;
     color: var(--text-color);
