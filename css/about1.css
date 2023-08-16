@@ -22,6 +22,7 @@
     justify-content: center;
     align-items: left;
     height: 40rem;
+    gap: 5%;
 }
 
 .card ul li{
@@ -45,7 +46,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 10px; 
+    gap: 0px; 
     border-radius: .8rem;
 }
 
@@ -129,6 +130,7 @@
     }
     .collapsible-content ul {
         max-width: 100%;
+        border-radius: .8rem;
     }
         /* Profile Picture */
     #profile-pic{
@@ -138,7 +140,10 @@
         margin-top: -80%;
     }
     .grid-right-about .card h2{
-        display: none;
+        /* display: none; */
+        background-color: var(--box-color);
+        height: 1.5rem;
+        border-radius: .8rem;
     }
     .card.h2:last-child {
      border-bottom: none;

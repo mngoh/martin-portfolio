@@ -1,10 +1,10 @@
 :root{
   --margin-bottom-home: 6%;
 }
-/* Background
+/* Background */
 #Home.section-background {
   position: relative;
-  background-image: url('../images/back3.svg'); 
+  background-image: url('../images/key_back.jpg'); 
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -18,9 +18,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.95); 
   z-index: -1; 
-} */
+} 
 
 /* Profile */
 .profile {
@@ -59,8 +59,8 @@
     }
     .button-link {
       padding: 20px;
-      background-color: var(--text-color);
-      color: var(--primary-color);
+      background-color: var(--box-color);
+      color: var(--text-color);
       font-size: var(--button-font-size);
       cursor: pointer;
       width: 15rem;
@@ -72,11 +72,8 @@
       margin: 0% auto;
       margin-bottom: 10%;
       transition: transform 0.3s ease;
+      cursor: grab;
     }
-    /* .button-link:hover{
-      background-color: var(--text-color);
-      color: var(--primary-color);
-  } */
   .button-link:hover{
     transform: scale(1.05);
   }

@@ -26,50 +26,39 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     requestAnimationFrame(scroll);
   }
-
-  // Add event listeners to each link/button
-  for (const link of navLinks) {
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      const targetId = link.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-      const targetOffset = targetElement.offsetTop;
-      const scrollDuration = 2000;
-      smoothScroll(targetOffset, scrollDuration);
-    });
-  }
-  learnMoreButton.addEventListener("click", function(event) {
-    event.preventDefault();
-    const targetOffset = aboutSection.offsetTop;
-    const scrollDuration = 2000;
-    smoothScroll(targetOffset, scrollDuration);
-  });
-  aboutButton.addEventListener("click", function(event) {
-    event.preventDefault();
-    const targetOffset = projectSection.offsetTop;
-    const scrollDuration = 2000;
-    smoothScroll(targetOffset, scrollDuration);
-  });
-  projectButton.addEventListener("click", function(event) {
-    event.preventDefault();
-    const targetOffset = contactSection.offsetTop;
-    const scrollDuration = 2000;
-    smoothScroll(targetOffset, scrollDuration);
-  });
 });
 
-// About Section 
-var coll = document.getElementsByClassName("collapsible");
-var i;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
+// Scrolling Navbar Background
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.getElementsByClassName('toggle-button')[0];
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+    const navbar = document.querySelector('.navbar');
+
+    toggleButton.addEventListener('click', (event) => {
+      event.preventDefault();
+      navbarLinks.classList.toggle('active');
+      navbar.classList.toggle('black-background');
+    });
+
+    const links = navbarLinks.getElementsByTagName('a');
+    for (let i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', () => {
+        navbarLinks.classList.remove('active');
+        navbar.classList.remove('black-background');
+      });
     }
   });
-}
+
+
+// // Hidden Nav Bar
+// const nav = document.querySelector('.navbar');
+// let lastScrollY = window.scrollY;
+// window.addEventListener("scroll", () => {
+//   if (lastScrollY < window.scrollY) {
+//     nav.classList.add('navbar--hidden');
+//   } else {
+//     nav.classList.remove('navbar--hidden');
+//   }
+//   lastScrollY = window.scrollY;
+// });
