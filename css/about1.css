@@ -95,6 +95,10 @@
 
 /* Media query for smaller screens */
 @media (max-width: 850px) {
+  /* Main Container */
+  #about{
+    margin-bottom: 20%;
+  }
   /* Container */
   .grid-container-about{
       max-width: 5%;

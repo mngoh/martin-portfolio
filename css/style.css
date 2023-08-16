@@ -6,7 +6,7 @@
   --button-font: 'Montserrat', 'sans';
 
   /* Font Size */
-  --home-font-size: 9rem;
+  --home-font-size: 8rem;
   --primary-font-size: 3.5rem;
   --secondary-font-size: 1.4rem;
   --third-font-size: calc(var(--secondary-font-size) / 1.5);
