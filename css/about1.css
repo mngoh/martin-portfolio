@@ -93,11 +93,11 @@
     margin-top: -2%;
   }
 
-/* Media query for smaller screens */
+  /* Media query for smaller screens */
 @media (max-width: 850px) {
-  /* Main Container */
-  #about{
-    margin-bottom: 20%;
+   /* Main Container */
+   #about{
+    margin-bottom: 60%;
   }
   /* Container */
   .grid-container-about{
