@@ -1,11 +1,6 @@
 /* Set Color Variables */
 :root {
-  /* --primary-color: #252746; */
-  /* --profile-text: #464866; */
-  /* --white-color: #AAABB8; */
-  /* --black-color: #2E9CCA; */
-  /* --box-color: #29648A; */
-  
+
   /* Font Style */
   --primary-font: 'Montserrat', 'sans';
   --button-font: 'Montserrat', 'sans';
@@ -25,22 +20,13 @@
   --button-font-size-shrink:1rem;
 
   /* Colors */
-  /* --primary-color: #252424; */
-  --primary-color: #3d3fbe;
-  /* --primary-color: #283fec;  */
+  --primary-color: #282859;
   --secondary-color: #F4F3EE;
   --text-color: #ffffff;
   --background-color: #000000;
   --box-color: #424B54;
   --box-color: #282859;
-  --button-color: #242525;
-  /* --primary-color: rgb(94, 114, 216); */
-  /* --primary-color: rgb(36, 62, 127); */
-  /* --secondary-color: rgb(157, 165, 172); */
-  /* --text-color: rgb(235, 235, 240);  */
-  /* --box-color: rgb(41, 40, 40); */
-  /* --button-color: white; */
-  /* --background-color: rgb(0, 0, 0); */
+  --button-color: #282859;
 
   /* Other */
   --max-width: 650px;
@@ -121,7 +107,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: var(--primary-font);
-  /* background-color: var(--background-color); */
+  background-color: rgba(0, 0, 0, 0.5);
   color: var(--text-color);
   width: 100%;
   z-index: 999;

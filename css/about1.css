@@ -11,59 +11,63 @@
   
 /* Profile Picture */
 #profile-pic{
-    height: 40rem;
-    width: auto;
+  height: 30rem;
+  width: auto;
+  background-color: var(--text-color);
+  border-radius: .8rem;
+  transform: translateY(20%);
 }
 
 /* Container */
 .grid-container-about{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: left;
-    height: 40rem;
-    gap: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: left;
+  height: 40rem;
+  gap: 5%;
 }
 
 .card ul li{
   margin-bottom: 2%;
 }
 .card h2{
-    margin-top: 6%;
+  margin-top: 6%;
 }
 
 /* Right Container */
 .grid-container-about ul{
-    max-width: 90%;
+  max-width: 90%;
 }
 
 /* Right Container */
 .grid-right-about{
-    background-color: var(--box-color);
-    height: 40rem;
-    width: 50rem;
-    display: flex;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 0px; 
-    border-radius: .8rem;
+  background-color: var(--box-color);
+  height: 40rem;
+  width: 50rem;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0px; 
+  border-radius: .8rem;
 }
 
 /* Add a class for collapsed content */
 .collapsible-content {
-    display: block; 
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
-    border-radius: .8rem;
-    color:var(--text-color);
-    font-size: var(--third-font-size);
-    font-family: var(--primary-font);
+  display: block; 
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  border-radius: .8rem;
+  color:var(--text-color);
+  font-size: var(--third-font-size);
+  font-family: var(--primary-font);
   }
   .collapsible-content.active {
     display: block;
   }
+
   /* Adjust the button styles as needed */
   .collapsible-button {
     font-size: var(--third-font-size);
@@ -89,66 +93,64 @@
     max-width: 50%;
     margin: 0 auto;
     margin-top: -2%;
-    }
+  }
 
-
-  /* Media query for smaller screens */
-  @media (max-width: 850px) {
-    /* Container */
-    .grid-container-about{
-        max-width: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        margin-bottom: 65%;
-    }
-    /* Right Container */
-    .grid-right-about{
-      background-color: transparent;
-        height: 5rem;
-        width: 20rem;
-        grid-template-columns: none;
-        grid-template-rows: none;
-    }
-    /* Hide the collapse button initially */
-    .collapsible-button {
+/* Media query for smaller screens */
+@media (max-width: 850px) {
+  /* Container */
+  .grid-container-about{
+      max-width: 5%;
       display: flex;
       flex-direction: column;
-      align-items: left;
-      max-width: 100%;
-      width: 100%;
-    }
-    .collapsible-content{
-        background-color: var(--background-color);
-        color: var(--text-color);
-    }
-    /* Show the collapsed content when button is toggled */
-    .collapsible-content.collapsed {
-      max-height: 1000px; 
-    }
-    .collapsible-content ul {
-        max-width: 100%;
-        border-radius: .8rem;
-    }
-        /* Profile Picture */
-    #profile-pic{
-        height: 20rem;
-        width: auto;
-        margin-bottom: 20%;
-        margin-top: -80%;
-    }
-    .grid-right-about .card h2{
-        /* display: none; */
-        background-color: var(--box-color);
-        height: 1.5rem;
-        border-radius: .8rem;
-    }
-    .card.h2:last-child {
-     border-bottom: none;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      margin-bottom: 85%;
   }
-  .text-line {
-    border-bottom:none;
-    }
+  /* Right Container */
+  .grid-right-about{
+    background-color: transparent;
+      height: 5rem;
+      width: 20rem;
+      grid-template-columns: none;
+      grid-template-rows: none;
+  }
+  /* Hide the collapse button initially */
+  .collapsible-button {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    max-width: 100%;
+    width: 100%;
+  }
+  .collapsible-content{
+      background-color: var(--background-color);
+      color: var(--text-color);
+  }
+  /* Show the collapsed content when button is toggled */
+  .collapsible-content.collapsed {
+    max-height: 1000px; 
+  }
+  .collapsible-content ul {
+      max-width: 100%;
+      border-radius: .8rem;
+  }
+  /* Profile Picture */
+  #profile-pic{
+      height: 20rem;
+      width: auto;
+      margin-bottom: 20%;
+  }
+  .grid-right-about .card h2{
+      /* display: none; */
+      background-color: var(--box-color);
+      height: 1.5rem;
+      border-radius: .8rem;
+  }
+  .card.h2:last-child {
+    border-bottom: none;
+}
+.text-line {
+  border-bottom:none;
+  }
 }

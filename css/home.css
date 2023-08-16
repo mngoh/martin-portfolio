@@ -59,7 +59,7 @@
     }
     .button-link {
       padding: 20px;
-      background-color: var(--box-color);
+      background-color: var(--button-color);
       color: var(--text-color);
       font-size: var(--button-font-size);
       cursor: pointer;

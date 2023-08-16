@@ -26,8 +26,36 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     requestAnimationFrame(scroll);
   }
+  // Add event listeners to each link/button
+  for (const link of navLinks) {
+    link.addEventListener("click", function(event) {
+      event.preventDefault();
+      const targetId = link.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+      const targetOffset = targetElement.offsetTop;
+      const scrollDuration = 2000;
+      smoothScroll(targetOffset, scrollDuration);
+    });
+  }
+  learnMoreButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    const targetOffset = aboutSection.offsetTop;
+    const scrollDuration = 2000;
+    smoothScroll(targetOffset, scrollDuration);
+  });
+  aboutButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    const targetOffset = projectSection.offsetTop;
+    const scrollDuration = 2000;
+    smoothScroll(targetOffset, scrollDuration);
+  });
+  projectButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    const targetOffset = contactSection.offsetTop;
+    const scrollDuration = 2000;
+    smoothScroll(targetOffset, scrollDuration);
+  });
 });
-
 
 // Scrolling Navbar Background
 document.addEventListener("DOMContentLoaded", function() {
@@ -50,8 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-
-// // Hidden Nav Bar
+// Hidden Nav Bar
 // const nav = document.querySelector('.navbar');
 // let lastScrollY = window.scrollY;
 // window.addEventListener("scroll", () => {
