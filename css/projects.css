@@ -46,9 +46,9 @@
   background-color: var(--box-color);
   margin-bottom: 5%;
   font-size: var(--thrid-font-size);
-}
+  }
 
-/* TRY HOVER - IT WAS BEHIND GRID */
+  /* TRY HOVER - IT WAS BEHIND GRID */
   .box:hover{
     transform: scale(1.08); 
   }
@@ -71,7 +71,6 @@
     text-align: left;
     margin-bottom: 0%;
     margin-top: 4%;
-    
 }
 
   /* Button */
@@ -91,9 +90,9 @@
     margin: 0 auto; 
     transition: transform 0.3s ease; 
   }
-      .button-project:hover{
-        background-color:var(--primary-color);
-        color: var(--text-color);
+  .button-project:hover{
+    background-color:var(--primary-color);
+    color: var(--text-color);
   }
 
 /* Icon Chevron
@@ -152,19 +151,19 @@ button i.fa-2xl {
 @media (max-width: 850px) {
   /* Projects Section */
   #projects {
-  text-align: center;
-  align-items: center;
-  z-index: 0; 
-  margin-bottom: -30%;
+    text-align: center;
+    align-items: center;
+    z-index: 0; 
+    margin-bottom: -30%;
  }
  /* Grid Container */
  .grid-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* margin-left: -140%; */
-  margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: -140%; */
+    margin-top: 5%;
   }
   /* Boxes */
   .box {
