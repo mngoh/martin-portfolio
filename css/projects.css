@@ -201,17 +201,16 @@ button i.fa-2xl {
   .text-line-project {
     max-width: 20%;
     margin-top: 0%;
-    }
-    /* Button */
-    button i.fa-2xl {
-      font-size: var(--thrid-font-size-shrink);
-      z-index: 999;
-      color: var(--background-color);
-      }
+  }
+  /* Button */
+  button i.fa-2xl {
+    font-size: var(--thrid-font-size-shrink);
+    z-index: 999;
+    color: var(--background-color);
+  }
   #button-right{
     display: none;
   }
-  /* TRY HOVER - IT WAS BEHIND GRID */
   .box:hover{
     transform: none; 
   }

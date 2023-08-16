@@ -138,7 +138,7 @@ form button{
   form{
     width: 80%;
     height: auto;
-    margin-bottom: -20%;
+    margin-bottom: -10%;
     margin-top: 2%;
     font-size: var(--third-font-size-shrink);
   }
