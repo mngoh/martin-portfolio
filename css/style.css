@@ -25,11 +25,12 @@
   --text-color: #ffffff;
   --background-color: #000000;
   --box-color: #424B54;
-  --box-color: #282859;
+  --box-color: rgb(21, 21, 145, .3);
   --button-color: #282859;
 
   /* Other */
   --max-width: 650px;
+  --border-radius: .2rem;
 }
 
 /* Body */
@@ -78,7 +79,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: var(--primary-font);
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0);
   color: var(--text-color);
   width: 100%;
   z-index: 999;

@@ -1,7 +1,26 @@
 * {
   box-sizing: border-box;
 }
-
+/* Background */
+#projects.section-background {
+  position: relative;
+  background-image: url('../images/key_back.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: auto;
+  z-index: -99999;
+}
+#projects.section-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); 
+  z-index: -99999; 
+} 
 /* Projects Section */
 #projects {
   text-align: center;
@@ -28,10 +47,10 @@
     grid-template-columns: repeat(auto-fit , minmax(240px, 1fr));
     margin-top: 5%;
     background-color: var(--text-color);
-    height: 13rem;
+    height: 12rem;
     width:100%;
     z-index: 0;
-    border-radius: .9rem;
+    border-radius: var(--border-radius);
 }
 
 /* Boxes */
@@ -41,7 +60,7 @@
   padding: 40px;
   height: 40rem;
   width: 30rem;
-  border-radius: .8rem;
+  border-radius: var(--border-radius);
   transition: transform 0.3s ease;
   background-color: var(--box-color);
   margin-bottom: 5%;
@@ -82,7 +101,7 @@
     font-size:var(--button-font-size);
     cursor: pointer;
     width: 15rem;
-    border-radius: .5rem;
+    border-radius: var(--border-radius);
     text-decoration: none;
     text-align: center;
     font-family: var(--button-font);
@@ -106,7 +125,7 @@
   border: none;
   background-color: var(--text-color);
   height: 2.1rem;
-  border-radius: 2rem;
+  border-radius: var(--border-radius);
   z-index: 9999;
 }
 /* Icon */
