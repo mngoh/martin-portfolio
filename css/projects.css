@@ -152,10 +152,10 @@ button i.fa-2xl {
 @media (max-width: 850px) {
   /* Projects Section */
   #projects {
-    text-align: center;
-    align-items: center;
-    z-index: 0; 
-    margin-bottom: -30%;
+  text-align: center;
+  align-items: center;
+  z-index: 0; 
+  margin-bottom: -30%;
  }
  /* Grid Container */
  .grid-container {
@@ -165,7 +165,7 @@ button i.fa-2xl {
   align-items: center;
   /* margin-left: -140%; */
   margin-top: 5%;
- }
+  }
   /* Boxes */
   .box {
     position: relative;
