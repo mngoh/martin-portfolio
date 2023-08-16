@@ -1,3 +1,13 @@
+/* Background */
+/* #about.section-background {
+  background-image: url('../images/back2.svg'); /* Set the path to your image 
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: auto;
+  opacity: .2;
+  z-index: -999999;
+} */
   
 /* Profile Picture */
 #profile-pic{
@@ -10,17 +20,20 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     height: 40rem;
 }
 
+.card ul li{
+  margin-bottom: 2%;
+}
 .card h2{
     margin-top: 6%;
 }
 
 /* Right Container */
 .grid-container-about ul{
-    max-width: 50%;
+    max-width: 90%;
 }
 
 /* Right Container */
