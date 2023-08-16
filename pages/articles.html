@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" type="text/css" href="../css/home.css">
+  <script src="js/script.js" defer></script>
   <script src="https://kit.fontawesome.com/b2fb9e30a3.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/b2fb9e30a3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
@@ -38,21 +39,21 @@
             display: flex;
             justify-content: center; 
             align-items: flex-start; 
-          }
+        }
       </style>
       <a href="../index.html#home" class="button-link" id="button-link">Go Back</a>
       <style>
         .button-link {
         padding: 20px;
-        background-color: var(--profile-text);
-        color: rgb(0, 0, 0);
+        background-color: var(--button-color);
+        color: var(--text-color);
         font-size: 25px;
         cursor: pointer;
-        width: 15rem;
+        width: 20rem;
         border-radius: .5rem;
         text-decoration: none;
         text-align: center;
-        font-family: var(--button-font);
+        font-family: var(--button-font-shrink);
         display: block; 
         margin: 0% auto;
         margin-bottom: 10%;
@@ -64,12 +65,14 @@
     }
     @media screen and (max-width: 650px) {
       #gif {
-        width: 15rem;
+        width: auto;
         margin-bottom: 10%;
+        margin-right: 1%;
+        margin-left: 1%;
       }
       #button-link {
-      padding: 6px;
-      font-size: .7rem;
+      padding: 16px;
+      font-size: var(--button-font-shrink);
       width: 50%;
       }
     }
