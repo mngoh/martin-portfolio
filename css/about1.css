@@ -129,6 +129,8 @@
 .html:before { width: 50%; }
 .css:before { width: 50%; }
 .git:before { width: 50%; }
+.tableau:before { width: 50%; }
+
 
 .skill-list li:after {
   content: "";
@@ -150,6 +152,7 @@
 .html:after { width: 40%; }
 .css:after { width: 40%; }
 .git:after { width: 45%; }
+.tableau:after { width: 35%; }
 
 
 /* Bullets */
