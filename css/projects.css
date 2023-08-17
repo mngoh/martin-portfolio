@@ -43,14 +43,13 @@
   margin-top: 2%;
  }
   .grid-container img {
-    display: grid;
-    grid-template-columns: repeat(auto-fit , minmax(240px, 1fr));
-    margin-top: 5%;
+    margin-top: -2%;
     background-color: var(--text-color);
     height: 12rem;
     width:100%;
     z-index: 0;
     border-radius: var(--border-radius);
+    margin-bottom: 9%;
 }
 
 /* Boxes */
@@ -184,6 +183,10 @@ button i.fa-2xl {
     align-items: center;
     /* margin-left: -140%; */
     margin-top: 5%;
+  }
+  .grid-container img{
+    margin-bottom: 0%;
+    margin-top: 2%;
   }
   /* Boxes */
   .box {
