@@ -81,7 +81,7 @@
     .button-link{
       padding: 20px;
       background-color: var(--button-color);
-      color: var(--text-color);
+      color: var(--button-text-color);
       font-size: var(--button-font-size);
       cursor: pointer;
       width: 15rem;

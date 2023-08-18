@@ -112,6 +112,7 @@ form{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 90px;
 }
 
 /* Form Button */
@@ -144,18 +145,22 @@ form{
   #contact h1{
     margin-bottom: 6%;
   }
+  /* Contact Container */
+  .contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   form{
     width: 80%;
     height: auto;
     margin-bottom: -10%;
     margin-top: 2%;
     font-size: var(--third-font-size-shrink);
-  }
-  .form-bot {
     display: flex;
-    flex-direction: column; 
-    align-items: center;
-    font-size: var(--third-font-size-shrink);
+    flex-direction: column;
+    margin-bottom: 1%;
   }
   form h3{
     margin-top: -2%;
@@ -166,13 +171,46 @@ form{
     margin-bottom: 3%;
     font-size: var(--secondary-font-size-shrink);
   }
-  form button, #resume {
+  #submit, #resume {
     margin-bottom: 40px;
     font-size: var(--button-font-shrink);
     color: var(--background-color);
     align-items: center;
   }
   #resume{
-    margin-top: -1%;
+    margin-top: -10%;
+  }
+  .contact-buttons{
+    gap: 9px;
+  }
+  form h3{
+    margin-top: -10%;
+    color: var(--text-color);
+    font-weight: 90px;
+    margin-bottom: 1%;
+    font-size: var(--thrid-font-size);
+  }
+  form input, form textarea{
+    height: 2rem;
+    width: 20rem;
+  }
+  form textarea{
+    height: 8rem;
+  }
+  #name , #email, #phone{
+    padding: 17px;
+  }
+  #subject{
+    margin-bottom: 0%;
+    padding: 5px;
+  }
+  .subject-label{
+    font-family: var(--button-font);
+  }
+  form label {
+    margin-top: 5%;
+  }
+  #form-right{
+    margin-top: -4.6%;
   }
 }
