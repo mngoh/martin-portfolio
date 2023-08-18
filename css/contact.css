@@ -1,5 +1,5 @@
 :root{
-  --height-input: 1rem;
+  --height-input: 3rem;
   --width-input: 30rem;
 }
 /* Background */
@@ -40,7 +40,7 @@
 
 /* Submission Form */
 form{
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   font-family: var(--primary-font);
   display: flex;
   flex-direction: row;
@@ -50,7 +50,7 @@ form{
   }
   .form-column{
     flex: 1;
-    padding: 10px;
+    padding: 20px;
   }
   form h3{
     margin-top: -10%;
@@ -71,6 +71,9 @@ form{
     height: var(--height-input);
     width: var(--width-input);
   }
+  form textarea{
+    height: 7.2rem;
+  }
 
   #name , #email, #phone{
     padding: 17px;
@@ -86,7 +89,9 @@ form{
   form label {
     margin-top: 5%;
   }
-
+  #form-right{
+    margin-top: -4%;
+  }
 /* Form Bottom */
 .form-bot {
   display: flex;
