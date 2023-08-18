@@ -119,7 +119,7 @@ form{
   text-decoration: none;
   font-size: var(--button-font);
   padding: 12px;
-  color: var(--text-color);
+  color: var(--button-text-color);
   font-size: var(--button-font-size);
   border: 0;
   outline: none;
@@ -135,10 +135,7 @@ form{
 #submit:hover, #resume:hover {
   transition: transform 0.3s ease; 
   background-color: var(--button-color-hover);
-  color: var(--text-color);
-}
-
-#submit:hover{
+  color: var(--button-text-color-hover);
   transform: scale(1.15);
 }
 

@@ -26,11 +26,12 @@
   --background-color: #000000;
   --box-color: #424B54;
   --box-color: rgb(21, 21, 145, .3);
-  --button-color: #22229c;
-  --resume-button-color: blue;
-  --button-text-color: white;
-  --button-color-hover: white;
   --name-color: rgb(255, 255, 2555, .7);
+  /* Buttons */
+  --button-color: #22229c;
+  --button-text-color: rgb(255, 255, 255);
+  --button-color-hover: red ;
+  --button-text-color-hover: rgb(0, 0, 0);
 
   /* Other */
   --max-width: 650px;

@@ -94,11 +94,11 @@
       margin-bottom: 10%;
       transition: transform 0.3s ease;
       cursor: grab;
-      z-index: 9999999;
+      z-index: 1;
     }
   .button-link:hover{
     transform: scale(1.05);
-    color: var(--text-color);
+    color: var(--button-text-color-hover);
     background-color: var(--button-color-hover);
   }
   /* lines for text */
