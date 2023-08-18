@@ -25,28 +25,29 @@
 
 /* Profile */
 .profile {
-    position: static;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     margin-top: 0%;
     margin-left: 5%;
     }
     .profile-text {
       height: 100%;
-      margin-bottom: 6%;
+      margin-bottom: 5%;
     }
     .profile-text .hi {
       font-size: var(--home-font-size);
       max-width: 50%;
-      margin-bottom: 9%;
+      margin-bottom: 10%;
       margin-top: 3%;
       margin-left: -20%;
     }
     .profile-text .name {
       font-size: var(--home-font-size);
       max-width: 100%;
-      margin-bottom: 4%;
+      margin-bottom: 10%;
       margin-top: -8%;
       /* margin-right: 5%; */
       color: var(--primary-color);
@@ -134,16 +135,22 @@
       font-size: var(--home-font-size-shrink);
       margin-bottom: 100px;
       margin: 0 auto;
+      background-color: transparent;
       margin-bottom: var(--margin-bottom-home);
     }
     .profile-text .bot{
       font-size: var(--secondary-font-size-shrink);
       margin-bottom: 50px;
-      max-width: 500px;
+      max-width: 800px;
       margin-left: 16%;
       margin-right: 20%;
       margin: 0 auto;
       margin-bottom: var(--margin-bottom-home);
+      animation: none;
+      word-wrap: normal;
+      overflow: auto;
+      white-space: nowrap;
+
     }
     .profile .button-link, #resume{
         padding: 16px;
