@@ -1,5 +1,5 @@
 /* Background */
-#about.section-background {
+/* #about.section-background {
   position: relative;
   background-image: url('../images/key_back.jpg'); 
   background-size: cover;
@@ -17,7 +17,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9); 
   z-index: -1; 
-} 
+}  */
   
 /* Profile Picture */
 #profile-pic{
