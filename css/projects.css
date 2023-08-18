@@ -9,7 +9,7 @@
   background-position: center;
   height: 100%;
   width: auto;
-  z-index: -99999;
+  z-index: 1;
 }
 #projects.section-background::before {
   content: "";
@@ -64,6 +64,9 @@
   background-color: var(--box-color);
   margin-bottom: 5%;
   font-size: var(--thrid-font-size);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   }
 
   /* TRY HOVER - IT WAS BEHIND GRID */
@@ -72,7 +75,7 @@
   }
 
   .box h2 {
-    margin-top: -6%;
+    margin-top: -15%;
     margin-bottom: 0%;
     color: var(--text-color);
     font-size: var(--secondary-font-size);
@@ -80,15 +83,15 @@
   .box p {
     text-align: left;
     font-size: var(--third-font-size);
-    margin-bottom: 0%;
     margin-top: 1%;
-    word-break: break-all;
+    word-break:normal;
     white-space: normal;
+    margin-bottom: 10%;
   }
   .box h3{
     text-align: left;
     margin-bottom: 0%;
-    margin-top: 4%;
+    /* margin-top: 4%; */
 }
 
   /* Button */

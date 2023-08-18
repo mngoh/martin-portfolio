@@ -1,6 +1,28 @@
 :root{
   --margin-bottom: 1%
 }
+
+/* Background */
+#copyright.section-background {
+  position: relative;
+  background-image: url('../images/key_back.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: auto;
+  z-index: 1;
+}
+#copyright.section-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); 
+  z-index: -99999; 
+} 
+
 /* Copyright */
 #copyright { 
   margin-top: -8%;
