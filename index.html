@@ -42,9 +42,9 @@
         <div class='profile-text'>
             <h1 class="hi">Hi, I'm </h1> 
             <h1 class="name"><b> Martin Ngoh</b> </h1>
-            <b><h1 class="bot"> AI <span class="line">|</span> Data Science <span class="line">|</span> Machine Learning  <span class="line">|</span> Web Development </h1></b>
+            <b><h1 class="bot"> AI <span class="line">|</span> Data Science <span class="line">|</span> Machine Learning  <span class="line">|</span> </b>
           </div>
-          <div class="home-buttons">
+        <div class="home-buttons">
           <a class="button-link" data-scroll-to="#about"><b>Learn More</b></a>
           <a id="resume" class="button-36" href="resume/Martin_Ngoh_Resume.pdf" download="Martin_Ngoh_Resume.pdf" target="_blank"><i class="fas fa-download"></i> Resume </a>
         </div>
@@ -170,18 +170,22 @@
     <h2>Thanks for stopping by, reach out with any questions or feedback</h2>
     <div class="contact-container">
       <form id="ContactForm" action="contact.php" method="POST">
-        <h3>Enter your information:</h3>
-        <input type="text" id="name" name="name" placeholder="Name" required>
-        <input type="hidden" name="_next" value="thankyou.html">
-        <input type="text" id="email" name="email" placeholder="Email" required>
-        <input type="text" id="phone" name="phone" placeholder="Phone">
-        <label for="subject" class="subject-label">Subject:</label>
-        <input type="text" id="subject" name="_subject" placeholder="Subject" required>
-        <textarea id="message" name="message" rows="4" placeholder="Send me a message!" required></textarea>
-        <div class="form-bot">
-          <button id="submit" type="submit">Send</button>
-        </div>
+        <div class="form-column" id="form-left">
+          <h3>Provide your details:</h3>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <input type="hidden" name="_next" value="thankyou.html">
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <input type="tel" id="phone" name="phone" placeholder="Phone">
+      </div>
+      <div class="form-column" id="form-right">
+          <label for="subject" class="subject-label">Subject:</label>
+          <input type="text" id="subject" name="_subject" placeholder="Subject" required>
+          <textarea id="message" name="message" rows="4" placeholder="Drop me a message!" required></textarea>
+      </div>
       </form>
+      <div class="form-bot" id="form-button">
+        <button id="submit" type="submit">Send</button>
+      </div>
     </div>
   </section>
 
