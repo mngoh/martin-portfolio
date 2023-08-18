@@ -35,11 +35,11 @@
 /* Footer Container */
 .footer-container{
   margin-bottom: var(--margin-bottom);
-  margin-top: -5%;
+  margin-top: -10%;
 }
 
 /* Footer Links */
-.footer-links, .footer-text {
+.footer-links, .footer-text, .resume-downlaod {
   list-style-type: none; 
   padding: 0;
   margin: 0;
@@ -65,7 +65,7 @@
 }
 
 /* Footer Links Anchor Hover */
-.footer-text li a:hover, .footer-links i.fa-2xl:hover {
+.footer-text li a:hover, .footer-links i.fa-2xl:hover{
   color: var(--button-color-hover);
   background-color: transparent;
 }
@@ -78,7 +78,7 @@
     align-items: center;
     margin-bottom: 4%;
   }
-  #copyright, .footer-links{
+  #copyright, .footer-links, #reusme{
     font-size: var(--third-font-size-shrink);
   }
 }

@@ -198,7 +198,7 @@ body {
   }
   .navbar-links.active, .navbar.active{
     display: flex;
-    background-color: var(--primary-color);
+    background-color: var(--background-color);
   }
   /* Body Styling */
   section h1{

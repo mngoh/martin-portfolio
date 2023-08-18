@@ -33,11 +33,16 @@
   align-items: center;
   justify-content: center;
   margin-top: -1%;
-  margin-bottom: 1%;
+  margin-bottom: -5%;
 }
 /* H1 */
 #contact h2 {
   margin-bottom: 2%;
+}
+
+/* Contact Section */
+#contact{
+  margin-bottom: 10%;
 }
 
 /* Submission Form */
@@ -49,7 +54,7 @@ form{
   padding: 5vw 4vw;
   width: 70rem;
   border-radius: var(--border-radius);
-  margin-top: 2%;
+  margin-top: -1%;
   }
   .form-column{
     flex: 1;
@@ -113,10 +118,12 @@ form{
   justify-content: center;
   align-items: center;
   gap: 90px;
+  margin-bottom: 1%;
+  margin-top: -2%;
 }
 
 /* Form Button */
-#submit{
+#submit, #resume{
   text-decoration: none;
   font-size: var(--button-font);
   padding: 12px;
@@ -130,14 +137,25 @@ form{
   border-radius: var(--border-radius);
   background-color: var(--button-color);
   font-family: var(--button-font);
-  margin-top: -20%;
 }
 
-#submit:hover {
+#submit:hover, #resume:hover {
   transition: transform 0.3s ease; 
   background-color: var(--button-color-hover);
   color: var(--button-text-color-hover);
   transform: scale(1.15);
+}
+/* Resume Download */
+#resume{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  /* Footer Links Anchor Hover */
+  #resume:hover {
+  color: var(--button-color);
+  color: var(--text-color);
+  background-color: transparent;
 }
 
 /* Media Container For Buttons and Icons*/
@@ -172,7 +190,7 @@ form{
     margin-bottom: 3%;
     font-size: var(--secondary-font-size-shrink);
   }
-  #submit {
+  #submit, #resume {
     margin-bottom: 40px;
     font-size: var(--button-font-shrink);
     color: var(--background-color);
@@ -198,7 +216,7 @@ form{
   #name , #email, #phone{
     padding: 17px;
   }
-  #subject{
+  #subject, #resume{
     margin-bottom: 0%;
     padding: 5px;
   }
