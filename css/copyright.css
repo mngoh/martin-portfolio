@@ -26,15 +26,16 @@
 
 /* Copyright */
 #copyright { 
-  margin-top: -8%;
   color: var(--text-color);
   font-size: var(--third-color);
   text-align: center;
+  margin-bottom:0%;
 }
 
 /* Footer Container */
 .footer-container{
   margin-bottom: var(--margin-bottom);
+  margin-top: -5%;
 }
 
 /* Footer Links */
