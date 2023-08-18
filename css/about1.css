@@ -21,8 +21,8 @@
   
 /* Profile Picture */
 #profile-pic{
-  height: auto;
-  width: 20rem;
+  height: 40rem;
+  width: auto;
   background-color: var(--text-color);
   border-radius: var(--border-radius);
 }
