@@ -131,7 +131,6 @@
 .git:before { width: 50%; }
 .tableau:before { width: 50%; }
 
-
 .skill-list li:after {
   content: "";
   position: absolute;
@@ -144,6 +143,7 @@
   z-index: 9999;
   margin-top: 1.5%;
 }
+
 /* Adjust proficiency widths as needed */
 .python:after { width: 48%; }
 .r:after { width: 43%; }
