@@ -3,6 +3,7 @@
   --width-input: 30rem;
   --button-width: 8rem;
 }
+
 /* Background */
 #contact.section-background {
   position: relative;
@@ -24,18 +25,6 @@
   z-index: -99999; 
 } 
 
-/* Contact Container */
-.contact-container{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  margin-top: -1%;
-  margin-bottom: -5%;
-}
-
 /* H1 */
 #contact h2 {
   margin-bottom: 2%;
@@ -46,22 +35,25 @@
   margin-bottom: 10%;
 }
 
+/* Contact Container */
+.contact-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+
 /* Submission Form */
 form{
   /* background-color: var(--background-color); */
   font-family: var(--primary-font);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: left;
   padding: 5vw 4vw;
-  width: 80rem;
+  width: 40%;
   border-radius: var(--border-radius);
   margin-top: -1%;
-  }
-  .form-column{
-    flex: 1;
-    padding: 20px;
   }
   form h3{
     margin-top: -10%;
@@ -80,7 +72,7 @@ form{
     font-size: var(--thrid-font-size);
     font-family: var(--button-font);
     height: var(--height-input);
-    width: var(--width-input);
+    width: 100%
   }
   form textarea{
     height: 8rem;
@@ -98,29 +90,6 @@ form{
   form label {
     margin-top: 5%;
   }
-/* Form Bottom */
-.form-bot {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10px;
-}
-/* Remove Underline */
-.form-bot a {
-  text-decoration: none;
-}
-
-/* Contact Buttons */
-.contact-buttons{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 90px;
-  margin-bottom: 1%;
-  margin-top: -5%;
-}
 
 /* Form Button */
 #submit{
@@ -138,12 +107,9 @@ form{
   background-color: var(--button-color);
   font-family: var(--button-font);
 }
-
-#submit:hover, #resume:hover {
-  transition: transform 0.3s ease; 
-  background-color: var(--button-color-hover);
-  color: var(--button-text-color-hover);
-  transform: scale(1.15);
+#submit:hover{
+  background-color: var(--primary-color);
+  color: var(--text-color);
 }
 #resume:hover{
   background-color: var(--text-color);
@@ -193,7 +159,7 @@ form{
     font-size: var(--secondary-font-size-shrink);
   }
   #submit, #resume {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     font-size: var(--button-font-shrink);
     color: var(--background-color);
     align-items: center;
@@ -201,9 +167,6 @@ form{
   #resume {
     font-size: var(--button-font-shrink);
     color: var(--text-color);
-  }
-  .contact-buttons{
-    gap: 60px;
   }
   form h3{
     margin-top: -10%;
@@ -214,7 +177,6 @@ form{
   }
   form input, form textarea{
     height: 2rem;
-    width: 20rem;
   }
   form textarea{
     height: 8rem;
