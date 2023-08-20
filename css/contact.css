@@ -106,6 +106,7 @@ form{
   border-radius: var(--border-radius);
   background-color: var(--button-color);
   font-family: var(--button-font);
+  margin-bottom: 5%;
 }
 #submit:hover{
   background-color: var(--primary-color);
