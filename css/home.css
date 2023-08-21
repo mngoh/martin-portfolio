@@ -116,7 +116,7 @@
 }
 
 /* Media Container For Profile  */
-@media(max-width:850px){
+@media(max-width:1080px){
   .profile{
     margin-left: 5%;
     align-items: center;
@@ -159,4 +159,20 @@
         margin: 0 auto;
         margin-bottom: 10%;
     }
+}
+
+/* Shrink on text */
+@media(max-width:503px){
+  .profile-text .hi, .name{
+    font-size: 3rem;
+  }
+  .profile-text .bot{
+    font-size: .7rem;
+  }
+  .profile .button-link{
+    height: 2rem;
+    width: 90%;
+    font-size: .7rem;
+  }
+  
 }

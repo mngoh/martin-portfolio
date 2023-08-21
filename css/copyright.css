@@ -77,9 +77,14 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 4%;
+    margin: 0 auto;
   }
-  #copyright, .footer-links, #reusme{
+  #copyright, .footer-links{
     font-size: var(--third-font-size-shrink);
+  }
+  .footer-links li a i{
+    font-size: 2rem;
+    margin-top: 80%;
   }
 }
 
@@ -91,7 +96,7 @@
     align-items: center;
   }
   /* Add some spacing between the stacked items */
-  .footer-links li {
+  .footer-links li a i {
     margin-bottom: 20px;
   }
 }
