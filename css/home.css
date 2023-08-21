@@ -163,16 +163,36 @@
 
 /* Shrink on text */
 @media(max-width:503px){
-  .profile-text .hi, .name{
+  .profile-text .hi, .profile-text .name{
     font-size: 3rem;
+  }
+  .profile-text .hi{
+    margin-top: 40%;
   }
   .profile-text .bot{
     font-size: .7rem;
   }
   .profile .button-link{
-    height: 2rem;
-    width: 90%;
     font-size: .7rem;
+    height: auto;
+    width: auto;
   }
   
+}
+
+
+@media (width:2560px) {
+  .profile-text .hi, .profile-text .name{
+    font-size: 10rem;
+  }  
+  .profile-text .hi{
+    margin-top: 4%;
+  }
+  .profile-text .bot{
+    font-size: 2.7rem;
+  }
+  .profile .button-link{
+    font-size: 1.4rem;
+    width: 100%;
+  }
 }
