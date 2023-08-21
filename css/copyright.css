@@ -54,13 +54,24 @@
 /* Footer Links */
 .footer-links {
   margin-bottom: var(--margin-bottom);
+  display: flex;
+  gap: 20px;
+}
+
+.footer-text{
+  gap: 15px;
+}
+
+.links{
+  font-size: var(--third-font-size);
+  margin-bottom: 1%;
 }
 
 /* Footer Links Items */
 .footer-links li, .footer-text li {
   position: relative; 
-  margin-right: 20px; 
 }
+
 
 /* Footer Links Anchor */
 .footer-links li a, .footer-text li a {
@@ -83,7 +94,7 @@
     margin-bottom: 4%;
     margin: 0 auto;
   }
-  #copyright, .footer-links{
+  #copyright, .footer-links, .links{
     font-size: var(--third-font-size-shrink);
   }
   .footer-links li a i{
