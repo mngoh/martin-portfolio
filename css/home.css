@@ -196,13 +196,13 @@
 
 @media (max-width:675px) {
   .profile-text .hi, .profile-text .name{
-    font-size: 4rem;
+    font-size: 5rem;
   }  
   .profile-text .hi{
     margin-top: 20%;
   }
   .profile-text .bot{
-    font-size: 1rem;
+    font-size: .7rem;
   }
   .profile .button-link{
     font-size: 1rem;
@@ -223,6 +223,38 @@
   }
   .profile .button-link{
     font-size: 1.4rem;
+    width: 100%;
+  }
+}
+
+@media (max-width:450px) {
+  .profile-text .hi, .profile-text .name{
+    font-size: 4rem;
+  }  
+  .profile-text .hi{
+    margin-top: 40%;
+  }
+  .profile-text .bot{
+    font-size: .7rem;
+  }
+  .profile .button-link{
+    font-size: .7rem;
+    width: 100%;
+  }
+}
+
+@media (max-width:375px) {
+  .profile-text .hi, .profile-text .name{
+    font-size: 3rem;
+  }  
+  .profile-text .hi{
+    margin-top: 40%;
+  }
+  .profile-text .bot{
+    font-size: .7rem;
+  }
+  .profile .button-link{
+    font-size: .7rem;
     width: 100%;
   }
 }
