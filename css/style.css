@@ -41,6 +41,11 @@
   --button-color-hover: var(--primary-color);
   --button-text-color-hover: rgb(255, 255, 255);
 
+  /* Font Weights */
+  --main-weight: bolder;
+  --second-weight: 400;
+  --third-weight: 100;
+
   /* Other */
   --max-width: 650px;
   --border-radius: .2rem;
@@ -199,12 +204,14 @@ body {
     font-size: var(--primary-font-size);
     margin-bottom: 1%;
     margin-top: -2%;
+    font-weight: var(--main-weight);
   }
   section h2{
     text-align: center;
     margin-top: 0%;
     margin-bottom: 3%;
     font-size: var(--secondary-font-size);
+    font-weight: var(--second-weight);
   }
 
 /* Media Container for NAV bar and Body Text */

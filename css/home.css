@@ -16,6 +16,9 @@
       height: 100%;
       margin-bottom: 5%;
     }
+    .profile .hi, .profile .name{
+      font-weight: var(--main-weight);
+    }
     .profile-text .hi {
       font-size: var(--home-font-size);
       max-width: 50%;
@@ -50,7 +53,7 @@
       margin: 0 auto; 
     }    
     .profile-text .bot {
-      font-weight: lighter;
+      font-weight: var(--third-weight);
     }   
     /* The typing effect */
     @keyframes typing {
@@ -89,7 +92,7 @@
   
   /* lines for text */
   .line {
-    font-weight: bold;
+    font-weight: 700;
     color: var(--primary-color);
     margin-left: .5%;
     margin-right: .5%;
@@ -190,23 +193,6 @@
   }
 }
 
-
-@media (width:2560px) {
-  .profile-text .hi, .profile-text .name{
-    font-size: 10rem;
-  }  
-  .profile-text .hi{
-    margin-top: 4%;
-  }
-  .profile-text .bot{
-    font-size: 2.7rem;
-  }
-  .profile .button-link{
-    font-size: 1.4rem;
-    width: 100%;
-  }
-}
-
 @media (max-width:450px) {
   .profile-text .hi, .profile-text .name{
     font-size: 4rem;
@@ -235,5 +221,21 @@
   }
   .profile .button-link{
     font-size: .7rem;
+  }
+}
+
+@media (width:2560px) {
+  .profile-text .hi, .profile-text .name{
+    font-size: 15rem;
+  }  
+  .profile-text .hi{
+    margin-top: 10%;
+  }
+  .profile-text .bot{
+    font-size: 2.7rem;
+  }
+  .profile .button-link{
+    font-size: 1.4rem;
+    width: 100%;
   }
 }

@@ -66,6 +66,9 @@
   font-size: var(--third-font-size);
   margin-bottom: 1%;
 }
+.links h2{
+  font-weight: var(--thrid-weight);
+}
 
 /* Footer Links Items */
 .footer-links li, .footer-text li {
@@ -105,7 +108,7 @@
 @media (max-width: 350px) {
   .footer-links, .footer-text {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   /* Add some spacing between the stacked items */

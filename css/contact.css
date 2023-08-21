@@ -52,10 +52,10 @@ form{
   form h3{
     margin-top: -10%;
     color: var(--text-color);
-    font-weight: 90px;
     margin-bottom: 1%;
     display: flex;
     font-size: var(--thrid-font-size);
+    font-weight: var(--third-weight);
   }
   form input, form textarea{
     border: 0;
@@ -163,7 +163,7 @@ form{
   form h3{
     margin-top: -10%;
     color: var(--text-color);
-    font-weight: 90px;
+    font-weight: var(--third-weight);
     margin-bottom: 1%;
     font-size: var(--thrid-font-size);
   }

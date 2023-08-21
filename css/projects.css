@@ -79,6 +79,7 @@
     margin-bottom: 0%;
     color: var(--text-color);
     font-size: var(--secondary-font-size);
+    font-weight: var(--second-weight);
   }
   .box p {
     text-align: left;
@@ -87,13 +88,13 @@
     word-break:normal;
     white-space: normal;
     margin-bottom: 10%;
+    font-weight: var(--third-weight);
   }
   .box h3{
     text-align: left;
     margin-bottom: 0%;
     /* margin-top: 4%; */
-}
-
+  }
   /* Button */
   .button-project {
     margin-bottom: 10%;

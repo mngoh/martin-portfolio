@@ -39,9 +39,11 @@
 
 .card ul li{
   margin-bottom: 2%;
+  font-weight: var(--third-weight);
 }
 .card h2{
   margin-top: 6%;
+  font-weight: var(--second-weight);
 }
 
 /* Right Container */
