@@ -44,7 +44,7 @@
   /* Font Weights */
   --main-weight: bolder;
   --second-weight: 400;
-  --third-weight: 100;
+  --third-weight: 300;
 
   /* Other */
   --max-width: 650px;
@@ -77,7 +77,7 @@
 /* Home Section Name */
 .profile-text .name span {
   background-image: 
-    linear-gradient(to right, var(--text-color), var(--primary-color)); 
+    linear-gradient(to right, var(--primary-color), var(--text-color)); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;  
   background-position: 0; 
