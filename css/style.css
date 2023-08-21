@@ -44,7 +44,7 @@
   /* Font Weights */
   --main-weight: bolder;
   --second-weight: 400;
-  --third-weight: 300;
+  --third-weight: 200;
 
   /* Other */
   --max-width: 650px;
@@ -211,7 +211,7 @@ body {
     margin-top: 0%;
     margin-bottom: 3%;
     font-size: var(--secondary-font-size);
-    font-weight: var(--second-weight);
+    font-weight: var(--third-weight);
   }
 
 /* Media Container for NAV bar and Body Text */
