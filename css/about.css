@@ -209,7 +209,7 @@
   #profile-pic{
       height: 20rem;
       width: auto;
-      margin-bottom: 20%;
+      margin-top: -70%;
   }
   .grid-right-about .card h2{
       /* display: none; */
@@ -222,5 +222,35 @@
   }
   .text-line {
     border-bottom:none;
+  }
+}
+
+@media(max-width: 1170px){
+  .skill-list li:after, .skill-list li:before {
+    margin-top: 1.5%;
+    margin-left: 35%;
+  }
+}
+@media(max-width: 1025px){
+  .skill-list li:after, .skill-list li:before {
+    margin-top: 1.5%;
+    position: absolute;
+    margin-left: 40%;
+  }
+}
+
+@media(max-width: 990px){
+  .skill-list li:after, .skill-list li:before {
+    margin-top: 1.5%;
+    position: absolute;
+    margin-left: 45%;
+  }
+}
+
+@media(max-width: 983px){
+  .skill-list li:after, .skill-list li:before {
+    margin-top: 1.5%;
+    position: absolute;
+    margin-left: 54%;
   }
 }
