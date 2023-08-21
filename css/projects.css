@@ -245,8 +245,12 @@ button i.fa-2xl {
     margin-top: -300px;
   }
 }
-
-@media(max-width: 422px){
+@media(max-width: 759px){
+  #projects, h1{
+    margin-top: 0px;
+  }
+}
+@media(max-width: 450px){
   #projects, h1{
     margin-top: 500px;
   }

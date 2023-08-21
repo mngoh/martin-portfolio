@@ -50,9 +50,11 @@
       margin-bottom: 10%;
       margin-top: -8%;
       /* margin-right: 5%; */
-      color: var(--primary-color);
       background-color:var(--name-color);
       border-radius: var(--border-radius);
+    }
+    .profile-text .name:nth-child(1){
+      color: var(--resume-color);
     }
     .profile-text .bot {
       font-size: var(--secondary-font-size);
@@ -102,10 +104,11 @@
     color: var(--button-text-color-hover);
     background-color: var(--button-color-hover);
   }
+  
   /* lines for text */
   .line {
     font-weight: bold;
-    color: var(--primary-color);
+    color: var(--resume-color);
     margin-left: .5%;
     margin-right: .5%;
   }

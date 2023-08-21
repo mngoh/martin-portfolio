@@ -25,19 +25,20 @@
 
   /* Colors */
   --primary-color: #282859;
+  --primary-color: rgba(61, 61, 231, 0.755);
   --secondary-color: #F4F3EE;
   --text-color: #ffffff;
   --background-color: #000000;
-  --box-color: #424B54;
-  --box-color: rgb(21, 21, 145, .3);
+  --box-color: rgb(21, 21, 145, .22);
   /* --name-color: rgb(255, 255, 2555, .7); */
   --resume-color:rgb(21, 233, 106);
-  --primary-color:rgb(21, 233, 106);
+  /* --primary-color:rgb(21, 233, 106); */
+
   /* Buttons */
   --button-color: #ffffff;
   --button-text-color: rgb(0, 0, 0);
   --button-color-hover: rgb(41, 25, 189);
-  --button-color-hover:rgb(21, 233, 106);
+  --button-color-hover: var(--primary-color);
   --button-text-color-hover: rgb(255, 255, 255);
 
   /* Other */
