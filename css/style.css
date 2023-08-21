@@ -17,8 +17,8 @@
   --button-font-size:1.2rem;
 
   /* Font Size - Shrink*/
-  --home-font-size-shrink: 6rem;
-  --primary-font-size-shrink: 2.5rem;
+  --home-font-size-shrink: 7rem;
+  --primary-font-size-shrink: 2.7rem;
   --secondary-font-size-shrink: 1rem;
   --third-font-size-shrink: calc(var(--secondary-font-size-shrink) / 1.2);
   --button-font-size-shrink:1rem;
@@ -74,14 +74,14 @@
   z-index: -2; 
 } 
 
-/* Home Section Name */
+/* Home Section Name
 .profile-text .name span {
   background-image: 
     linear-gradient(to right, var(--primary-color), var(--text-color)); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;  
   background-position: 0; 
-}
+} */
 
 
 /* Body */
@@ -251,10 +251,11 @@ body {
   /* Body Styling */
   section h1{
     margin-top: 2%;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     font-size: var(--primary-font-size-shrink);
   }
   section h2{
+    margin-bottom: 2%;
     font-size: var(--secondary-font-size-shrink);
   }
 }

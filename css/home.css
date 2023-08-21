@@ -35,9 +35,9 @@
       background-color:var(--name-color);
       border-radius: var(--border-radius);
     }
-    .profile-text span{
+    /* .profile-text span{
       color: var(--primary-color);
-    }
+    } */
     .profile-text .bot {
       font-size: var(--secondary-font-size);
       margin-bottom: 0%; 
@@ -195,13 +195,13 @@
 
 @media (max-width:450px) {
   .profile-text .hi, .profile-text .name{
-    font-size: 4rem;
+    font-size: 4.2rem;
   }  
   .profile-text .hi{
     margin-top: 40%;
   }
   .profile-text .bot{
-    font-size: .7rem;
+    font-size: .9rem;
   }
   .profile .button-link{
     font-size: .7rem;

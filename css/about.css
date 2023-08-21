@@ -269,3 +269,11 @@
     margin-top: -15%;
   }
 }
+
+
+@media (width:390px) {
+  #about h1{
+    margin-top: -6%;
+  }
+ 
+}
