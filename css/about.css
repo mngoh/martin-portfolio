@@ -254,3 +254,13 @@
     margin-left: 54%;
   }
 }
+
+/* Iphones not max */
+@media (width:375px) {
+  #about h1{
+    margin-top: -8%;
+  }
+  #profile-pic{
+    margin-top: -15%;
+  }
+}
