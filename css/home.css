@@ -202,7 +202,7 @@
     margin-top: 20%;
   }
   .profile-text .bot{
-    font-size: .7rem;
+    font-size: 1rem;
   }
   .profile .button-link{
     font-size: 1rem;
@@ -245,7 +245,7 @@
 
 @media (max-width:375px) {
   .profile-text .hi, .profile-text .name{
-    font-size: 3rem;
+    font-size: 3.2rem;
   }  
   .profile-text .hi{
     margin-top: 40%;
@@ -255,6 +255,5 @@
   }
   .profile .button-link{
     font-size: .7rem;
-    width: 100%;
   }
 }
