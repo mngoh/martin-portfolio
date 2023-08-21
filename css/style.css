@@ -4,6 +4,10 @@
   /* Font Style */
   --primary-font: 'Montserrat', 'sans';
   --button-font: 'Montserrat', 'sans';
+  --primary-font: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+  Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+  Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --button-font: var(var(--primary-font));
 
   /* Font Size */
   --home-font-size: 8rem;
@@ -26,12 +30,14 @@
   --background-color: #000000;
   --box-color: #424B54;
   --box-color: rgb(21, 21, 145, .3);
-  --name-color: rgb(255, 255, 2555, .7);
+  /* --name-color: rgb(255, 255, 2555, .7); */
   --resume-color:rgb(21, 233, 106);
+  --primary-color:rgb(21, 233, 106);
   /* Buttons */
   --button-color: #ffffff;
   --button-text-color: rgb(0, 0, 0);
   --button-color-hover: rgb(41, 25, 189);
+  --button-color-hover:rgb(21, 233, 106);
   --button-text-color-hover: rgb(255, 255, 255);
 
   /* Other */

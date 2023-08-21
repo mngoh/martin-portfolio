@@ -91,7 +91,7 @@ form{
   text-decoration: none;
   font-size: var(--button-font);
   padding: 12px;
-  color: var(--primary-color);
+  color: var(--background-color);
   font-size: var(--button-font-size);
   border: 0;
   outline: none;
@@ -99,15 +99,14 @@ form{
   width: 100%;
   margin-top: 1%;
   border-radius: var(--border-radius);
-  background-color: var(--button-color);
+  background-color: var(--text-color);
   font-family: var(--button-font);
   margin-bottom: 5%;
 }
 #submit:hover{
-  background-color: var(--primary-color);
   color: var(--text-color);
+  background-color: var(--button-color-hover);
 }
-
 
 .contact-links{
   display: flex;
