@@ -43,12 +43,15 @@
       margin-right: 3%;
       overflow: auto;
       white-space: nowrap;
-      letter-spacing: .15em; /* Adjust as needed */
+      letter-spacing: .15em; 
       animation: 
         typing 3.5s steps(40, end),
         blink-caret .75s step-end infinite;
-      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      margin: 0 auto; 
     }    
+    .profile-text .bot {
+      font-weight: lighter;
+    }   
     /* The typing effect */
     @keyframes typing {
       from { width: 0 }
@@ -153,7 +156,7 @@
 }
 
 /* Shrink on text */
-@media(max-width:503px){
+@media(max-width:543px){
   .profile-text .hi, .profile-text .name{
     font-size: 3rem;
   }

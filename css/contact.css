@@ -151,7 +151,7 @@ form{
     font-size: var(--secondary-font-size-shrink);
   }
   #submit, #resume {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     font-size: var(--button-font-shrink);
     color: var(--background-color);
     align-items: center;

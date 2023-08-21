@@ -223,8 +223,8 @@
   .text-line {
     border-bottom:none;
   }
-  .skill-list li:after, .skill-list li:before {
-    margin-top: 1.5%;
+  .skill-list li::after{
+    margin-left: -20%;
   }
 }
 
