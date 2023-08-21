@@ -96,7 +96,7 @@
       margin: 0% auto;
       margin-bottom: 10%;
       transition: transform 0.3s ease;
-      cursor: grab;
+      cursor: pointer;
       z-index: 1;
     }
   .button-link:hover{
@@ -108,7 +108,7 @@
   /* lines for text */
   .line {
     font-weight: bold;
-    color: var(--resume-color);
+    color: var(--primary-color);
     margin-left: .5%;
     margin-right: .5%;
   }

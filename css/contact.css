@@ -4,6 +4,10 @@
   --button-width: 8rem;
 }
 
+#contact{
+  margin-bottom: -5%;
+}
+
 /* Background */
 #contact.section-background {
   position: relative;
@@ -24,11 +28,6 @@
   background-color: rgba(0, 0, 0, 0.7); 
   z-index: -99999; 
 } 
-
-/* Contact Section */
-#contact{
-  margin-bottom: 10%;
-}
 
 /* Contact Container */
 .contact-container{
