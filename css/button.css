@@ -102,3 +102,9 @@
     transform: translateX(0);
   }
 }
+
+@media (max-width: 850px) {
+  .btn-98{
+    width: 100%;
+  }
+}

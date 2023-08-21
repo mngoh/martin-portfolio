@@ -92,7 +92,7 @@
 @media (max-width: 350px) {
   .footer-links, .footer-text {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
   /* Add some spacing between the stacked items */

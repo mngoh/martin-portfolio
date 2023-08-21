@@ -133,8 +133,6 @@ form{
 @media (max-width: 850px) {
   #download-resume{
     font-size: 1rem;
-    margin-left: -20%;
-
   }
   form{
     height: auto;

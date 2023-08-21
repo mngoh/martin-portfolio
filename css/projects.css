@@ -242,7 +242,6 @@ button i.fa-2xl {
 }
 @media(max-width: 1447px){
   .box {
-    position: relative;
     color: var(--text-color);
     width: 25rem;
   }
@@ -250,14 +249,12 @@ button i.fa-2xl {
 
 @media(max-width: 1253px){
   .box {
-    position: relative;
     color: var(--text-color);
     width: 20rem;
   }
 }
 @media(max-width: 984px){
   .box {
-    position: relative;
     color: var(--text-color);
     width: 20rem;
   }

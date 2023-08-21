@@ -207,9 +207,9 @@
   }
   /* Profile Picture */
   #profile-pic{
-      height: 20rem;
-      width: auto;
-      margin-top: -70%;
+      height: auto;
+      width: 20rem;
+      margin-top: 0%;
   }
   .grid-right-about .card h2{
       /* display: none; */
