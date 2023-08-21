@@ -34,6 +34,10 @@
 
 /* Footer Container */
 .footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: var(--margin-bottom);
   margin-top: -10%;
 }
@@ -92,7 +96,7 @@
 @media (max-width: 350px) {
   .footer-links, .footer-text {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
   /* Add some spacing between the stacked items */
