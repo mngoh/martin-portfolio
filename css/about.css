@@ -223,6 +223,9 @@
   .text-line {
     border-bottom:none;
   }
+  .skill-list li:after, .skill-list li:before {
+    margin-top: 1.5%;
+  }
 }
 
 @media(max-width: 1170px){
@@ -255,7 +258,7 @@
   }
 }
 
-/* Iphones not max */
+/* Iphone - not max */
 @media (width:375px) {
   #about h1{
     margin-top: -8%;

@@ -46,6 +46,29 @@
   --border-radius: .2rem;
 }
 
+
+/* HOME Background */
+#Home.section-background {
+  position: relative;
+  background-image: url('../images/key_back.jpg'); 
+  background-image: url('../images/back2.jpg'); 
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  z-index: 1;
+  height: 100vh;
+}
+#Home.section-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); 
+  z-index: -2; 
+} 
+
 /* Body */
 body {
   background-color: var(--background-color);
