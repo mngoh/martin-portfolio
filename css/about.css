@@ -23,7 +23,9 @@
 #profile-pic{
   height: 40rem;
   width: auto;
-  background-color: var(--text-color);
+  opacity: 90%;
+  background-color: none;
+  white-space: none;
   border-radius: var(--border-radius);
 }
 
