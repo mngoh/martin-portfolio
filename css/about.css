@@ -23,7 +23,6 @@
 #profile-pic{
   height: 40rem;
   width: auto;
-  opacity: 90%;
   background-color: none;
   white-space: none;
   border-radius: var(--border-radius);
