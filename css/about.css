@@ -142,7 +142,7 @@
   background-color: #d6d6de; 
   margin-left: 29%;
   border-radius: var(--border-radius);
-  z-index: 9999;
+  z-index: 2;
   margin-top: 1.5%;
 }
 

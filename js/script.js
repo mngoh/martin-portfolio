@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   });
-
 // Hidden Nav Bar
 // const nav = document.querySelector('.navbar');
 // let lastScrollY = window.scrollY;

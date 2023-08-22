@@ -34,9 +34,9 @@
       background-color:var(--name-color);
       border-radius: var(--border-radius);
     }
-    /* .profile-text span{
+    .profile-text span{
       color: var(--primary-color);
-    } */
+    }
     .profile-text .bot {
       font-size: var(--secondary-font-size);
       margin-bottom: 0%; 
@@ -132,7 +132,7 @@
       font-size: var(--home-font-size-shrink);
       margin-bottom: 100px;
       margin: 0 auto;
-      background-color: transparent;
+      /* background-color: transparent; */
       margin-bottom: var(--margin-bottom-home);
     }
     .profile-text .bot{
