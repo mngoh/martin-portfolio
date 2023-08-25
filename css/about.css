@@ -226,8 +226,8 @@
   .text-line {
     border-bottom:none;
   }
-  .skill-list li::after{
-    margin-left: -20%;
+  .skill-list li{
+    margin-right: 20% ;
   }
 }
 
