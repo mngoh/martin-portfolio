@@ -131,7 +131,7 @@ form{
 /* Media Container For Buttons and Icons*/
 @media (max-width: 850px) {
   #download-resume{
-    font-size: 1rem;
+    font-size: 2rem;
   }
   form{
     height: auto;
@@ -150,15 +150,11 @@ form{
     margin: 0 auto;
     font-size: var(--secondary-font-size-shrink);
   }
-  #submit, #resume {
+  #submit {
     margin-bottom: 10px;
     font-size: var(--button-font-shrink);
     color: var(--background-color);
     align-items: center;
-  }
-  #resume {
-    font-size: var(--button-font-shrink);
-    color: var(--text-color);
   }
   form h3{
     margin-top: -10%;
