@@ -133,6 +133,8 @@
 .css:before { width: 50%; }
 .git:before { width: 50%; }
 .tableau:before { width: 50%; }
+.PySpark:before { width: 50%; }
+
 
 .skill-list li:after {
   content: "";
@@ -148,7 +150,7 @@
 }
 
 /* Adjust proficiency widths as needed */
-.python:after { width: 48%; }
+.python:after { width: 46%; }
 .r:after { width: 43%; }
 .sql:after { width: 40%; }
 .sas:after { width: 30%; }
@@ -157,6 +159,7 @@
 .css:after { width: 40%; }
 .git:after { width: 45%; }
 .tableau:after { width: 35%; }
+.PySpark:after { width: 40%; }
 
 
 /* Bullets */
