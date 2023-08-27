@@ -60,7 +60,7 @@
   text-transform: uppercase;
 }
 .btn-98:before {
-  background: #fff;
+  background: var(--primary-color);
   bottom: calc(var(--thickness) * -1);
   content: "";
   display: block;

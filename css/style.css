@@ -129,7 +129,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: var(--primary-font);
+  font-family: var(--button-font);
   background-color: rgba(0, 0, 0);
   color: var(--text-color);
   width: 100%;
@@ -142,10 +142,10 @@ body {
   /* font-size: 1.5rem; */
   transition: transform 0.3s ease-out;
   }
-  .navbar .name {
-    font-size: 3rem; 
-    margin: .5rem ;
-    margin-left: 2%;
+  .navbar .name img{
+    height: 3rem;
+    width: auto;
+    margin-left: 20%;
   }
   .navbar .name::first-letter{
     color: var(--primary-color);

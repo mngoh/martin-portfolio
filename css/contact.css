@@ -121,12 +121,9 @@ form{
 }
 .resume li a {
   text-decoration: none;
-  color: var(--resume-color);
+  color: var(--text-color);
   font-size: 2rem;
 }
-
-
-
 
 /* Media Container For Buttons and Icons*/
 @media (max-width: 850px) {
