@@ -146,6 +146,7 @@ body {
     height: 3rem;
     width: auto;
     margin-left: 20%;
+    margin-top: 3%;
   }
   .navbar .name::first-letter{
     color: var(--primary-color);
