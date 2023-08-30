@@ -23,7 +23,7 @@
 #profile-pic{
   height: 40rem;
   width: auto;
-  background-color: none;
+  /* background-color: var(--box-color); */
   white-space: none;
   border-radius: var(--border-radius);
 }
