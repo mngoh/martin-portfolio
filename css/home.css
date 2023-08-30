@@ -236,3 +236,21 @@
     width: 100%;
   }
 }
+
+
+/* Max Height */
+@media (height:700px) {
+  .profile-text .hi, .profile-text .name{
+    font-size: 15rem;
+  }  
+  .profile-text .hi{
+    margin-top: -10%;
+  }
+  .profile-text .bot{
+    font-size: 2.7rem;
+  }
+  .profile .button-link{
+    font-size: 1.4rem;
+    width: 100%;
+  }
+}
