@@ -100,7 +100,7 @@
     text-decoration: none;
     color: var(--text-color);
     background-color: transparent;
-    transition: .s;
+    transition: .3s;
   }
 
   .socials li a i:hover{
@@ -199,8 +199,8 @@
     gap: 10px
   }
   .home-buttons a {
-    font-size: .5rem;
-    width: 5rem;
+    font-size: .64rem;
+    width: 5.5rem;
   }
   .socials li a {
     font-size: .8rem;
