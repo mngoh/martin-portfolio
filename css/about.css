@@ -22,7 +22,7 @@
 /* Profile Picture */
 #profile-pic{
   height: 40rem;
-  width:\\\;
+  width:auto;
   /* background-color: var(--box-color); */
   white-space: none;
   border-radius: var(--border-radius);
@@ -153,7 +153,7 @@
       justify-content: center;
       align-items: center;
       margin: 0 auto;
-      margin-bottom: 85%;
+      margin-bottom: 120%;
   }
   /* Right Container */
   .grid-right-about{
@@ -175,9 +175,6 @@
     }
   .card.h2:last-child {
     border-bottom: none;
-  }
-  .text-line {
-    border-bottom:none;
   }
   .skill-list li{
     margin-right: 20% ;
