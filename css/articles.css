@@ -14,7 +14,7 @@
     background-position: center;
     width: auto;
     z-index: 1;
-    height: 100vh;
+    height: 80vh;
   }
   #Home.section-background::before {
     content: "";
@@ -59,7 +59,7 @@
     margin-bottom: 0%;
     margin-top: 1%;
 }
-.article-bot{
+.home-bot{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -69,14 +69,13 @@
     display: flex;
     gap: 20px;
 }
-.button-articles,
-.button-suggest{
+.button-articles{
     padding: 15px;
     background-color: var(--button-color);
     color: var(--button-text-color);
     font-size: var(--button-font-size);
     cursor: pointer;
-    width: 10rem;
+    width: 12rem;
     border-radius: .5rem;
     text-decoration: none;
     text-align: center;
@@ -91,6 +90,12 @@
     color: var(--button-text-color-hover);
     background-color: var(--button-color-hover);
   }
+  .home-bot .socials{
+    margin-right: 10%;
+  }
+
+
+
 
 /* Articles */
 .articles {
