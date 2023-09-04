@@ -100,10 +100,12 @@
     text-decoration: none;
     color: var(--text-color);
     background-color: transparent;
+    transition: .3s;
   }
 
-  .socials li a:hover{
-    background-color: var(--primary-color);
+  .socials li a i:hover{
+    color: var(--primary-color);
+    background-color: transparent;
   }
 
   

@@ -32,9 +32,14 @@
 /* Contact Container */
 .contact-container{
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 20rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.left-contact{
+  width: 40%;
 }
 
 /* Submission Form */
