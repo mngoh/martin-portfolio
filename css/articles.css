@@ -1,9 +1,8 @@
 /* Variables */
 :root{
     --main-font-size: 7rem;
-    --second-font-size: 2rem; 
-    --thrid-font-size: 2rem;
-
+    --second-font-size: 1.5rem; 
+    --third-font-size: 1.3rem;
 }
 
 /* HOME Background */
@@ -28,7 +27,6 @@
     z-index: -2; 
   } 
 
-
 /* Home */
 .home{
     display: flex;
@@ -37,12 +35,13 @@
     align-items: center;
     width: 40rem;
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 5%;
     gap: 20px;
 }
 .home-text h1 { 
     font-size: var(--main-font-size);
     letter-spacing: .15em; 
+    margin-left: -10%;
 }
 .home-text h2 { 
     font-size: var(--second-font-size);
@@ -50,9 +49,45 @@
     text-align: left;
 }
 .home .bot-text{
-    font-size: 2rem;
+    font-size: var(--second-font-size);
 }
-
+.home .bot-line h1{
+    font-size: var(--third-font-size);
+    margin-bottom: 0%;
+    margin-top: 1%;
+}
+.article-bot{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+.article-buttons{
+    display: flex;
+    gap: 20px;
+}
+.button-articles,
+.button-suggest{
+    padding: 15px;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    font-size: var(--button-font-size);
+    cursor: pointer;
+    width: 10rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    text-align: center;
+    font-family: var(--button-font);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    z-index: 1;
+    }
+  .button-articles:hover,
+  .button-suggest:hover{
+    transform: scale(1.05);
+    color: var(--button-text-color-hover);
+    background-color: var(--button-color-hover);
+  }
 
 /* Articles */
 .articles {
@@ -64,6 +99,7 @@
     background-color: var(--background-color);
     width: auto;
     margin-top: 2%;
+    margin-bottom: -30%;
     }
 .articles h1 {
     font-size: var(--second-font-size);
