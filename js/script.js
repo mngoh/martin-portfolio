@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   const hireButton = document.querySelector(".button-hire");
   const aboutButton = document.querySelector(".button-about"); 
   const projectButton = document.querySelector(".button-project");
+  const articlesButton = document.querySelector(".button-articles");
   const aboutSection = document.getElementById("about");
   const projectSection = document.getElementById("projects");
   const contactSection = document.getElementById("contact"); 
@@ -62,6 +63,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const scrollDuration = 2000;
     smoothScroll(targetOffset, scrollDuration);
   });
+  articlesButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    const targetOffset = contactSection.offsetTop;
+    const scrollDuration = 2000;
+    smoothScroll(targetOffset, scrollDuration);
+  });
 });
 
 // Scrolling Navbar Background
@@ -95,3 +102,9 @@ document.addEventListener("DOMContentLoaded", function() {
 //   }
 //   lastScrollY = window.scrollY;
 // });
+
+
+// Articles
+function redirectToDifferentPage(url) {
+  window.location.href = url;
+}

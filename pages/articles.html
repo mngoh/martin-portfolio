@@ -8,7 +8,8 @@
   <link rel="stylesheet" type="text/css" href="../css/home.css">
     <link rel="stylesheet" type="text/css" href="../css/articles.css">
   <link rel="stylesheet" type="text/css" href="../css/articles.css">
-  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" type="text/css" href="../css/copyright.css">
+  <script src="../js/script.js" defer></script>
   <script src="https://kit.fontawesome.com/b2fb9e30a3.js" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/b2fb9e30a3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
@@ -49,11 +50,8 @@
           experience in the field of AI. Feel feel to suggest other topics you'd be interested in learning
           more about. 
         </p>
-      <div class="article-bot">
-        <div class="article-buttons">
-          <a class="button-articles" data-scroll-to="#about"><b>Articles</b></a>
-          <!-- <a class="button-suggest" data-scroll-to="#contact"><b>Suggest a Topic</b></a> -->
-        </div>
+      <div class="home-bot">
+          <a class="button-articles" data-scroll-to="#Articles"><b>Articles</b></a>
         <div class="socials">
           <li><a href="mailto:mngoh8@gmail.com"><i class="fa-regular fa-envelope fa-2xl" id="mail"></i></a></li>
           <li><a href="https://www.linkedin.com/in/mngoh"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
@@ -63,8 +61,6 @@
     </div>
   </section>
 
-
-
   <!-- Articles -->
   <section id="Articles">
     <div class="gradient-overlay"></div>
@@ -72,33 +68,51 @@
       <h1>Choose an Article Below to Learn More!</h1>
       <form action="/search" method="get" class="article-search">
         <input type="text" name="q" placeholder="Search..." class="text">
-        <input type="submit" value="Search" class="submit">
+        <input type="hidden" name="section" value="Articles">
+        <button type="submit"><i class="fa fa-search"></i></button>
       </form>
-          <div class="article-container">
-        <div class="article-box">
-          <h1> Linear Regression</h1>
+        <div class="article-container">
+          <div class="article-box" onclick="redirectToDifferentPage('page1.html')">
+            <h1>Linear Regression</h1>
         </div>
-        <div class="article-box">
-          <h1> Linear Regression</h1>
+        <div class="article-box" onclick="redirectToDifferentPage('page2.html')">
+            <h1>Linear Regression</h1>
         </div>
-        <div class="article-box">
-          <h1> Linear Regression</h1>
+        <div class="article-box" onclick="redirectToDifferentPage('page3.html')">
+            <h1>Linear Regression</h1>
         </div>
-        <div class="article-box">
-          <h1> Linear Regression</h1>
+        <div class="article-box" onclick="redirectToDifferentPage('page4.html')">
+            <h1>Linear Regression</h1>
         </div>
-        <div class="article-box">
-          <h1> Linear Regression</h1>
+        <div class="article-box" onclick="redirectToDifferentPage('page5.html')">
+            <h1>Linear Regression</h1>
         </div>
-        <div class="article-box">
-          <h1> Linear Regression</h1>
+        <div class="article-box" onclick="redirectToDifferentPage('page6.html')">
+            <h1>Linear Regression</h1>
         </div>
       </div>
       </style>
     </div>
   </section>
-
-  <!-- Footer -->
   
+  <!-- Footer -->
+  <!-- Footer section -->
+  <section id="copyright" class="copyright-background">
+    <div class="footer-container">
+      <!-- <div class="links"><h2>Links</h2></div> -->
+      <ul class="footer-text">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/articles.html">Articles</a></li>
+      </ul>
+      <ul class="footer-links">
+        <li><a href="mailto:mngoh8@gmail.com"><i class="fa-regular fa-envelope fa-2xl" id="mail"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/mngoh"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+        <li><a href="https://github.com/mngoh"><i class="fa-brands fa-github fa-2xl" id="github"></i></a></li>
+        <li><a href="https://www.instagram.com/martinngoh"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+      </ul>
+    </div>
+    <p>&copy; Martin Ngoh 2023. All Rights Reserved.</p>
+</section>
+
 </body>
 </html>
