@@ -34,16 +34,14 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 20rem;
+  height: 15rem;
   width: 80%;
   margin: 0 auto;
 }
-.left-contact{
-  width: 35%;
-}
+
 .left-contact h2{
-  margin-top: 2%;
   text-align: left;
+  width: 30rem;
 }
 
 /* Submission Form */
@@ -51,19 +49,15 @@ form{
   /* background-color: var(--background-color); */
   font-family: var(--primary-font);
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   padding: 2vw 1vw;
-  width: 40%;
+  width: 30%;
   border-radius: var(--border-radius);
-  margin-top: 3%;
   }
   form h3{
-    margin-top: -10%;
     color: var(--text-color);
     margin-bottom: 1%;
-    display: flex;
     font-size: var(--thrid-font-size);
     font-weight: var(--third-weight);
   }
@@ -76,21 +70,10 @@ form{
     font-size: var(--third-font-size);
     font-family: var(--button-font);
     height: var(--height-input);
-    width: 14rem
-  }
-  .right-form, 
-  .left-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 30rem;
-    width: 20rem;
+    width: 25rem
   }
   form textarea{
-    margin-left: 3%;
-    height: 5rem;
-    width: 20rem;
+    height: 6rem;
   }
   #name , #email, #phone{
     padding: 17px;
@@ -124,6 +107,7 @@ form{
   width: 40%;
   transition: .3s;
   margin: 0 auto;
+  margin-top: 4%;
 }
 #submit:hover{
   color: var(--text-color);
@@ -177,9 +161,16 @@ form{
 
 
 /* Media Container For Buttons and Icons*/
-@media (max-width: 850px) {
+@media (max-width: 1206px) {
+  .contact-container{
+    gap: 50px;
+  }
+}
+
+@media (max-width: 1206px) {
   form{
     height: auto;
+    flex-direction: column;
     width: 20rem;
     margin-bottom: -10%;
     margin-top: 2%;
