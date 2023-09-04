@@ -28,7 +28,10 @@
   } 
 
 /* Home */
-.home{
+#Home{
+    height: 10rem;
+} 
+.home-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,10 +51,10 @@
     letter-spacing: .15em; 
     text-align: left;
 }
-.home .bot-text{
+.home-container .bot-text{
     font-size: var(--second-font-size);
 }
-.home .bot-line h1{
+.home-container .bot-line h1{
     font-size: var(--third-font-size);
     margin-bottom: 0%;
     margin-top: 1%;
