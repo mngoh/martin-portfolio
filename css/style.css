@@ -143,10 +143,9 @@ body {
   transition: transform 0.3s ease-out;
   }
   .navbar .name img{
-    height: 3rem;
+    height: 2.8rem;
     width: auto;
     margin-left: 20%;
-    margin-top: 3%;
   }
   .navbar .name::first-letter{
     color: var(--primary-color);
