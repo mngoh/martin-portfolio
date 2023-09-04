@@ -3,6 +3,7 @@
 <head>
   <title>Martin N.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="logo/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="../css/style.css">
   <link rel="stylesheet" type="text/css" href="../css/home.css">
   <link rel="stylesheet" type="text/css" href="../css/articles.css">
@@ -32,12 +33,14 @@
   </div>
 
   <!-- Home -->
-  <section id="Home">
+  <section id="Home" class="section-background">
     <div class="home">
       <div class="home-text">
-        <h1>Welcome.</h1>
-        <h2>Martin Ngoh</h2>
-      </div>
+        <h1>Welcome</h1>
+    </div>
+    <div class="bot-line">
+      <h1 class="bot"> AI <span class="line">|</span> Data Science <span class="line">|</span> Machine Learning </h1>
+  </div> 
       <p class="bot-text">
         These articles were written by Martin Ngoh for the purposes of sharing my knowledge and 
         experience in the field of AI. Feel feel to suggest other topics you'd be interested in learning
@@ -55,7 +58,7 @@
   <section id="Articles">
     <div class="gradient-overlay"></div>
     <div class="articles">
-      <h1>Chose an Article Below to Learn More!</h1>
+      <h1>Choose an Article Below to Learn More!</h1>
       <form action="/search" method="get" class="article-search">
         <input type="text" name="q" placeholder="Search..." class="text">
         <input type="submit" value="Search" class="submit">
