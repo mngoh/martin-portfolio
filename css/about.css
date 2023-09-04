@@ -37,7 +37,11 @@
   height: 40rem;
   gap: 5%;
 }
-
+.card{
+  background-color: var(--box-color);
+  border-radius: var(--border-radius);
+  border-radius: 2rem;
+}
 .card ul li{
   margin-bottom: 2%;
   font-weight: var(--third-weight);
@@ -45,6 +49,9 @@
 .card h2{
   margin-top: 6%;
   font-weight: var(--second-weight);
+}
+.card:hover{
+  scale: 1rem;
 }
 
 /* Right Container */
@@ -54,14 +61,13 @@
 
 /* Right Container */
 .grid-right-about{
-  background-color: var(--box-color);
+  /* background-color: var(--box-color); */
   height: 40rem;
   width: 50rem;
-  display: flex;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 0px; 
+  gap: 20px; 
   border-radius: var(--border-radius);
 }
 
