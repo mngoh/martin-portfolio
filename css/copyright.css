@@ -99,14 +99,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 4%;
+    margin-bottom: 5%;
     margin: 0 auto;
+    margin-top: 5%;
   }
   #copyright, .footer-links, .links{
     font-size: var(--third-font-size-shrink);
   }
   .footer-links li a i{
-    font-size: 1rem;
+    font-size: 2rem;
   }
 }
 
