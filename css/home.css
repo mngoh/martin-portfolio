@@ -100,7 +100,7 @@
     text-decoration: none;
     color: var(--text-color);
     background-color: transparent;
-    transition: .3s;
+    transition: .s;
   }
 
   .socials li a i:hover{
