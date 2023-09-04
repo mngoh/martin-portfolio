@@ -4,32 +4,38 @@
 
 /* Profile */
 .profile {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 2%;
     margin-left: 0%;
+    width: 20;
     }
     .profile-text {
       height: 100%;
-      margin-bottom: 5%;
-  
+    }
+    .profile-intro{
+      width : 40rem;
+      margin-bottom: 1%; 
+    }
+    .intro{
+      width: 100%;
+      font-size: var(--secondary-font-size);
+      font-weight: var(--third-weight);
     }
     .profile .hi, .profile .name{
       font-weight: var(--main-weight);
     }
     .profile-text .hi {
       font-size: var(--home-font-size);
-      margin-bottom: 10%;
       margin-top: 3%;
+      text-align: left;
     }
     .profile-text .name {
       font-size: var(--home-font-size);
       max-width: 100%;
-      margin-bottom: 8%;
-      margin-top: -8%;
       background-color:var(--name-color);
       /* border-radius: var(--border-radius); */
     }
@@ -39,10 +45,10 @@
     .profile-text .bot {
       font-size: var(--secondary-font-size);
       color: var(--text-color);
-      margin-right: 3%;
       overflow: auto;
       white-space: nowrap;
       letter-spacing: .15em; 
+      text-align: left;
       animation: 
         typing 3.5s steps(40, end),
         blink-caret .75s step-end infinite;
@@ -61,14 +67,19 @@
       from, to { border-color: transparent }
       50% { border-color: rgb(255, 255, 255); }
     }
+    .home-buttons{
+      display: flex;
+      gap: 10px;
+    }
 
-    .button-link{
-      padding: 20px;
+    .button-link,
+    .button-hire{
+      padding: 15px;
       background-color: var(--button-color);
       color: var(--button-text-color);
       font-size: var(--button-font-size);
       cursor: pointer;
-      width: 15rem;
+      width: 10rem;
       border-radius: .5rem;
       text-decoration: none;
       text-align: center;
@@ -80,7 +91,8 @@
       cursor: pointer;
       z-index: 1;
     }
-  .button-link:hover{
+  .button-link:hover,
+  .button-hire:hover{
     transform: scale(1.05);
     color: var(--button-text-color-hover);
     background-color: var(--button-color-hover);

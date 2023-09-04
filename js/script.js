@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   const navLinks = document.querySelectorAll("nav ul li a, .profile-text button");
   const learnMoreButton = document.querySelector(".button-link");
+  const hireButton = document.querySelector(".button-hire");
   const aboutButton = document.querySelector(".button-about"); 
   const projectButton = document.querySelector(".button-project");
   const aboutSection = document.getElementById("about");
@@ -40,6 +41,12 @@ document.addEventListener("DOMContentLoaded", function() {
   learnMoreButton.addEventListener("click", function(event) {
     event.preventDefault();
     const targetOffset = aboutSection.offsetTop;
+    const scrollDuration = 2000;
+    smoothScroll(targetOffset, scrollDuration);
+  });
+  hireButton.addEventListener("click", function(event) {
+    event.preventDefault();
+    const targetOffset = contactSection.offsetTop;
     const scrollDuration = 2000;
     smoothScroll(targetOffset, scrollDuration);
   });
