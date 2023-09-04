@@ -45,8 +45,7 @@
     }   
     .profile-intro{
       width: 40rem;
-    }
-    .profile-intro p {
+      margin-top: -1.5%;
     }
     /* Bottom Row */
     .bottom-row{
