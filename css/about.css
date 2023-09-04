@@ -33,21 +33,21 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   height: 40rem;
   gap: 5%;
 }
 .card{
   background-color: var(--box-color);
+  color: var(--text-color);
   border-radius: var(--border-radius);
-  border-radius: 2rem;
 }
 .card ul li{
   margin-bottom: 2%;
   font-weight: var(--third-weight);
 }
 .card h2{
-  margin-top: 6%;
+  margin-top: 1%;
   font-weight: var(--second-weight);
 }
 .card:hover{
@@ -61,50 +61,16 @@
 
 /* Right Container */
 .grid-right-about{
-  /* background-color: var(--box-color); */
   height: 40rem;
   width: 50rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 20px; 
+  gap: 15px; 
   border-radius: var(--border-radius);
 }
 
-/* Add a class for collapsed content */
-.collapsible-content {
-  display: block; 
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
-  border-radius: var(--border-radius);
-  color:var(--text-color);
-  font-size: var(--third-font-size);
-  font-family: var(--primary-font);
-  }
-  .collapsible-content.active {
-    display: block;
-  }
-
-  /* Adjust the button styles as needed */
-  .collapsible-button {
-    font-size: var(--third-font-size);
-    font-family: var(--primary-font);
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    display: none;
-    cursor: pointer;
-    border-radius: var(--border-radius);
-  }
-  
-  /* Expand the content when not collapsed */
-  .collapsible-content:not(.collapsed) {
-    max-height: 1000px; /* Set a large value to allow for expansion */
-  }
-  .text-line {
+.text-line {
     /* border-bottom: 5px solid rgb(255, 255, 255); */
     border-bottom:3px solid var(--text-color);
     max-width: 50%;
@@ -179,56 +145,43 @@
    #about{
     margin-bottom: 60%;
   }
-  /* Container */
   .grid-container-about{
-      max-width: 5%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      margin: 0 auto;
-      margin-bottom: 85%;
+      margin-bottom: 35rem;
   }
   /* Right Container */
   .grid-right-about{
-    background-color: transparent;
-      height: 5rem;
-      width: 20rem;
-      grid-template-columns: none;
-      grid-template-rows: none;
-  }
-  /* Hide the collapse button initially */
-  .collapsible-button {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    max-width: 100%;
-    width: 100%;
-  }
-  .collapsible-content{
-      background-color: var(--background-color);
-      color: var(--text-color);
-  }
-  /* Show the collapsed content when button is toggled */
-  .collapsible-content.collapsed {
-    max-height: 1000px; 
-  }
-  .collapsible-content ul {
-    max-width: 100%;
-    border-radius: var(--border-radius);
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    }
+  .card{
+    width: 15rem;
   }
   /* Profile Picture */
   #profile-pic{
-      height: auto;
-      width: 20rem;
+      height: 20rem;
+      width: auto;
       margin-top: 0%;
   }
-  .grid-right-about .card h2{
-      /* display: none; */
-      background-color: var(--box-color);
-      height: 1.5rem;
-      border-radius: var(--border-radius);
-    }
+    /* Right Container */
+  .grid-right-about{
+    height: 20rem;
+    width: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr); /* 2 rows */
+    gap: 15px; 
+    border-radius: var(--border-radius);
+  }
+  .text-line ul{
+    font-size: var(--second-font-size-shrink);
+  }
   .card.h2:last-child {
     border-bottom: none;
   }
@@ -261,7 +214,6 @@
     margin-left: 45%;
   }
 }
-
 @media(max-width: 983px){
   .skill-list li:after, .skill-list li:before {
     margin-top: 1.5%;
@@ -269,18 +221,12 @@
     margin-left: 54%;
   }
 }
-
 /* Iphone - not max */
 @media (width:375px) {
   #about h1{
     margin-top: -8%;
   }
-  #profile-pic{
-    margin-top: -15%;
-  }
 }
-
-
 @media (width:390px) {
   #about h1{
     margin-top: -6%;
