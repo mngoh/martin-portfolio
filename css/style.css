@@ -17,7 +17,7 @@
   --button-font-size:1.2rem;
 
   /* Font Size - Shrink*/
-  --home-font-size-shrink: 7rem;
+  --home-font-size-shrink: 5rem;
   --primary-font-size-shrink: 2.7rem;
   --secondary-font-size-shrink: 1rem;
   --third-font-size-shrink: calc(var(--secondary-font-size-shrink) / 1.2);

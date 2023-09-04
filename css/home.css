@@ -9,19 +9,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
     margin-top: 2%;
-    margin-left: 0%;
-    width: 20;
     }
-    .profile-text {
-      height: 100%;
-    }
-    .profile-intro{
-      width : 40rem;
-      margin-bottom: 1%; 
+    .profile-text{
+      margin-left: 4%;
     }
     .intro{
-      width: 100%;
       font-size: var(--secondary-font-size);
       font-weight: var(--third-weight);
     }
@@ -30,48 +24,44 @@
     }
     .profile-text .hi {
       font-size: var(--home-font-size);
-      margin-top: 3%;
       text-align: left;
     }
     .profile-text .name {
       font-size: var(--home-font-size);
-      max-width: 100%;
-      background-color:var(--name-color);
-      /* border-radius: var(--border-radius); */
+      letter-spacing: .03em;
     }
     .profile-text span{
       color: var(--primary-color);
     }
-    .profile-text .bot {
-      font-size: var(--secondary-font-size);
-      color: var(--text-color);
-      overflow: auto;
-      white-space: nowrap;
-      letter-spacing: .15em; 
+    .bot-line{
+      width: 40rem;
       text-align: left;
-      animation: 
-        typing 3.5s steps(40, end),
-        blink-caret .75s step-end infinite;
-      margin: 0 auto; 
-    }    
-    .profile-text .bot {
-      font-weight: var(--third-weight);
-    }   
-    /* The typing effect */
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
     }
-    /* The typewriter cursor effect */
-    @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: rgb(255, 255, 255); }
+    .bot-line .bot {
+      font-size: var(--secondary-font-size);
+      letter-spacing: .15em; 
+      font-weight: var(--third-weight);
+      text-align: left;
+    }   
+    .profile-intro{
+      width: 40rem;
+    }
+    .profile-intro p {
+    }
+    /* Bottom Row */
+    .bottom-row{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 200px;
     }
     .home-buttons{
       display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
       gap: 10px;
     }
-
     .button-link,
     .button-hire{
       padding: 15px;
@@ -97,6 +87,20 @@
     color: var(--button-text-color-hover);
     background-color: var(--button-color-hover);
   }
+  .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: calc(var(--secondary-font-size) *.7);
+  }
+  .socials li{
+    list-style-type: none;
+  }
+  .socials li a i{
+    text-decoration: none;
+    color: var(--text-color);
+  }
   
   /* lines for text */
   .line {
@@ -111,158 +115,31 @@
   background-color: var(--background-color);
 }
 
-@media (max-width: 960px) {
-  .profile-text .hi{
-    margin-top: 10%;
-  }
-  .profile-text .name, .profile-text .hi{
-    font-size: 7rem;
+/* Media Container For Profile  */
+@media(max-width:850px){
+  .profile-text .name{
+    margin-top: -27px;
   }
   .profile-text .bot{
-    font-size: 1rem;
+    margin-top: -14px;
   }
 }
 
-/* Media Container For Profile  */
 @media(max-width:850px){
-  .profile{
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    }
     .profile-text .hi{
       font-size: var(--home-font-size-shrink);
-      margin-bottom: 70px;
-      margin: 0 auto;
-      margin-top: 5%;
-      margin-bottom: var(--margin-bottom-home);
     }
     .profile-text .name{
       font-size: var(--home-font-size-shrink);
-      margin-bottom: 100px;
-      margin: 0 auto;
-      /* background-color: transparent; */
-      margin-bottom: var(--margin-bottom-home);
+      margin-top: -4%;
     }
-    .profile-text .bot{
-      font-size: var(--secondary-font-size-shrink);
-      margin-bottom: 50px;
-      max-width: 800px;
-      margin-left: 16%;
-      margin-right: 20%;
-      margin: 0 auto;
-      margin-bottom: var(--margin-bottom-home);
-      /* animation: none; */
-      word-wrap: normal;
-      overflow: auto;
-      white-space: nowrap;
+    .bot-line .bot{
+      font-size: 1rem;
     }
-    .profile .button-link, #resume{
-        padding: 16px;
-        font-size: var(--button-font-size-shrink);
-        width: 12rem;
-        margin: 0 auto;
-        margin-bottom: 10%;
-  }
-}
-
-/* Shrink on text */
-@media(max-width:543px){
-  .profile-text .hi, .profile-text .name{
-    font-size: 3rem;
-  }
-  .profile-text .hi{
-    margin-top: 40%;
-  }
-  .profile-text .bot{
-    font-size: .7rem;
-  }
-  .profile .button-link{
-    font-size: .7rem;
-    height: auto;
-    width: auto;
-  }
-  
-}
-
-@media (max-width:675px) {
-  .profile-text .hi, .profile-text .name{
-    font-size: 5rem;
-  }  
-  .profile-text .hi{
-    margin-top: 20%;
-  }
-  .profile-text .bot{
-    font-size: 1rem;
-  }
-  .profile .button-link{
-    font-size: 1rem;
-    width: 100%;
-    padding: 13px 25px;
-  }
-}
-
-@media (max-width:450px) {
-  .profile-text .hi, .profile-text .name{
-    font-size: 4.2rem;
-  }  
-  .profile-text .hi{
-    margin-top: 40%;
-  }
-  .profile-text .bot{
-    font-size: .9rem;
-  }
-  .profile .button-link{
-    font-size: .7rem;
-    width: 100%;
-  }
-}
-
-@media (max-width:380px) {
-  .profile-text .hi, .profile-text .name{
-    font-size: 3.5rem;
-  }  
-  .profile-text .hi{
-    margin-top: 25%;
-  }
-  .profile-text .bot{
-    font-size: .7rem;
-  }
-  .profile .button-link{
-    font-size: .7rem;
-  }
-}
-
-@media (width:2560px) {
-  .profile-text .hi, .profile-text .name{
-    font-size: 15rem;
-  }  
-  .profile-text .hi{
-    margin-top: 10%;
-  }
-  .profile-text .bot{
-    font-size: 2.7rem;
-  }
-  .profile .button-link{
-    font-size: 1.4rem;
-    width: 100%;
-  }
-}
-
-
-/* Max Height */
-@media (height:700px) {
-  .profile-text .hi, .profile-text .name{
-    font-size: 15rem;
-  }  
-  .profile-text .hi{
-    margin-top: -10%;
-  }
-  .profile-text .bot{
-    font-size: 2.7rem;
-  }
-  .profile .button-link{
-    font-size: 1.4rem;
-    width: 100%;
-  }
+    .profile-intro{
+      width: 28rem;
+    }
+    .profile{
+      gap: 20px
+    }
 }
