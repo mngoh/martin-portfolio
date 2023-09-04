@@ -154,3 +154,65 @@
     text-underline-offset: 8px;
     text-decoration-thickness: 4px;
 }
+
+/* Post */
+/* Background */
+#post.post-background {
+  position: relative;
+  background-image: url('../images/key_back.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: auto;
+  z-index: 1;
+}
+#post.post-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); 
+  z-index: -99999; 
+} 
+.post{
+    margin-top: 100%;
+}
+.post-box{
+    color: var(--background-color);
+    background-color: var(--text-color);
+    height: 70rem;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: .2rem;
+}
+.post-box h1{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+.post-box h2{
+    font-size: 1rem;
+}
+.post-content{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.post-content h1,
+.post-content h2,
+.post-content p{
+    text-align: left;
+    color: var(--background-color);
+}
+.post-content h1{
+    font-size: 2rem;
+    font-weight: 300
+    }
+.post-content p{
+    font-size: 1rem;
+    font-weight: 200
+    }
+
