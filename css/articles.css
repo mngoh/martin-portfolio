@@ -1,10 +1,33 @@
 /* Variables */
 :root{
-    --main-font: 10rem;
-    --second-font: 5rem; 
-    --thrid-font: 3rem;
+    --main-font-size: 7rem;
+    --second-font-size: 2rem; 
+    --thrid-font-size: 2rem;
 
 }
+
+/* HOME Background */
+#Home.section-background {
+    position: relative;
+    background-image: url('../images/key_back.jpg'); 
+    background-image: url('../images/back2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    z-index: 1;
+    height: 100vh;
+  }
+  #Home.section-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    z-index: -2; 
+  } 
+
 
 /* Home */
 .home{
@@ -12,12 +35,24 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 32rem;
+    width: 40rem;
     margin: 0 auto;
+    margin-top: 2%;
+    gap: 20px;
 }
-.home-text{
+.home-text h1 { 
+    font-size: var(--main-font-size);
+    letter-spacing: .15em; 
+}
+.home-text h2 { 
+    font-size: var(--second-font-size);
+    letter-spacing: .15em; 
     text-align: left;
 }
+.home .bot-text{
+    font-size: 2rem;
+}
+
 
 /* Articles */
 .articles {
@@ -31,7 +66,8 @@
     margin-top: 2%;
     }
 .articles h1 {
-    font-size: var(--secondary-font-size);
+    font-size: var(--second-font-size);
+    font-weight: 500;
     }
 .article-search{
     margin-bottom: 2%;
@@ -44,7 +80,7 @@
 }
 .article-search input .submit{
     color: var(--text-color);
-    background-color: var(--white  -color);
+    background-color: var(--text-color);
     cursor: pointer;
 }
 .article-container {
@@ -55,14 +91,12 @@
     grid-row-gap: 50px;
     margin: 0 auto;
 }
-
 .article-box{
     width: 25rem;
     height: 15rem;
     background-color: var(--box-color);
     border-radius: 1rem;
 }
-
 .article-box h1{
     font-size: var(--secondary-font-size);
     font-weight: 600;
