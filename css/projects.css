@@ -23,8 +23,6 @@
 }  */
 /* Projects Section */
 #projects {
-  text-align: center;
-  align-items: center;
   z-index: 0; 
   margin-bottom: 0%;
 }
@@ -34,16 +32,16 @@
 
 /* Grid Container and Image*/
 .grid-container {
-  display: flex;
-  align-items: center;
-  grid-template-columns: repeat(auto-fit , minmax(240px, 1fr));
-  z-index: 0; 
-  justify-content: space-evenly;
-  margin: 0 auto;
-  margin-top: 2%;
- }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    margin: 0 auto;
+    width: 70%;
+    }
+
   .grid-container img {
-    margin-top: -7%;
     background-color: var(--text-color);
     height: 12rem;
     width:100%;
@@ -56,13 +54,11 @@
 .box {
   /* position: relative; */
   color: var(--white-color);
-  padding: 40px;
-  height: 37rem;
-  width: 30rem;
+  padding: 30px;
   border-radius: var(--border-radius);
+  border-radius: 1rem;
   transition: transform 0.3s ease;
   background-color: var(--box-color);
-  margin-bottom: 5%;
   font-size: var(--thrid-font-size);
   display: flex;
   flex-direction: column;
@@ -70,15 +66,13 @@
   z-index: 1;
   }
 
-  /* TRY HOVER - IT WAS BEHIND GRID */
   .box:hover{
-    transform: scale(1.08);
+    transform: scale(1.01);
     background-color: var(--box-color); 
   }
 
   .box h2 {
     margin-top: -15%;
-    margin-bottom: 0%;
     color: var(--text-color);
     font-size: var(--secondary-font-size);
     font-weight: var(--second-weight);
@@ -86,7 +80,6 @@
   .box p {
     text-align: left;
     font-size: var(--third-font-size);
-    margin-top: 1%;
     word-break:normal;
     white-space: normal;
     margin-bottom: 10%;
@@ -94,75 +87,10 @@
   }
   .box h3{
     text-align: left;
-    margin-bottom: 0%;
-    /* margin-top: 4%; */
-  }
-  /* Button */
-  .button-project {
-    margin-bottom: 10%;
-    padding: 20px;
-    background-color: var(--text-color);
-    color: var(--background-color);
-    font-size:var(--button-font-size);
-    cursor: pointer;
-    width: 15rem;
-    border-radius: var(--border-radius);
-    text-decoration: none;
-    text-align: center;
-    font-family: var(--button-font);
-    display: block; 
-    margin: 0 auto; 
-    transition: transform 0.3s ease; 
-  }
-  .button-project:hover{
-    background-color:var(--primary-color);
-    color: var(--text-color);
   }
 
-/* Icon Chevron
-/* Target both buttons with the class 'scrollmenu' */
-.scrollmenu button {
-  position: relative;
-  background-color: transparent;
-  outline: none; 
-  box-shadow: none;
-  cursor: pointer;
-  border: none;
-  background-color: var(--text-color);
-  height: 2.1rem;
-  border-radius: var(--border-radius);
-  z-index: 9999;
-}
-/* Icon */
-button i.fa-2xl {
-  justify-content: flex-start; 
-  align-items: center;
-  display: flex;
-  font-size: var(--thrid-font-size);
-  z-index: 999;
-  color: var(--background-color);
-  }
-  /* Button Hover */
-  button i.fa-2xl:hover {
-  color: var(--text-color);
-  }
-  /* Button Hover */
-  button:hover, i.fa-2xl:hover {
-    background-color: var(--primary-color);
-    color: var(--text-color);
-  }
-/* Target the buttons individually by their aria-label attribute */
-#button-left {
-  display: none;
-  position: absolute;
-  left: 2%;
-}
 
-#button-right{
-  position: absolute;
-  z-index: 9999;
-  right: 2%;
-} 
+
 
 /* Text Line */
 .text-line-project {
@@ -232,15 +160,6 @@ button i.fa-2xl {
   .text-line-project {
     max-width: 20%;
     margin-top: 0%;
-  }
-  /* Button */
-  button i.fa-2xl {
-    font-size: var(--thrid-font-size-shrink);
-    z-index: 999;
-    color: var(--background-color);
-  }
-  #button-right{
-    display: none;
   }
   .box:hover{
     transform: none; 
