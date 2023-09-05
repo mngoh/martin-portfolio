@@ -102,13 +102,11 @@ form{
   border: none;
   outline: none;
   cursor: pointer;
-  width: auto;
   border-radius: var(--border-radius);
   background-color: var(--text-color);
   font-family: var(--button-font);
   height: 2.5rem;
-  width: 100%;
-  margin-right: 40%;
+  width: 10rem;
 }
 #submit:hover{
   color: var(--text-color);
@@ -117,13 +115,19 @@ form{
 
 .contact-links{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   gap: 25px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 2%;
 }
 
 /* Resume */
+.resume{
+  margin-right: 10%;
+}
 .resume li{
   list-style: none;
 }
