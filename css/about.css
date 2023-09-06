@@ -19,28 +19,28 @@
   z-index: -1; 
 }  */
   
-/* Profile Picture */
-#profile-pic{
+/* Profile Picture 
+/* #profile-pic{
   height: 40rem;
   width:auto;
-  /* background-color: var(--box-color); */
+  /* background-color: var(--box-color); 
   white-space: none;
   border-radius: var(--border-radius);
-}
+} */
 
 /* Container */
 .grid-container-about{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: left;
-  height: 40rem;
-  gap: 5%;
+  align-items: center;
+  gap: 1%;
 }
 .card{
   background-color: var(--box-color);
   color: var(--text-color);
   border-radius: var(--border-radius);
+  height: 20rem;
 }
 .card ul li{
   margin-bottom: 2%;
@@ -53,6 +53,9 @@
 .card:hover{
   scale: 1rem;
 }
+#card-about ul li{
+  width: 70%;
+}
 
 /* Right Container */
 .grid-container-about ul{
@@ -61,13 +64,32 @@
 
 /* Right Container */
 .grid-right-about{
-  height: 40rem;
-  width: 50rem;
+  height: 28rem;
+  width: 60%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px; 
   border-radius: var(--border-radius);
+  margin-bottom:10%;
+}
+
+#about-summary{
+  width: var(--width-profile);
+  margin: 0 auto;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.grid-profile{
+  width: 30%;
+  background-color: var(--box-color);
+  border-radius: 2rem;
+  height: 20rem;
+}
+.grid-profile p {
+  font-size: 2rem;
+  max-width: 90%
 }
 
 .text-line {
