@@ -28,6 +28,10 @@
   border-radius: var(--border-radius);
 } */
 
+#about h2{
+  margin-bottom: 2%;
+}
+
 /* Container */
 .grid-container-about{
   display: flex;
@@ -40,14 +44,13 @@
   background-color: var(--box-color);
   color: var(--text-color);
   border-radius: var(--border-radius);
-  height: 20rem;
 }
 .card ul li{
   margin-bottom: 2%;
   font-weight: var(--third-weight);
 }
 .card h2{
-  margin-top: 1%;
+  margin-top: .5%;
   font-weight: var(--second-weight);
 }
 .card:hover{
@@ -59,26 +62,29 @@
 
 /* Right Container */
 .grid-container-about ul{
-  max-width: 90%;
+  max-width: 100%;
 }
 
 /* Right Container */
 .grid-right-about{
   height: 28rem;
-  width: 60%;
+  width: 50%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 20px; 
+  gap: 15px; 
   border-radius: var(--border-radius);
   margin-bottom:10%;
 }
 
-#about-summary{
-  width: var(--width-profile);
+.about-summary{
+  width: 45%;
   margin: 0 auto;
   margin-bottom: 2%;
-  text-align: center;
+  text-align: left;
+}
+.about-summary h2{
+  text-align: left;
 }
 
 .grid-profile{
@@ -166,6 +172,7 @@
    /* Main Container */
    #about{
     margin-bottom: 60%;
+    width: 55%;
   }
   /* Container */
   .grid-container-about{
