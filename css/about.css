@@ -172,31 +172,22 @@
    /* Main Container */
    #about{
     margin-bottom: 60%;
-    width: 55%;
   }
   /* Container */
   .grid-container-about{
-      max-width: 5%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      margin: 0 auto;
-      margin-bottom: 120%;
+      margin-bottom: 100%;
   }
   /* Right Container */
   .grid-right-about{
     background-color: transparent;
       height: 5rem;
-      width: 20rem;
-      grid-template-columns: none;
-      grid-template-rows: none;
-  }
-  /* Profile Picture */
-  #profile-pic{
-      height: auto;
-      width: 20rem;
-      margin-top: 0%;
+      width: 70%;
+      grid-template-columns: 2fr;
+      grid-template-rows: 2fr;
+      margin: 0 auto;
   }
   .grid-right-about .card h2{
       /* display: none; */
@@ -207,6 +198,9 @@
   }
   .skill-list li{
     margin-right: 20% ;
+  }
+  .about-summary{
+    width: 70%;
   }
 }
 
@@ -247,6 +241,9 @@
   }
   #profile-pic{
     margin-top: -15%;
+  }
+  #about{
+    margin-bottom: 100%;
   }
 }
 
