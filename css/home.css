@@ -196,14 +196,18 @@
     margin-top: 5%;
   }
   .home-buttons{
-    gap: 10px
+    gap: 12px
   }
   .home-buttons a {
-    font-size: .64rem;
-    width: 5.5rem;
+    font-size: .74rem;
+    width: .6rem;
   }
   .socials li a {
     font-size: .8rem;
+  }
+  .button-link, 
+  .button-hire{
+    width: auto;
   }
 }
 
