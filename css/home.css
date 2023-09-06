@@ -24,6 +24,7 @@
     }
     .profile .hi, .profile .name{
       font-weight: var(--main-weight);
+      margin-left: -1%;
     }
     .profile-text .hi {
       font-size: var(--home-font-size);
