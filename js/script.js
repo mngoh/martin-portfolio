@@ -108,3 +108,10 @@ document.addEventListener("DOMContentLoaded", function() {
 function redirectToDifferentPage(url) {
   window.location.href = url;
 }
+
+// Form Submit 
+document.getElementById("myForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+  this.action = "../pages/thankyou.html"; 
+  this.submit();
+});
