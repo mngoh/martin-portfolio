@@ -50,9 +50,6 @@
       font-weight: var(--third-weight);
       text-align: left;
     }   
-    .profile-intro{
-      /* margin-top: -1.5%; */
-    }
     /* Bottom Row */
     .bottom-row{
       width: 100%;
@@ -92,7 +89,8 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
-    font-size: calc(var(--secondary-font-size) *.7);
+    font-size: calc(var(--secondary-font-size) *.75);
+    margin-right: 10%;
   }
   .socials li{
     list-style-type: none;
@@ -129,7 +127,6 @@
   #about-summary{
     text-align: center;
     width: 20rem;
-  
   }
     .profile-text .hi{
       font-size: var(--home-font-size-shrink);
@@ -151,7 +148,11 @@
       margin-bottom: 5%;
     }
     .home-buttons a {
-      font-size: .9rem;
+      font-size: 1rem;
+      width: 10rem;
+    }
+    .bottom-row{
+      gap: 20px;
     }
 }
 @media(max-width:650px){
@@ -178,6 +179,10 @@
   .socials li a {
     font-size: .9rem;
   }
+  .bottom-row{
+    flex-direction: column;
+    gap: 30px;
+  }
 }
 
 @media(max-width:475px){
@@ -203,17 +208,18 @@
     margin-bottom: 5%;
   }
   .bottom-row{
-    margin-top: 10%;
+    margin-top: 6%;
   }
   .home-buttons{
     gap: 12px;
+    margin-bottom: 5%;
   }
   .home-buttons a {
-    font-size: .84rem;
-    width: 7rem;
+    font-size: .9rem;
+    width: 8rem;
   }
   .socials li a {
-    font-size: .8rem;
+    font-size: .9rem;
   }
 }
 

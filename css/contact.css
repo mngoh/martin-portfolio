@@ -153,7 +153,7 @@ form{
 @media (max-width: 850px) {
   form{
     height: auto;
-    width: 20rem;
+    width: 25rem;
     margin-bottom: -10%;
     margin-top: 2%;
     font-size: var(--third-font-size-shrink);
