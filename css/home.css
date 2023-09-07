@@ -191,6 +191,9 @@
   .bot-line .bot{
     font-size: 1rem;
   }
+  .profile-text{
+    margin-bottom: 5%;
+  }
   .profile{
     margin-top: 25%;
     width: 22.5rem;
@@ -200,13 +203,13 @@
     margin-bottom: 5%;
   }
   .bottom-row{
-    margin-top: 7%;
+    margin-top: 10%;
   }
   .home-buttons{
-    gap: 12px
+    gap: 12px;
   }
   .home-buttons a {
-    font-size: .74rem;
+    font-size: .84rem;
     width: 7rem;
   }
   .socials li a {
