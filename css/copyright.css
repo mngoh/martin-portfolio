@@ -39,6 +39,8 @@
   align-items: center;
   margin-top: -3%;
   margin-bottom: -10%;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* Footer Links */
@@ -121,5 +123,8 @@
   /* Add some spacing between the stacked items */
   .footer-links li a i {
     margin-bottom: 20px;
+  }
+  #copyright, .footer-links, .links{
+    font-size: var(--third-font-size-shrink);
   }
 }
