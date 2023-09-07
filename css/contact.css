@@ -196,6 +196,6 @@ form{
     font-family: var(--button-font);
   }
   #download-resume{
-    font-size: var(--secondary-font-size-shrink);
+    font-size: 1.6rem;
   }
 }
