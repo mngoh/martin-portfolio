@@ -35,10 +35,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    grid-column-gap: 40px;
+    grid-column-gap: 20px;
     grid-row-gap: 20px;
     margin: 0 auto;
-    width: 75%;
+    width: 85%;
     margin-top: 3%;
     margin-bottom: 5%;
     }
@@ -116,11 +116,12 @@
  /* Grid Container */
  .grid-container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-left: -140%; */
     margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
   .grid-container img{
     margin-bottom: 0%;
@@ -168,6 +169,14 @@
   #projects, h1{
     margin-top: 0px;
   }
+  /* Grid Container */
+ .grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 }
 @media(max-width: 450px){
   #projects, h1{
