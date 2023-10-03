@@ -225,7 +225,7 @@
   .grid-right-about{
     background-color: transparent;
       height: 5rem;
-      width: 85%;
+      width: 100%;
       grid-template-columns: 2fr;
       grid-template-rows: 2fr;
       margin: 0 auto;
@@ -240,7 +240,8 @@
     height: 100%;
   }
   .car-img{
-    width: 85%;
+    width: 100%;
+    height: 35rem;
   }
   .card.h2:last-child {
     border-bottom: none;
