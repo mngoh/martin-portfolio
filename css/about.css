@@ -31,6 +31,8 @@
   align-items: center;
   height: 40rem;
   width: 85%;
+  margin: 0 auto;
+  gap: 10%;
 }
 .card{
   background-color: var(--box-color);
@@ -61,17 +63,6 @@
   grid-template-rows: repeat(2, 1fr);
   gap: 25px; 
   border-radius: var(--border-radius);
-}
-.grid-left-about{
-  height: 100%;
-  width: 70rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#about-image{
-  height: 100%;
-  width:  50%%;
 }
 .about-summary{
   width: 45%;
@@ -254,4 +245,55 @@
     margin-top: -6%;
   }
  
+}
+
+/* Slideshow container */
+.grid-left-about {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+.car-img{
+  display: none;
+  margin: 0 auto;
+}
+.car-img img{
+  width: auto;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--text-color);
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  margin-right: 5%;
+}
+.prev:hover, .next:hover {
+  transform: scale(1.2);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
