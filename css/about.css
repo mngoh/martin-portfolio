@@ -38,6 +38,7 @@
   background-color: var(--box-color);
   color: var(--text-color);
   border-radius: var(--border-radius);
+  font-size: var(--third-font-size);
 }
 .card ul li{
   margin-bottom: 2%;
@@ -51,7 +52,7 @@
   scale: 1rem;
 }
 #card-about ul li{
-  width: 70%;
+  width: 80%;
 }
 
 /* Right Container */
@@ -122,17 +123,6 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
-}
-
-.grid-profile{
-  width: 30%;
-  background-color: var(--box-color);
-  border-radius: 2rem;
-  height: 20rem;
-}
-.grid-profile p {
-  font-size: 2rem;
-  max-width: 90%
 }
 
 .text-line {
@@ -213,6 +203,7 @@
   .card{
     border-radius: 1rem;
     width: 100%;
+    font-size: var(--third-font-size-shrink);
   }
   /* Container */
   .grid-container-about{
