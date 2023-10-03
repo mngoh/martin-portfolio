@@ -219,7 +219,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 100%;
+      margin-bottom: 80%;
   }
   /* Right Container */
   .grid-right-about{
@@ -240,7 +240,7 @@
     height: 100%;
   }
   .car-img{
-    width: 100%;
+    width: 90%;
     height: 35rem;
   }
   .card.h2:last-child {
@@ -291,9 +291,6 @@
   #about h1{
     margin-top: -8%;
   }
-  #about{
-    margin-bottom: 150%;
-  }
 }
 
 
@@ -303,3 +300,9 @@
   }
 }
 
+
+@media (width:650px) {
+  .grid-container-about{
+    margin-bottom: 150%;
+  }
+}
