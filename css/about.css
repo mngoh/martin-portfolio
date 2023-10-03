@@ -1,13 +1,13 @@
 /* Background */
 /* #about.section-background {
   position: relative;
-  background-image: url('../images/key_back.jpg'); 
+  background-image: url('../images/gtown.jpeg'); 
   background-size: cover;
   background-position: center;
   height: 100%;
   width: auto;
   z-index: 1;
-}
+} 
 #about.section-background::before {
   content: "";
   position: absolute;
@@ -15,9 +15,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); 
+  background-color: rgba(0, 0, 0, 0.86); 
   z-index: -1; 
-}  */
+}    */
   
 #about h2{
   margin-bottom: 2%;
@@ -29,7 +29,8 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1%;
+  height: 40rem;
+  width: 85%;
 }
 .card{
   background-color: var(--box-color);
@@ -52,22 +53,26 @@
 }
 
 /* Right Container */
-.grid-container-about ul{
-  max-width: 100%;
-}
-
-/* Right Container */
 .grid-right-about{
-  height: 28rem;
-  width: 50%;
+  height: 100%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 25px; 
   border-radius: var(--border-radius);
-  margin-bottom:10%;
 }
-
+.grid-left-about{
+  height: 100%;
+  width: 70rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about-image{
+  height: 100%;
+  width:  50%%;
+}
 .about-summary{
   width: 45%;
   margin: 0 auto;
@@ -164,6 +169,10 @@
    #about{
     margin-bottom: 60%;
   }
+  .card{
+    border-radius: 1rem;
+    width: 100%;
+  }
   /* Container */
   .grid-container-about{
       display: flex;
@@ -175,7 +184,7 @@
   .grid-right-about{
     background-color: transparent;
       height: 5rem;
-      width: 70%;
+      width: 85%;
       grid-template-columns: 2fr;
       grid-template-rows: 2fr;
       margin: 0 auto;
