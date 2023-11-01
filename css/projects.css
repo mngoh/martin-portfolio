@@ -56,7 +56,6 @@
   color: var(--white-color);
   padding: 30px;
   border-radius: var(--border-radius);
-  transition: transform 0.3s ease;
   background-color: var(--box-color);
   font-size: var(--thrid-font-size);
   display: flex;
@@ -103,7 +102,7 @@
   color: var(--text-color);
   font-weight: bold;
   font-size: 60px;
-  transition: 5s ease;
+  transition: .3s;
   border-radius: 0 3px 3px 0;
   user-select: none;
   z-index: 9999;
@@ -114,11 +113,11 @@
   border-radius: 3px 0 0 3px;
 }
 .prevp:hover, .nextp:hover {
-  transform: scale(1.01);
+  transform: scale(1.05);
 }
 .fade {
   animation-name: fade;
-  animation-duration: 5s;
+  animation-duration: 1s;
 }
 @keyframes fade {
   from {opacity: .5}
@@ -143,7 +142,7 @@
   background-color: var(--primary-color);
 }
 .dots.active{
-  background-color: var(--primary-color);
+  background-color: var(--resume-color);
 }
 
 /* Media Container For Projects Section */

@@ -14,7 +14,7 @@
   --primary-font-size: 3.7rem;
   --secondary-font-size: 1.6rem;
   --third-font-size: 1.3rem;
-  --button-font-size:1.2rem;
+  --button-font-size:1.4rem;
 
   /* Font Size - Shrink*/
   --home-font-size-shrink: 5rem;
@@ -32,8 +32,7 @@
   --box-color: rgb(21, 21, 145, .4);
   /* --name-color: rgb(255, 255, 2555, .7); */
   --resume-color:rgb(21, 233, 106);
-  --resume-color: var(--primary-color);
-  /* --primary-color:rgb(21, 233, 106); */
+  /* --resume-color: var(--primary-color); */
 
   /* Buttons */
   --button-color: #ffffff;
