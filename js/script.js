@@ -110,32 +110,57 @@ function redirectToDifferentPage(url) {
 }
 
 
-// About Caruosel 
+// About Carousel
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+// Next/previous controls for About Carousel
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
-// Thumbnail image controls
+// Thumbnail image controls for About Carousel
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
+// Show About Carousel Slides
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("car-img");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  slides[slideIndex - 1].style.display = "block";
+}
+
+// Project Section Carousel
+let projIndex = 1;
+showProjectSlides(projIndex);
+
+// Next/previous controls for Project Section Carousel
+function plusProjectSlides(n) {
+  showProjectSlides((projIndex += n));
+}
+
+// Show Project Section Carousel Slides
+function showProjectSlides(n) {
+  let i;
+  let projs = document.getElementsByClassName("box");
+  if (n > projs.length) {
+    projIndex = 1;
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  if (n < 1) {
+    projIndex = projs.length;
+  }
+  for (i = 0; i < projs.length; i++) {
+    projs[i].style.display = "none";
+  }
+  projs[projIndex - 1].style.display = "block";
 }
