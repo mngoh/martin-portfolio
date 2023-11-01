@@ -25,11 +25,11 @@
 
   /* Colors */
   --primary-color: #282859;
-  --primary-color: rgba(61, 61, 231, 0.4);
+  --primary-color: rgba(61, 61, 231, 0.7);
   --secondary-color: #F4F3EE;
   --text-color: #ffffff;
   --background-color: #000000;
-  --box-color: rgb(21, 21, 145, .32);
+  --box-color: rgb(21, 21, 145, .4);
   /* --name-color: rgb(255, 255, 2555, .7); */
   --resume-color:rgb(21, 233, 106);
   --resume-color: var(--primary-color);
@@ -48,7 +48,7 @@
 
   /* Other */
   --max-width: 650px;
-  --border-radius: .2rem;
+  --border-radius: .8rem;
 }
 
 
