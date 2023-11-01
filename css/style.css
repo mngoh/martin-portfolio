@@ -31,8 +31,8 @@
   --background-color: #000000;
   --box-color: rgb(21, 21, 145, .4);
   /* --name-color: rgb(255, 255, 2555, .7); */
-  --resume-color:rgb(21, 233, 106);
-  /* --resume-color: var(--primary-color); */
+  /* --resume-color:rgb(21, 233, 106); */
+  --resume-color: var(--primary-color);
 
   /* Buttons */
   --button-color: #ffffff;
