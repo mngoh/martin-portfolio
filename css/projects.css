@@ -142,7 +142,7 @@
   background-color: var(--primary-color);
 }
 .dots.active{
-  background-color: hotpink;
+  background-color: var(--primary-color);
 }
 
 /* Media Container For Projects Section */
