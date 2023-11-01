@@ -34,26 +34,62 @@
   gap: 10%;
   margin: 0 auto;
 }
-.card{
+.card {
   background-color: var(--box-color);
   color: var(--text-color);
   border-radius: var(--border-radius);
   font-size: var(--third-font-size);
+  perspective: 1000px;
+  cursor: pointer;
+  position: relative;
 }
-.card ul li{
+.card ul li {
   margin-bottom: 2%;
   font-weight: var(--third-weight);
 }
-.card h2{
+
+.card h2 {
   margin-top: .5%;
   font-weight: var(--second-weight);
 }
-.card:hover{
-  scale: 1rem;
+
+.card {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
-#card-about ul li{
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+#card-about ul li {
   width: 80%;
 }
+
+/* Position the front and back side */
+.card .card-front, .card .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+}
+
+/* Style the back side */
+.card .card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
 
 /* Right Container */
 .grid-right-about{
