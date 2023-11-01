@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 /* Background */
-/* #projects.section-background {
+#projects.section-background {
   position: relative;
   background-image: url('../images/key_back.jpg'); 
   background-size: cover;
@@ -20,7 +20,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9); 
   z-index: -99999; 
-}  */
+} 
 /* Projects Section */
 #projects {
   z-index: 0; 
@@ -63,7 +63,7 @@
   justify-content: space-evenly;
   z-index: 1;
   width: 100%;
-  height: 100%;
+  height: 40rem;
   }
   .box:hover{
     /* transform: scale(1.01); */
@@ -125,6 +125,9 @@
 }
 
 /* The circles or bullets and indicators */
+.project-dots{
+  margin-top: -3%;
+}
 .dots {
   cursor: pointer;
   height: 16px;
@@ -135,14 +138,13 @@
   display: inline-block;
   transition: background-color 0.5s ease;
 }
-
 .enable, .dots:hover {
   background-color: var(--primary-color);
 }
-
 .dots.active{
-  background-color: var(--primary-color);
+  background-color: hotpink;
 }
+
 /* Media Container For Projects Section */
 @media (max-width: 850px) {
   /* Projects Section */

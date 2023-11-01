@@ -122,12 +122,14 @@ function plusSlides(n) {
 // Thumbnail image controls for About Carousel
 function currentSlide(n) {
   showSlides((slideIndex = n));
+  updateDots(n); // Call the function to update the dots
 }
 
 // Show About Carousel Slides
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("car-img");
+  let dots = document.getElementsByClassName("dots"); // Use the correct class name
   if (n > slides.length) {
     slideIndex = 1;
   }
@@ -137,8 +139,21 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active"); // Remove the "active" class from all dots
+  }
   slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add("active"); // Add the "active" class to the selected dot
 }
+
+// Function to update dots
+function updateDots(n) {
+  showSlides((slideIndex = n));
+}
+
+
+
+
 
 // Project Section Carousel
 let projIndex = 1;
@@ -149,7 +164,7 @@ function plusProjectSlides(n) {
   showProjectSlides((projIndex += n));
 }
 
-// Thumbnail image controls for About Carousel
+// Thumbnail image controls for Project Section Carousel
 function currentSlide(n) {
   showProjectSlides((projIndex = n));
 }
@@ -158,15 +173,20 @@ function currentSlide(n) {
 function showProjectSlides(n) {
   let i;
   let projs = document.getElementsByClassName("box");
-  var circles = document.getElementsByClassName("dots");
-  if (n > projs.length) {projIndex = 1;}
-  if (n < 1) {projIndex = projs.length;}
+  let circles = document.getElementsByClassName("dots"); // Use the correct class name
+  if (n > projs.length) {
+    projIndex = 1;
+  }
+  if (n < 1) {
+    projIndex = projs.length;
+  }
   for (i = 0; i < projs.length; i++) {
     projs[i].style.display = "none";
   }
   for (i = 0; i < circles.length; i++) {
-    circles[i].className = circles[i].className.replace(" enable", "");
+    circles[i].classList.remove("active"); // Remove the "active" class from all dots
   }
   projs[projIndex - 1].style.display = "block";
-  circles[slidePosition-1].className += " enable";
+  circles[projIndex - 1].classList.add("active"); // Add the "active" class to the selected dot
 }
+
