@@ -39,9 +39,8 @@
     grid-row-gap: 20px;
     margin: 0 auto;
     width: 85%;
-    margin-top: 3%;
     margin-bottom: 5%;
-    height: 40rem;
+    height: 3%;
     }
 
   .grid-container img {
@@ -176,7 +175,6 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 65%;
   margin-bottom: 50%;
 }
 }
@@ -185,17 +183,11 @@
   #projects{
     margin-top:80%;
   }
-  .projects-summary{
-    margin-bottom: 70%;
-  }
 }
 
 @media(max-width: 540px){
   #projects{
     margin-top:120%;
-  }
-  .projects-summary{
-    margin-bottom: 80%;
   }
 }
 
@@ -203,18 +195,6 @@
 @media(max-width: 455px){
   #projects{
     margin-top:150%;
-  }
-  .projects-summary{
-    margin-bottom: 80%;
-  }
-}
-
-@media(max-width: 440px){
-  #projects{
-    margin-top:150%;
-  }
-  .projects-summary{
-    margin-bottom: 110%;
   }
 }
 
