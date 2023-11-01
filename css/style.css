@@ -12,8 +12,8 @@
   /* Font Size */
   --home-font-size: 6.8rem;
   --primary-font-size: 3.7rem;
-  --secondary-font-size: 1.5rem;
-  --third-font-size: calc(var(--secondary-font-size) / 1.3);
+  --secondary-font-size: 1.6rem;
+  --third-font-size: 1.3rem;
   --button-font-size:1.2rem;
 
   /* Font Size - Shrink*/
