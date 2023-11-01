@@ -239,6 +239,7 @@
   }
   /* Container */
   .grid-container-about{
+    margin-top: 30%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -246,12 +247,13 @@
   }
   /* Right Container */
   .grid-right-about{
-    background-color: transparent;
       height: 5rem;
       width: 100%;
       grid-template-columns: 2fr;
       grid-template-rows: 2fr;
       margin: 0 auto;
+      row-gap: 20rem;
+      margin-top: 9rem;
   }
   .grid-right-about .card h2{
       /* display: none; */
