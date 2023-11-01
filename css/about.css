@@ -35,42 +35,29 @@
   margin: 0 auto;
 }
 .card {
-  background-color: var(--box-color);
-  color: var(--text-color);
-  border-radius: var(--border-radius);
-  font-size: var(--third-font-size);
   perspective: 1000px;
   cursor: pointer;
   position: relative;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  background-color: var(--box-color);
+  border-radius: var(--border-radius);
 }
 .card ul li {
   margin-bottom: 2%;
   font-weight: var(--third-weight);
+  width: 90%;
 }
-
 .card h2 {
   margin-top: .5%;
   font-weight: var(--second-weight);
 }
-
-.card {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-.card:hover {
-  transform: rotateY(180deg);
-}
-
-#card-about ul li {
-  width: 80%;
-}
-
 /* Position the front and back side */
-.card .card-front, .card .card-back {
+.card-front, .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -82,12 +69,20 @@
   justify-content: center;
   border-radius: var(--border-radius);
 }
-
 /* Style the back side */
 .card .card-back {
-  background-color: dodgerblue;
+  background-color: var(--box-color);
   color: white;
   transform: rotateY(180deg);
+}
+.card.flipped {
+  transform: rotateY(180deg);
+}
+.icon .fas{
+  font-size: 3rem;
+}
+.card-front h2{
+  font-size: 2rem;
 }
 
 
@@ -164,7 +159,7 @@
 
 .text-line {
     /* border-bottom: 5px solid rgb(255, 255, 255); */
-    border-bottom:3px solid var(--text-color);
+    border-bottom:3px solid white;
     max-width: 50%;
     margin: 0 auto;
     margin-top: -2%;

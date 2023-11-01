@@ -190,3 +190,9 @@ function showProjectSlides(n) {
   circles[projIndex - 1].classList.add("active"); // Add the "active" class to the selected dot
 }
 
+
+// Card Click 
+function flipCard(cardId) {
+  const card = document.getElementById(cardId);
+  card.classList.toggle('flipped');
+}
