@@ -149,18 +149,24 @@ function plusProjectSlides(n) {
   showProjectSlides((projIndex += n));
 }
 
+// Thumbnail image controls for About Carousel
+function currentSlide(n) {
+  showProjectSlides((projIndex = n));
+}
+
 // Show Project Section Carousel Slides
 function showProjectSlides(n) {
   let i;
   let projs = document.getElementsByClassName("box");
-  if (n > projs.length) {
-    projIndex = 1;
-  }
-  if (n < 1) {
-    projIndex = projs.length;
-  }
+  var circles = document.getElementsByClassName("dots");
+  if (n > projs.length) {projIndex = 1;}
+  if (n < 1) {projIndex = projs.length;}
   for (i = 0; i < projs.length; i++) {
     projs[i].style.display = "none";
   }
+  for (i = 0; i < circles.length; i++) {
+    circles[i].className = circles[i].className.replace(" enable", "");
+  }
   projs[projIndex - 1].style.display = "block";
+  circles[slidePosition-1].className += " enable";
 }
