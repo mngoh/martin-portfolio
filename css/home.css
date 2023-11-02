@@ -222,7 +222,8 @@
     margin-bottom: 5%;
   }
   .home-buttons a {
-    font-size: .84rem;
+    font-size: 1rem;
+    font-weight: 900;
     width: 10rem;
   }
   .socials li a {
