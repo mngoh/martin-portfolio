@@ -196,3 +196,16 @@ function flipCard(cardId) {
   const card = document.getElementById(cardId);
   card.classList.toggle('flipped');
 }
+
+
+// Card Toggle
+function toggleCollapsible(cardId) {
+  const card = document.getElementById(cardId);
+  const cardBack = card.querySelector('.card-back');
+
+  if (cardBack.style.display === 'block') {
+    cardBack.style.display = 'none';
+  } else {
+    cardBack.style.display = 'block';
+  }
+}

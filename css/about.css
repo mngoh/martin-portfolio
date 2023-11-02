@@ -18,6 +18,7 @@
   background-color: rgba(0, 0, 0, 0.86); 
   z-index: -1; 
 }    */
+
   
 #about h2{
   margin-bottom: 2%;
@@ -47,14 +48,27 @@
   background-color: var(--box-color);
   border-radius: var(--border-radius);
 }
-.card ul li {
-  margin-bottom: 2%;
+.card-back ul {
   font-weight: var(--third-weight);
+  font-size: var(--third-font-size);
   width: 90%;
+}
+.card-back ul {
+  text-align: left;
+  margin-top: 2%;
+  word-spacing: 1px;
+}
+.card-back ul li {
+  margin-bottom: 5px;
 }
 .card h2 {
   margin-top: .5%;
   font-weight: var(--second-weight);
+}
+.card-back h2 {
+  position: absolute;
+  top: 0;
+  margin-top: 2%;
 }
 /* Position the front and back side */
 .card-front, .card-back {
@@ -68,6 +82,7 @@
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius);
+  background-color: var(--box-colorcolor);
 }
 /* Style the back side */
 .card .card-back {
@@ -169,7 +184,6 @@
 .skill-list li {
   position: relative;
   padding-left: 1px;
-  margin-bottom: 10px;
 }
 .skill-list li:before {
   content: "";
@@ -236,6 +250,9 @@
     border-radius: 1rem;
     width: 100%;
     font-size: var(--third-font-size-shrink);
+  }
+  .card-front, .card-back{
+    background-color: white;
   }
   /* Container */
   .grid-container-about{
