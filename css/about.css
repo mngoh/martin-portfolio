@@ -250,6 +250,9 @@
    #about{
     margin-bottom: 65%;
   }
+  .card-back h2{
+    display: none;
+  }
   .card{
     border-radius: 1rem;
     width: 100%;
