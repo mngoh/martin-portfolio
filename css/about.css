@@ -98,7 +98,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-bottom: 80%;
+      height: 60rem;
+  }
+  .text{
+    margin-bottom: 3%;
   }
   .about-summary{
     width: 80%;
@@ -107,7 +110,7 @@
 }
 
 /* Iphone - not max */
-@media (width:375px) {
+/* @media (width:375px) {
   #about p{
     margin-top: -8%;
   }
@@ -123,4 +126,4 @@
   .grid-container-about{
     margin-bottom: 150%;
   }
-}
+} */
