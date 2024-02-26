@@ -220,7 +220,6 @@ body {
   /* Nav Bar Styling */
   .toggle-button{
     display: flex;
-    top: .7rem;
   }
   .navbar-links{
     display: none;
@@ -232,8 +231,10 @@ body {
     /* background-color: rgba(0, 0, 0, 1); */
     z-index: 99999;
   }
-  .navbar .name{
-    font-size: 2rem;
+  .navbar .nav-name{
+    font-size: 1.5rem;
+    margin-left: 5%;
+    padding: 0px;
   }
   .navbar-links ul {
     width: 100%;
