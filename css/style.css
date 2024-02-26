@@ -132,7 +132,6 @@ body {
   align-items: center;
   font-family: var(--button-font);
   font-family: var(--primary-font);
-  /* background-color: rgba(0, 0, 0); */
   color: var(--text-color);
   width: 100%;
   z-index: 999;
@@ -144,12 +143,7 @@ body {
   /* font-size: 1.5rem; */
   transition: transform 0.3s ease-out;
   }
-  .navbar .name img{
-    height: 2.8rem;
-    width: auto;
-    margin-left: 20%;
-  }
-  .navbar .name::first-letter{
+  .navbar .nav-name::first-letter{
     color: var(--primary-color);
   }
  .navbar-links ul {
@@ -160,7 +154,7 @@ body {
   .navbar-links li {
     list-style: none;
   }
-  .navbar-links li a {
+  .navbar-links li a, .name {
     color:var(--text-color);
     text-decoration: none;
     font-size: 25px;
@@ -168,11 +162,15 @@ body {
     display: block;
     transition: .3s;
   }
+  .nav-name{
+    padding: 5rem;
+    font-size: 35px;
+  }
   .navbar-links a:hover,
   .navbar-links a.active {
     text-decoration: none; 
     display: block;
-    color: var(--box-color);
+    color: var(--primary-color);
   }
   /* Add a class to hide the nav bar when scrolling down */
   .navbar--hidden {
