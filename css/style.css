@@ -30,6 +30,7 @@
   --text-color: #ffffff;
   --background-color: #000000;
   --box-color: rgb(21, 21, 145, .4);
+  --box-color: rgba(62, 62, 71, 0.4);
   /* --name-color: rgb(255, 255, 2555, .7); */
   /* --resume-color:rgb(21, 233, 106); */
   --resume-color: var(--primary-color);
@@ -56,6 +57,7 @@
   position: relative;
   background-image: url('../images/key_back.jpg'); 
   background-image: url('../images/back2.jpg'); 
+  background-image: url('../images/zion.jpeg'); 
   background-size: cover;
   background-position: center;
   width: auto;
@@ -69,7 +71,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); 
+  background-color: rgba(0, 0, 0, 0.8); 
   z-index: -2; 
 } 
 
@@ -130,7 +132,7 @@ body {
   align-items: center;
   font-family: var(--button-font);
   font-family: var(--primary-font);
-  background-color: rgba(0, 0, 0);
+  /* background-color: rgba(0, 0, 0); */
   color: var(--text-color);
   width: 100%;
   z-index: 999;
@@ -170,7 +172,7 @@ body {
   .navbar-links a.active {
     text-decoration: none; 
     display: block;
-    color: var(--primary-color);
+    color: var(--box-color);
   }
   /* Add a class to hide the nav bar when scrolling down */
   .navbar--hidden {
