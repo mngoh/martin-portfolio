@@ -41,6 +41,10 @@
   text-align: center;
 }
 
+.icons-about i{
+  margin-left: 1%;
+  margin-right: 1%;
+}
 /* Container */
 .grid-container-about{
   display: flex;
@@ -71,6 +75,11 @@
 .icons-about{
   margin-top: 3%;
 }
+
+/* .text h2{
+  text-decoration: underline;
+  text-underline-offset: 20%;
+} */
 
 .about-summary{
   width: 45%;
