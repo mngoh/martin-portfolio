@@ -37,7 +37,7 @@
     flex-direction: column;
     margin: 0 auto;
     position: relative;
-    width: 60%;
+    width: 55%;
     gap: 20px;
     }
 
@@ -144,7 +144,7 @@
 }
 
 /* Media Container For Projects Section */
-@media (max-width: 850px) {
+@media (max-width: 8px) {
   /* Projects Section */
   #projects {
     text-align: center;
