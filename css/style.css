@@ -129,11 +129,12 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: var(--button-font);
+  font-family: var(--primary-font);
   background-color: rgba(0, 0, 0);
   color: var(--text-color);
   width: 100%;
   z-index: 999;
-  height: 50px;
+  height: 60px;
   width: 100%;
   top: 0;
   left: 0;
