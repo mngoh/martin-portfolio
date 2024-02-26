@@ -114,3 +114,13 @@
     margin: 10px auto;
    }
    }
+
+   /* Media Container For Projects Section */
+@media (max-width: 500px) {
+  .box h2{
+    font-size: 1.3rem;
+  }
+  .box p{
+    font-size: 1rem;
+  }
+  }
