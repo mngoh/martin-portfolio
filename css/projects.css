@@ -4,7 +4,7 @@
 /* Background */
 #projects.section-background {
   position: relative;
-  background-image: url('../images/key_back.jpg'); 
+  background-image: url('../images/psg.jpg'); 
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -66,7 +66,7 @@
   .box-text{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 60%;
 
   }
   .box h2 {
