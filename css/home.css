@@ -1,6 +1,6 @@
 :root{
-  --width-profile: 80%;
-  --width-profile-shrink: 80%;
+  --width-profile: 60%;
+  --width-profile-shrink: 60%;
 }
 /* Profile */
 .profile {
@@ -15,7 +15,7 @@
     margin: 0 auto;
     }
     .profile-text{
-      width: 60%;
+      width: 100%;
     }
     .intro{
       font-size: var(--secondary-font-size);
