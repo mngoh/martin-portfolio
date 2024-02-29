@@ -11,8 +11,8 @@
     justify-content: center;
     gap: 15px;
     width: var(--width-profile);
-    margin: 0 auto;
     height: 100%;
+    margin: 0 auto;
     }
     .profile-text{
       width: 100%;
@@ -23,15 +23,10 @@
     }
     .profile .hi, .profile .name{
       font-weight: var(--main-weight);
-      margin-left: -1%;
+      letter-spacing: .3rem;
     }
     .profile-text .hi {
       font-size: var(--home-font-size);
-      text-align: left;
-    }
-    .profile-text .name {
-      font-size: var(--home-font-size);
-      letter-spacing: .03em;
       text-align: left;
     }
     .profile-text span{
@@ -109,8 +104,6 @@
   .line {
     font-weight: 700;
     color: var(--primary-color);
-    margin-left: .5%;
-    margin-right: .5%;
   }
 
 /* Change Navbar Background on Click */
@@ -120,16 +113,11 @@
 
 /* Media Container For Profile  */
 @media(max-width:850px){
-  #about-summary{
-    text-align: center;
-    width: 20rem;
-  }
     .profile-text .hi{
       font-size: var(--home-font-size-shrink);
     }
     .profile-text .name{
       font-size: var(--home-font-size-shrink);
-      margin-top: -25px;
     }
     .bot-line .bot{
       font-size: 1rem;
@@ -137,11 +125,9 @@
     .profile{
       width: var(--width-profile-shrink);
       gap: 0px;
-      margin-top: 10%;
     }
     .profile p{ 
       font-size: 1.3rem;
-      margin-bottom: 5%;
     }
     .home-buttons a {
       font-size: 1rem;
@@ -155,23 +141,21 @@
   .profile-text .name, 
   .profile-text .hi{
     font-size: 3.9rem;
+    text-align: center;
   }
   .bot-line .bot{
     font-size: 1rem;
+    text-align: center;
   }
   .profile{
-    margin-top: 10%;
     width: 26rem;
   }
   .profile p{ 
     font-size: 1rem;
-    margin-bottom: 5%;
   }
   .home-buttons a {
     font-size: 1rem;
     width: 10rem;
-    margin-left: 0%;
-    margin-right: 0%;
   }
   .socials{
     margin-right: 0%;
@@ -192,42 +176,17 @@
   .profile-text .hi{
     font-size: 3.3rem;
   }
-  .profile-text .hi{
-    margin-bottom: 8%;
-  }
   .bot-line .bot{
     font-size: 1rem;
   }
-  .profile-text{
-    margin-bottom: 5%;
-  }
-  .profile{
-    margin-top: 25%;
-    width: 22.5rem;
-  }
-  .profile p{ 
-    font-size: .8rem;
-    margin-bottom: 5%;
-  }
-  .bottom-row{
-    margin-top: 6%;
-  }
-  .home-buttons{
-    gap: 12px;
-    margin-bottom: 5%;
-  }
-  .home-buttons a {
-    font-size: 1rem;
-    font-weight: 900;
-    width: 10rem;
-  }
-  .socials li a {
-    font-size: .9rem;
+  .home-buttons a{
+    padding: 10px;
+    width: 140px;
   }
 }
 
 @media(max-width:375px){
   .profile-text .hi{
-    margin-top: -10%;
+    font-size: 1rem;
   }
   }
