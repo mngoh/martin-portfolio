@@ -1,6 +1,6 @@
 :root{
-  --width-profile: 60%;
-  --width-profile-shrink: 60%;
+  --width-profile: 65%;
+  --width-profile-shrink: 65%;
 }
 /* Profile */
 .profile {
@@ -115,13 +115,10 @@
 /* Media Container For Profile  */
 @media(max-width:850px){
     .profile-text .hi{
-      font-size: var(--home-font-size-shrink);
-    }
-    .profile-text .name{
-      font-size: var(--home-font-size-shrink);
+      font-size: 4rem;
     }
     .bot-line .bot{
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
     .profile{
       width: var(--width-profile-shrink);
@@ -131,7 +128,7 @@
       font-size: 1.3rem;
     }
     .home-buttons a {
-      font-size: 1rem;
+      font-size: 1.1rem;
       width: 10rem;
     }
     .bottom-row{
@@ -158,31 +155,47 @@
   .home-buttons a {
     font-size: 1rem;
     width: 10rem;
-    gap: 2px;
+  }
+  .home-buttons{
+    gap: 10px;
   }
   .socials{
     margin-right: 0%;
-    gap: 2px;
+    gap: 10px;
   }
   .socials li a {
     font-size: 1rem;
   }
   .bottom-row{
-    gap: 30px;
+    gap: 15px;
   }
 }
 
 @media(max-width:475px){
+  .profile{
+    gap: 5px;
+  }
   .profile-text .name, 
   .profile-text .hi{
-    font-size: 3.3rem;
+    font-size: 2.9rem;
   }
   .bot-line .bot{
-    font-size: 1rem;
+    font-size: .9rem;
+  }
+  .socials{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
   }
   .home-buttons a{
     padding: 10px;
-    width: 140px;
+    width: 120px;
+  }
+  .bottom-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
   }
 }
 
