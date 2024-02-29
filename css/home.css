@@ -1,6 +1,6 @@
 :root{
-  --width-profile: 70%;
-  --width-profile-shrink: 70%;
+  --width-profile: 50%;
+  --width-profile-shrink: 50%;
 }
 /* Profile */
 .profile {
@@ -46,9 +46,8 @@
     .bottom-row{
       width: 100%;
       display: flex;
-      justify-content: space-between;
       align-items: left;
-      gap: 10px;
+      gap: 130px;
     }
     .home-buttons{
       display: flex;
