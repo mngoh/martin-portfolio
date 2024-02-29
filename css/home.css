@@ -1,6 +1,6 @@
 :root{
-  --width-profile: 45rem;
-  --width-profile-shrink: 35rem;
+  --width-profile: 80%;
+  --width-profile-shrink: 80%;
 }
 /* Profile */
 .profile {
