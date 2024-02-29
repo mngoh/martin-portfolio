@@ -125,8 +125,9 @@
       font-size: 1.1rem;
     }
     .profile{
-      width: var(--width-profile-shrink);
-      gap: 0px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
     }
     .profile p{ 
       font-size: 1.3rem;
