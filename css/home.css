@@ -15,7 +15,7 @@
     margin: 0 auto;
     }
     .profile-text{
-      width: 100%;
+      width: 60%;
     }
     .intro{
       font-size: var(--secondary-font-size);
