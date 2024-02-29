@@ -1,6 +1,6 @@
 :root{
-  --width-profile: 50%;
-  --width-profile-shrink: 50%;
+  --width-profile: 55%;
+  --width-profile-shrink: 80%;
 }
 /* Profile */
 .profile {
@@ -26,7 +26,7 @@
       letter-spacing: .3rem;
     }
     .profile-text .hi {
-      font-size: 7rem;
+      font-size: 6.5rem;
       text-align: left;
     }
     .profile-text span{
@@ -125,9 +125,9 @@
       font-size: 1.1rem;
     }
     .profile{
-      margin: 0 auto;
       justify-content: center;
       align-items: center;
+      width: var(--width-profile-shrink);
     }
     .profile p{ 
       font-size: 1.3rem;
@@ -149,10 +149,6 @@
   .bot-line .bot{
     font-size: 1rem;
     text-align: left;
-  }
-  .profile{
-    width: 26rem;
-    margin: 0 auto;
   }
   .profile p{ 
     font-size: 1rem;
@@ -178,7 +174,7 @@
 
 @media(max-width:475px){
   .profile{
-    gap: 5px;
+    gap: 2px;
     margin: 0 auto;
   }
   .profile-text .name, 
