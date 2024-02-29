@@ -141,14 +141,15 @@
   .profile-text .name, 
   .profile-text .hi{
     font-size: 3.9rem;
-    text-align: center;
+    text-align: left;
   }
   .bot-line .bot{
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
   }
   .profile{
     width: 26rem;
+    margin: 0 auto;
   }
   .profile p{ 
     font-size: 1rem;
@@ -164,9 +165,6 @@
     font-size: 1rem;
   }
   .bottom-row{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 30px;
   }
 }
