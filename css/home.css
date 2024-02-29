@@ -140,7 +140,7 @@
 @media(max-width:650px){
   .profile-text .name, 
   .profile-text .hi{
-    font-size: 3.9rem;
+    font-size: 3.6rem;
     text-align: left;
   }
   .bot-line .bot{
