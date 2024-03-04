@@ -100,7 +100,7 @@
     width: 100%;
    }
    .grid-container{
-    width: 80%;
+    width: 90%;
    }
    .box-text{
     width: 100%;
@@ -108,10 +108,12 @@
    .prj-img{
     display: none;
    }
-   #projects h2{
+   .box-text h2{
     width: 80%;
     text-align: center;
     margin: 10px auto;
+    font-size: 1.8rem;
+    font-weight: 600;
    }
    }
 

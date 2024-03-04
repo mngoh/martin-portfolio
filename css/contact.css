@@ -153,11 +153,10 @@ form{
 @media (max-width: 850px) {
   form{
     height: auto;
-    width: 85%;
+    width: 90%;
     margin-bottom: -10%;
     margin-top: 2%;
     font-size: var(--third-font-size-shrink);
-
   }
   form h3{
     margin-top: -2%;
@@ -166,10 +165,11 @@ form{
   #contact h2{
     max-width: 80%;
     margin: 0 auto;
-    font-size: var(--secondary-font-size-shrink);
+    font-size: 1.3rem;
   }
   #submit {
-    font-size: var(--button-font-shrink);
+    font-size: 1.4rem;
+    font-weight: 600;
     color: var(--background-color);
     align-items: center;
   }
@@ -177,7 +177,7 @@ form{
     color: var(--text-color);
     font-weight: var(--third-weight);
     margin-bottom: 1%;
-    font-size: var(--thrid-font-size);
+    font-size: 1.2rem;
   }
   form input, form textarea{
     height: 2rem;

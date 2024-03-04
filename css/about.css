@@ -50,7 +50,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 85%;
   gap: 1%;
   margin: 40px auto;
   height: 17rem;
@@ -104,26 +104,19 @@
     margin-bottom: 3%;
   }
   .about-summary{
-    width: 80%;
+    width: 90%;
     margin-bottom: 6%;
   }
-}
-
-/* Iphone - not max */
-/* @media (width:375px) {
-  #about p{
-    margin-top: -8%;
-  }
-}
-
-@media (width:390px) {
-  #about p{
-    margin-top: -6%;
-  }
-}
-
-@media (width:650px) {
   .grid-container-about{
-    margin-bottom: 150%;
+  width: 90%; 
   }
-} */
+  .text h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  .text p{
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+
+}
