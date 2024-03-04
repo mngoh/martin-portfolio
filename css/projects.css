@@ -116,13 +116,3 @@
     font-weight: 600;
    }
    }
-
-   /* Media Container For Projects Section */
-@media (max-width: 500px) {
-  .box h2{
-    font-size: var(--secondary-font-size-shrink);
-  }
-  .box p{
-    font-size: var(--third-font-size-shrink);
-  }
-  }
