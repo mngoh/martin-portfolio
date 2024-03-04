@@ -119,10 +119,10 @@
 }
 @media(max-width:850px){
     .profile-text .hi{
-      font-size: 4rem;
+      font-size: 6.5rem;
     }
     .bot-line .bot{
-      font-size: 1.1rem;
+      font-size: 2.3rem;
     }
     .profile{
       justify-content: center;
@@ -134,27 +134,34 @@
     }
     .home-buttons a {
       font-size: 1.1rem;
-      width: 10rem;
+      width: 13rem;
+      padding: 20px;
     }
     .bottom-row{
-      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      align-items: left;
+      gap: 40px;
+    }
+    .socials{
+      width: 40%;
+      justify-content: space-between;
+    }
+    .socials i {
+      font-size: 3rem;
     }
 }
 @media(max-width:650px){
   .profile-text .name, 
   .profile-text .hi{
-    font-size: 3.6rem;
     text-align: left;
   }
   .bot-line .bot{
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: left;
   }
-  .profile p{ 
-    font-size: 1rem;
-  }
   .home-buttons a {
-    font-size: .9rem;
     width: 10rem;
   }
   .home-buttons{
@@ -164,45 +171,32 @@
     margin-right: 0%;
     gap: 10px;
   }
-  .socials li a {
-    font-size: 1rem;
-  }
-  .bottom-row{
-    gap: 15px;
-  }
 }
 
 @media(max-width:475px){
   .profile{
+    width: 92%;
     gap: 2px;
     margin: 0 auto;
   }
   .profile-text .name, 
   .profile-text .hi{
-    font-size: 3.2rem;
+    font-size: 5.5rem;
   }
   .bot-line .bot{
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .socials{
     display: flex;
     justify-content: left;
-    gap: 20px;
+    gap: 25px;
+  }
+  .socials i{
+    font-size: 2.5rem;
   }
   .home-buttons a{
-    padding: 10px;
-    width: 130px;
+    padding: 15px;
+    width: 150px;
   }
-  .bottom-row{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-  }
+ 
 }
-
-@media(max-width:375px){
-  .profile-text .hi{
-    font-size: 1rem;
-  }
-  }
