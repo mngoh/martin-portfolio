@@ -1,28 +1,24 @@
 :root{
     --main-color: rgb(92, 183, 199);
 }
-/* Nav Bar */
-.navbar{
-    background-color:  rgb(92, 90, 90);
-}
 
 /* Headder Blog */
 .blog_head{
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
-    height: 10%;
     color: white;
+    background-color: black;
     padding: 10px;
     align-items: center;
     display: flex;
     justify-content: center;
+    height: 20%;
 }
 .blog_head h1 {
     font-size: 4rem;
-    font-family: var(--primary-font);
+    font-family: 'Verdana', Times, serif;
     font-weight: 600;
     text-transform:uppercase;
-    letter-spacing: 4px;
 }
 
 /* Blogs */
