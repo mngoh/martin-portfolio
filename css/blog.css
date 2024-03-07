@@ -1,12 +1,44 @@
 :root{
     --main-color: rgb(92, 183, 199);
+    --main-color: #6394d9;
+    --back-color: rgb(255, 255, 255);
+    --font-color: black;    
+    --font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* Nav Bar */
+.navbar-blog{
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    color: black;
+    border-bottom: 1px solid #ccc; /* Adjust the color and thickness as needed */
+}
+.navbar-links li a{
+    color: black;
+    font-family: var(--font-family);
 }
 
+/* Search Bar */
+
+
+
+
+/* Headder */
+.head-name{
+    background-color: var(--back-color);
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
 
 /* HOME Background */
 #Home.section-background {
     position: relative;
-    background-image: url('../images/back2.jpg');
+    /* background-image: url('../images/back2.jpg'); */
     background-size: cover;
     background-position: center;
     width: auto;
@@ -20,7 +52,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); 
+    background-color:var(--back-color); 
     z-index: -2; 
   } 
 
@@ -28,7 +60,6 @@
 .blog_head{
     width: 100%;
     margin: 0 auto;
-    color: white;
     background-color: black;
     padding: 10px;
     align-items: center;
@@ -38,7 +69,7 @@
 }
 .blog_head h1 {
     font-size: 4rem;
-    font-family: 'Verdana', Times, serif;
+    font-family: var(--font-family);
     font-weight: 600;
     text-transform:uppercase;
 }
@@ -55,7 +86,7 @@
     gap: 10px;
 }
 .box{
-    background-color: var(--box-color);
+    /* background-color: var(--box-color); */
     height: 100%;
     width: 100%;
     margin: 0 auto;
@@ -67,7 +98,8 @@
     text-align: left;
     width: 90%;
     margin: 20px auto;
-    color: var(--main-color);
+    color: var(--font-color);
+    font-family: var(--font-family);
 }
 .box p{
     width: 90%;
@@ -75,6 +107,8 @@
     margin: 20px auto;
     text-align: left;
     font-size: 1.2rem;
+    color: var(--font-color);
+    font-family: var(--font-family);
 }
 .box img{
     height: 40%;
