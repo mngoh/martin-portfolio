@@ -5,13 +5,17 @@
     --font-color: black;    
     --font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 /* Nav Bar */
 .navbar-blog{
+    top: 0;
+    position: sticky;
+    z-index: 999;
     display: flex;
     justify-content: space-around;
-    background-color: white;
+    background-color: var(--back-color);
     color: black;
-    border-bottom: 1px solid #ccc; /* Adjust the color and thickness as needed */
+    border-bottom: 1px solid #ccc; 
 }
 .navbar-links li a{
     color: black;
@@ -31,16 +35,22 @@
 }
 
 /* HOME Background */
-#Home.section-background {
+#Home.section-background, 
+#Ai.section-background, 
+#Soccer.section-background, 
+#Travel.section-background {
     position: relative;
-    /* background-image: url('../images/back2.jpg'); */
+    background-image: none;
     background-size: cover;
     background-position: center;
     width: auto;
     z-index: 1;
-    height: 100vh;
+    height: 70vh;
   }
-  #Home.section-background::before {
+  #Home.section-background::before,
+  #Ai.section-background::before, 
+  #Soccer.section-background::before, 
+  #Travel.section-background::before {
     content: "";
     position: absolute;
     top: 0;
@@ -72,32 +82,37 @@
 /* Blogs */
 .blogs{
     /* background-color: var(--primary-color); */
-    height: 65%;
-    width: 85%;
-    margin: 60px auto;
-    display: flex;
-    justify-content: space-evenly;
+    height: 100%;
+    width: 90%;
+    display: flex; 
+    justify-content: space-around;
     align-items: center;
+    margin: 0px auto;
     gap: 10px;
 }
 .box{
     /* background-color: var(--box-color); */
     height: 100%;
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
+}
+.box:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.3s ease; 
 }
 .box h2{
     font-size: 1.7rem;
     margin-top: 2%;
     font-weight: 400;
     text-align: left;
-    width: 90%;
+    width: 80%;
     margin: 20px auto;
     color: var(--font-color);
     font-family: var(--font-family);
 }
 .box p{
-    width: 90%;
+    width: 80%;
     font-weight: 200;
     margin: 20px auto;
     text-align: left;
@@ -107,8 +122,8 @@
 }
 .box img{
     height: 40%;
-    width: 90%;
+    width: 80%;
     display: flex;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
 }
