@@ -33,6 +33,9 @@
     text-align: center;
     padding: 20px;
 }
+.head-name:hover{
+    cursor: pointer;
+}
 
 /* HOME Background */
 #Home.section-background, 
