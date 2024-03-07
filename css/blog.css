@@ -18,11 +18,6 @@
     font-family: var(--font-family);
 }
 
-/* Search Bar */
-
-
-
-
 /* Headder */
 .head-name{
     background-color: var(--back-color);
@@ -32,7 +27,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 30px;
+    padding: 20px;
 }
 
 /* HOME Background */
