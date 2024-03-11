@@ -103,125 +103,72 @@ document.addEventListener("DOMContentLoaded", function() {
 //   lastScrollY = window.scrollY;
 // });
 
-
-// Articles
-function redirectToDifferentPage(url) {
-  window.location.href = url;
-}
-
-
-// About Carousel
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls for About Carousel
-function plusSlides(n) {
-  showSlides((slideIndex += n));
-}
-
-// Thumbnail image controls for About Carousel
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-  updateDots(n); // Call the function to update the dots
-}
-
-// Show About Carousel Slides
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("car-img");
-  let dots = document.getElementsByClassName("dots"); // Use the correct class name
-  if (n > slides.length) {
-    slideIndex = 1;
-  }
-  if (n < 1) {
-    slideIndex = slides.length;
-  }
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].classList.remove("active"); // Remove the "active" class from all dots
-  }
-  slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].classList.add("active"); // Add the "active" class to the selected dot
-}
-
-// Function to update dots
-function updateDots(n) {
-  showSlides((slideIndex = n));
-}
-
-
-
-
-
-// Project Section Carousel
-let projIndex = 1;
-showProjectSlides(projIndex);
-
-// Next/previous controls for Project Section Carousel
-function plusProjectSlides(n) {
-  showProjectSlides((projIndex += n));
-}
-
-// Thumbnail image controls for Project Section Carousel
-function currentSlide(n) {
-  showProjectSlides((projIndex = n));
-}
-
-// Show Project Section Carousel Slides
-function showProjectSlides(n) {
-  let i;
-  let projs = document.getElementsByClassName("box");
-  let circles = document.getElementsByClassName("dots"); // Use the correct class name
-  if (n > projs.length) {
-    projIndex = 1;
-  }
-  if (n < 1) {
-    projIndex = projs.length;
-  }
-  for (i = 0; i < projs.length; i++) {
-    projs[i].style.display = "none";
-  }
-  for (i = 0; i < circles.length; i++) {
-    circles[i].classList.remove("active"); // Remove the "active" class from all dots
-  }
-  projs[projIndex - 1].style.display = "block";
-  circles[projIndex - 1].classList.add("active"); // Add the "active" class to the selected dot
-}
-
-
-// Card Click 
-function flipCard(cardId) {
-  const card = document.getElementById(cardId);
-  card.classList.toggle('flipped');
-}
-
-
-// Card Toggle
-function toggleCollapsible(cardId) {
-  const card = document.getElementById(cardId);
-  const cardBack = card.querySelector('.card-back');
-
-  if (cardBack.style.display === 'block') {
-    cardBack.style.display = 'none';
-  } else {
-    cardBack.style.display = 'block';
-  }
-}
-
-
-// on scroll 
 document.addEventListener("DOMContentLoaded", function() {
-    var boxes = document.querySelectorAll('.box','.about-summary');
-    function checkScroll() {
-        boxes.forEach(function(box) {
-            var boxPosition = box.getBoundingClientRect().top;
-            var screenHeight = window.innerHeight;
-            if (boxPosition < screenHeight) {
-                box.classList.add('animate__fadeInUp');
-            }
-        });
-    }
-    window.addEventListener('scroll', checkScroll);
+  var aboutSummaries = document.querySelectorAll('.profile, .grid-container-about, .contact-container, .about-summary, .grid-container');
+
+  function addAnimation() {
+      aboutSummaries.forEach(function(summary) {
+          var summaryPosition = summary.getBoundingClientRect().top;
+          var screenHeight = window.innerHeight;
+
+          // Check if the entire summary is within the viewport
+          if (summaryPosition < screenHeight && summaryPosition > 0) {
+              summary.classList.add('animate__fadeInUp');
+          }
+      });
+  }
+
+  // Function to handle animation when a navbar link is clicked
+  function handleNavbarLinkClick(event) {
+      event.preventDefault(); // Prevent default anchor behavior
+
+      var targetId = this.getAttribute('href'); // Get target section ID from href attribute
+      var targetSection = document.querySelector(targetId); // Find the target section
+
+      if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to the target section
+          addAnimation(); // Add animation class to the target section
+      }
+  }
+
+  // Attach event listeners to navbar links
+  var navLinks = document.querySelectorAll('.navbar-links li');
+  navLinks.forEach(function(link) {
+      link.addEventListener('click', handleNavbarLinkClick);
+  });
+
+  // Trigger the animation on page load as well
+  addAnimation();
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Select all sections with the class 'section-background' on the page
+  var sections = document.querySelectorAll('.section-background');
+
+  // Function to handle automatic scrolling
+  function scrollToNextSection() {
+      // Find the index of the current active section
+      var currentSectionIndex = -1;
+      sections.forEach(function(section, index) {
+          var rect = section.getBoundingClientRect();
+          if (rect.top >= 0 && rect.top < window.innerHeight) {
+              currentSectionIndex = index;
+          }
+      });
+
+      // Scroll to the next section if available
+      if (currentSectionIndex < sections.length - 1) {
+          var nextSection = sections[currentSectionIndex + 1];
+          nextSection.scrollIntoView({ behavior: 'smooth' });
+      }
+  }
+
+  // Attach scroll event listener to trigger automatic scrolling
+  window.addEventListener('scroll', function() {
+      // Trigger scrolling when the user scrolls past 80% of the current section
+      if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight * 0.8) {
+          scrollToNextSection();
+      }
+  });
 });
