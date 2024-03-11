@@ -209,3 +209,19 @@ function toggleCollapsible(cardId) {
     cardBack.style.display = 'block';
   }
 }
+
+
+// on scroll 
+document.addEventListener("DOMContentLoaded", function() {
+    var boxes = document.querySelectorAll('.box');
+    function checkScroll() {
+        boxes.forEach(function(box) {
+            var boxPosition = box.getBoundingClientRect().top;
+            var screenHeight = window.innerHeight;
+            if (boxPosition < screenHeight) {
+                box.classList.add('animate__fadeInUp');
+            }
+        });
+    }
+    window.addEventListener('scroll', checkScroll);
+});
