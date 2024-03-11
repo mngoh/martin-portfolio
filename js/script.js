@@ -213,7 +213,7 @@ function toggleCollapsible(cardId) {
 
 // on scroll 
 document.addEventListener("DOMContentLoaded", function() {
-    var boxes = document.querySelectorAll('.box');
+    var boxes = document.querySelectorAll('.box','.about-summary');
     function checkScroll() {
         boxes.forEach(function(box) {
             var boxPosition = box.getBoundingClientRect().top;
