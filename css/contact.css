@@ -14,7 +14,7 @@
   background-image: url('../images/zion.jpeg'); 
   background-size: cover;
   background-position: center;
-  height: 100%;
+  height: 75vh;
   width: auto;
   z-index: 1;
 }
@@ -47,7 +47,7 @@ form{
   padding: 5vw 4vw;
   width: 40%;
   border-radius: var(--border-radius);
-  margin-top: 3%;
+  margin-top: 5%;
   }
   form h3{
     margin-top: -10%;
