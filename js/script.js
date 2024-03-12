@@ -141,34 +141,3 @@ document.addEventListener("DOMContentLoaded", function() {
   addAnimation();
 });
 
-
-document.addEventListener("DOMContentLoaded", function() {
-  // Select all sections with the class 'section-background' on the page
-  var sections = document.querySelectorAll('.section-background');
-
-  // Function to handle automatic scrolling
-  function scrollToNextSection() {
-      // Find the index of the current active section
-      var currentSectionIndex = -1;
-      sections.forEach(function(section, index) {
-          var rect = section.getBoundingClientRect();
-          if (rect.top >= 0 && rect.top < window.innerHeight) {
-              currentSectionIndex = index;
-          }
-      });
-
-      // Scroll to the next section if available
-      if (currentSectionIndex < sections.length - 1) {
-          var nextSection = sections[currentSectionIndex + 1];
-          nextSection.scrollIntoView({ behavior: 'smooth' });
-      }
-  }
-
-  // Attach scroll event listener to trigger automatic scrolling
-  window.addEventListener('scroll', function() {
-      // Trigger scrolling when the user scrolls past 80% of the current section
-      if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight * 0.8) {
-          scrollToNextSection();
-      }
-  });
-});
