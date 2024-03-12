@@ -103,41 +103,4 @@ document.addEventListener("DOMContentLoaded", function() {
 //   lastScrollY = window.scrollY;
 // });
 
-document.addEventListener("DOMContentLoaded", function() {
-  var aboutSummaries = document.querySelectorAll('.profile, .grid-container-about, .contact-container, .about-summary, .grid-container');
-
-  function addAnimation() {
-      aboutSummaries.forEach(function(summary) {
-          var summaryPosition = summary.getBoundingClientRect().top;
-          var screenHeight = window.innerHeight;
-
-          // Check if the entire summary is within the viewport
-          if (summaryPosition < screenHeight && summaryPosition > 0) {
-              summary.classList.add('animate__fadeInUp');
-          }
-      });
-  }
-
-  // Function to handle animation when a navbar link is clicked
-  function handleNavbarLinkClick(event) {
-      event.preventDefault(); // Prevent default anchor behavior
-
-      var targetId = this.getAttribute('href'); // Get target section ID from href attribute
-      var targetSection = document.querySelector(targetId); // Find the target section
-
-      if (targetSection) {
-          targetSection.scrollIntoView({ behavior: 'smooth' }); // Smoothly scroll to the target section
-          addAnimation(); // Add animation class to the target section
-      }
-  }
-
-  // Attach event listeners to navbar links
-  var navLinks = document.querySelectorAll('.navbar-links li');
-  navLinks.forEach(function(link) {
-      link.addEventListener('click', handleNavbarLinkClick);
-  });
-
-  // Trigger the animation on page load as well
-  addAnimation();
-});
 
