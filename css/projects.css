@@ -31,6 +31,10 @@
   margin-bottom: 1.5%;
 }
 
+.learn-more{
+  font-size: .8rem;
+}
+
 /* Grid Container and Image*/
 .grid-container {
     /* display: grid;
@@ -68,7 +72,7 @@
   flex-direction: column;
   justify-content: space-between;
   z-index: 1;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
   width: 80%;
 }
   .box-text{
@@ -106,6 +110,9 @@
   }
 /* Media Container For Projects Section */
 @media (max-width: 850px) {
+  .box-text img {
+    display: none;
+   }
    .box{
     display: flex;
     flex-direction: column;
