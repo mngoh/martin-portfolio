@@ -7,7 +7,7 @@
   background-image: url('../images/psg.jpg'); 
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 100%;
   width: auto;
   z-index: 1;
 }

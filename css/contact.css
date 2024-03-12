@@ -14,7 +14,7 @@
   background-image: url('../images/zion.jpeg'); 
   background-size: cover;
   background-position: center;
-  height: 75vh;
+  height: 100%;
   width: auto;
   z-index: 1;
 }
