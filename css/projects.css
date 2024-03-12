@@ -30,6 +30,10 @@
 #projects h2{
   margin-bottom: 1.5%;
 }
+.proj-head{
+  width: 80%;
+  margin: 0 auto;
+}
 
 .learn-more{
   font-size: .8rem;
