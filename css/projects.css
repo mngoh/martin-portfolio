@@ -46,9 +46,6 @@
   margin-bottom: 0%;
   width: 100%;
 }
-#projects h2{
-  margin-bottom: 1.5%;
-}
 .proj-head{
   width: 80%;
   margin: 0 auto;
@@ -66,7 +63,7 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px; */
     display: flex;
-    margin: 100px auto;
+    margin: 10px auto;
     position: relative;
     width: 90%;
     gap: 10px;
