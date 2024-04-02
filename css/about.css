@@ -114,6 +114,7 @@
       flex-direction: column;
       align-items: center;
       height: 60rem;
+      transform: translateX(-70%);
   }
   .text{
     margin-bottom: 3%;
