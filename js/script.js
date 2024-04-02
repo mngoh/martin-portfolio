@@ -114,5 +114,16 @@ const observer = new IntersectionObserver((entries) => {
     }
   })
 });
-const hiddenElements = document.querySelectorAll('.profile');
-hiddenElements.forEach((el) => observer.observe(el));
+
+// Profile
+const hiddenProfile = document.querySelectorAll('.profile');
+hiddenProfile.forEach((el) => observer.observe(el));
+// About
+const hiddenAbout = document.querySelectorAll('.about');
+hiddenAbout.forEach((el) => observer.observe(el));
+// Project
+const hiddenProject = document.querySelectorAll('.projects');
+hiddenProject.forEach((el) => observer.observe(el));
+// Contact
+const hiddenContact = document.querySelectorAll('.contact-container');
+hiddenContact.forEach((el) => observer.observe(el));

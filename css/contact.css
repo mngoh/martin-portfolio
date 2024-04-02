@@ -29,6 +29,13 @@
   z-index: -99999; 
 } 
 
+.contact-container{
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateY(-100%);
+  transition: all 1.5s;
+}
+
 /* Contact Container */
 .contact-container{
   display: flex;
