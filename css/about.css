@@ -136,3 +136,10 @@
   }
 
 }
+
+@media (max-width: 450px) {
+  /* Container */
+  .about{
+      height: 30rem;
+  }
+}
