@@ -15,7 +15,6 @@
   transform: translateX(0);
 }
 
-
 /* Profile */
 .profile {
     /* position: relative; */
@@ -30,6 +29,7 @@
     }
     .profile-text{
       width: 100%;
+  
     }
     .intro{
       font-size: var(--secondary-font-size);
@@ -37,7 +37,7 @@
     }
     .profile .hi, .profile .name{
       font-weight: var(--main-weight);
-      letter-spacing: .3rem;
+      letter-spacing: .3rem; 
     }
     .profile-text .hi {
       font-size: 6.5rem;
