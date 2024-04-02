@@ -2,6 +2,20 @@
   --width-profile: 55%;
   --width-profile-shrink: 85%;
 }
+
+.profile{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1.4s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
 /* Profile */
 .profile {
     /* position: relative; */

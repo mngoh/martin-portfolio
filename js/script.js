@@ -114,5 +114,5 @@ const observer = new IntersectionObserver((entries) => {
     }
   })
 });
-const hiddenElements = document.querySelectorAll('.section-background');
+const hiddenElements = document.querySelectorAll('.profile');
 hiddenElements.forEach((el) => observer.observe(el));
