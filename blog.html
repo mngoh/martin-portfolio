@@ -14,7 +14,6 @@
 <body>
   <header class="head-name" onclick="window.location.href = 'blog.html';">Martin Ngoh</header>
   <nav class="navbar-blog">
-      <!-- <div class="name"><img src="logo/MN.png" style="height: rem;"> </div> -->
       <a href="#" class="toggle-button" onclick='toggleNavbarBackground()'>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -24,19 +23,24 @@
         <ul>
           <li><a href="#Home" onclick="window.location.href = 'blog.html';">Home</a></li>
           <li><a href="#Ai" onclick="window.location.href = 'index.html';">About</a></li>
-
         </ul>
       </div>
-      <div class="search-bar">
-        <form class="search" action=""> 
-          <input type="search" class='search-input' placeholder="Search here..." required>
-          <button type="submit">Search</button>
-        </form>   
-    </div>
+      <ul class="footer-links">
+        <li><a href="mailto:contact@martinngoh.com"><i class="fa-regular fa-envelope fa-2xl" id="mail"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/mngoh"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+        <li><a href="https://github.com/mngoh"><i class="fa-brands fa-github fa-2xl" id="github"></i></a></li>
+        <li><a href="https://www.instagram.com/martinngoh"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+      </ul>
     </nav>
 
   <!-- Home -->
   <section id="Home" class="section-background">
+    <div class="search-bar">
+      <form class="search" action=""> 
+        <input type="search" class='search-input' placeholder="Search for Content..." required>
+        <button type="submit">Search</button>
+      </form>   
+    </div>
     <div class="blogs">
       <div class="box" onclick="window.location.href = '../blogs/gradient_boosting.html';">
         <img src="../images/vcu_stats.png">
@@ -99,18 +103,9 @@
         <ul class="footer-text">
           <li><a href="../index.html">Martin</a></li>
           <li><a href="blog.html">Blog</a></li>
-          <!-- <li><a href="pages/articles.html">Articles</a></li> -->
-        </ul>
-        <ul class="footer-links">
-          <li><a href="mailto:contact@martinngoh.com"><i class="fa-regular fa-envelope fa-2xl" id="mail"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/mngoh"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-          <li><a href="https://github.com/mngoh"><i class="fa-brands fa-github fa-2xl" id="github"></i></a></li>
-          <!-- <li><a href="https://www.instagram.com/martinngoh"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> -->
         </ul>
         <p>&copy; 2024 Martin Ngoh. All Rights Reserved.</p>
       </div>
   </section>
-
-
 </body>
 </html>

@@ -130,3 +130,41 @@ hiddenContact.forEach((el) => observer.observe(el));
 // Blog 
 const hiddenBlogs = document.querySelectorAll('.box');
 hiddenBlogs.forEach((el) => observer.observe(el));
+
+
+
+
+// Search Bar for Blog
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.querySelector('.search-input');
+  const searchForm = document.querySelector('.search');
+  const boxes = document.querySelectorAll('.box');
+  const noResultsMessage = document.querySelector('.no-results-message');
+
+  function filterBoxes(searchTerm) {
+      searchTerm = searchTerm.trim().toLowerCase();
+      let foundMatch = false;
+      boxes.forEach(function(box) {
+          const boxText = box.textContent.toLowerCase();
+          if (boxText.includes(searchTerm)) {
+              box.style.display = 'block'; // Show the box
+              foundMatch = true;
+          } else {
+              box.style.display = 'none'; // Hide the box
+          }
+      });
+
+      // Display "No Matching Results" message if no matches found
+      if (!foundMatch) {
+          noResultsMessage.style.display = 'block';
+      } else {
+          noResultsMessage.style.display = 'none';
+      }
+  }
+
+  // Event listener for the form submit
+  searchForm.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+      filterBoxes(searchInput.value);
+  });
+});
