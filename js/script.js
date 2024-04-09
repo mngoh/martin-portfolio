@@ -127,3 +127,6 @@ hiddenProject.forEach((el) => observer.observe(el));
 // Contact
 const hiddenContact = document.querySelectorAll('.contact-container');
 hiddenContact.forEach((el) => observer.observe(el));
+// Blog 
+const hiddenBlogs = document.querySelectorAll('.box');
+hiddenBlogs.forEach((el) => observer.observe(el));
