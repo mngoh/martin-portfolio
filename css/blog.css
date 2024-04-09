@@ -67,11 +67,39 @@ button:hover{
     color: black;
     border-bottom: 1px solid #ccc; 
 }
-.navbar-links li a{
+.navbar-links-blog li a{
     color: black;
     font-family: var(--font-family);
     font-size: 25px;
 }
+.navbar-links-blog ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  .navbar-links-blog li {
+    list-style: none;
+  }
+  .navbar-links-blog li a {
+    color:var(--black-color);
+    text-decoration: none;
+    font-size: 25px;
+    padding: 1rem;
+    display: block;
+    transition: .3s;
+  }
+  .navbar-links-blog a:hover,
+  .navbar-links-blog a.active {
+    text-decoration: none; 
+    display: block;
+    color: var(--primary-color);
+  }
+  .toggle-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 2rem;
+  }
 
 /* Headder */
 .head-name{
@@ -172,7 +200,7 @@ button:hover{
     font-weight: 200;
     margin: 20px auto;
     text-align: left;
-    font-size: 1.rem;
+    font-size: 1rem;
     color: var(--font-color);
     font-family: var(--font-family);
 }
@@ -197,6 +225,9 @@ body {
     margin: auto;
     padding: 20px;
     color: var(--font-color);
+}
+.container img{
+    max-width: 100%;
 }
 h1, h2, h3 {
     margin-bottom: 10px;
@@ -245,7 +276,21 @@ li {
         margin: 0px auto;
         gap: 60px;
     }
-
+    .name{
+        display: flex;
+    }
+    .footer-links{
+        display: none;
+    }
+    .navbar-links-blog ul{
+        display: none;
+    }
+    .search-bar span{
+        display: none;
+    }
+    .toggle-button{
+        display: flex;
+      }
 }
 
 
