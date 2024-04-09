@@ -167,4 +167,9 @@ document.addEventListener('DOMContentLoaded', function() {
       event.preventDefault(); // Prevent default form submission
       filterBoxes(searchInput.value);
   });
+
+  // Event listener for the input change
+  // searchInput.addEventListener('input', function() {
+  //   filterBoxes(searchInput.value);
+  // });
 });

@@ -38,26 +38,52 @@
     </nav>
     <div class="container">
       <h1>What is Gradient Boosting?</h1>
-      <p>Gradient Boosting is a fundamental machine learning (ML) technique that enhances the accuracy of decision trees by sequentially adding more trees.</p>
+      <p>Gradient Boosting is a fundamental machine learning (ML) technique that enhances the accuracy of decision trees by sequentially adding more trees.
+        Gradient Boosting is a framework that is key in understanding how popular ML Algorithms like XGBoost work. 
+      </p>
+      <a href="#GBM">Click Here to see the XGBoost Example in Python</a>
       
       <h2>Importance of Gradient Boosting</h2>
       <ul>
           <li>It creates a more robust model compared to a single decision tree.</li>
       </ul>
       <h2>Types of Gradient Boosting Algorithms</h2>
-      <h3>Type 1</h3>
-      <p>Description of the first type.</p>
+
+      <h3>Gradient Boosting Machine (GBM)</h3>
+      <p>GBM is the original gradient boosting algorithm that was created by Jerome Friedman. The 
+        algorithm works by building a sequence of trees where each new tree aims to correct the errors made by the prior ones. 
+        The GBM algorithm minimizes a loss function using gradient descent.
+      </p>
+
+      <h3>XGBoost (Extreme Gradient Boosting)</h3>
+      <p>XGBoost is a popular gradient boosting technique created by Tianqi Chen. This algorithm is an enhanced version of GBM by employing 
+        parallell tree construction, and regularization. XGBoost gained popularity due to its speed and performance. 
+      </p>
       
-      <h3>Type 2</h3>
-      <p>Description of the second type.</p>
+      <h3>CatBoost</h3>
+      <p>CatBoost is a gradient boosting library that was created by Yandex and designed to handle large amounts of categorical variables. 
+        The algorithm uses regularization techniques in attempt to avoid overfitting.
+      </p>
+
+      <h3>LightGBM</h3>
+      <p>LightGBM is another gradient boosting framework that was developed by Microsoft. This algorithm introduces Gradient-based One-Side Sampling (GOSS) and Exclusive 
+        Feature Bundling (EFB). These concepts are optimization techniques that were added to improve the efficiency and effectiveness of training gradient boosting models for large datasets. 
+        GOSS works by applying a down-sampling strategy vs sampling uniformly across the dataset. This decreases computation costs. 
+        EFB works by allowing the model to capture interactions among similar feature values, reducing dimensions.
+      </p>
+
+      <h2> Pros and Cons of Gradient Boosting</h2>
+      <h3>Pros</h3>
+      <li>High Accuracy - Because of the combination of decision trees, gradient boosting algorithms have the ability to predict with high accuracy.</li>
+      <li>Data - Gradient boosting algorithms allow for a wide range of data types to be used in the algorithms, effectively handling various data.</li>
+      <li>Robust - Regularization techniques ensure that gradient boosting models are robust to overfitting. </li>
+
+      <h3>Cons</h3>
+      <li>Computationally Expensive - Gradient boosting on large datasets can be very computationally expensive due to the sequential nature of the algorithm.</li>
+      <li>Sensitive - The performance of a gradient boosting algorithm is very sensitive to hyperparameter tuning making it a challenging model to optimize.</li>
+      <li> Interpretability -  </li>
       
-      <h3>Type 3</h3>
-      <p>Description of the third type.</p>
-      
-      <h2>Gradient Boosting from Scratch</h2>
-      <p>Steps to get started, how to choose, best practices.</p>
-      
-      <h2>Gradient Boosting with XGBoost</h2>
+      <h2 id="GBM">Gradient Boosting with XGBoost in Python</h2>
       <p>Benefits and usage of XGBoost in Gradient Boosting.</p>
       
       <h2>Get Started with Gradient Boosting Today</h2>

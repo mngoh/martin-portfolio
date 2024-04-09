@@ -138,7 +138,7 @@ button:hover{
 /* Blogs */
 .blogs{
     height: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     display: grid; 
     grid-template-rows: repeat(2, 1fr); /* 3 rows */
     grid-template-columns: repeat(3, 1fr); /* 10 columns */
