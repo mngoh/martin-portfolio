@@ -186,11 +186,7 @@ body {
     display: block;
     color: var(--primary-color);
   }
-  /* Add a class to hide the nav bar when scrolling down */
-  .navbar--hidden {
-  transform: translateY(-50px);
-  box-shadow: none;
-}
+ 
 
 /* Toggle Button */
 .toggle-button{

@@ -91,17 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
   });
-// Hidden Nav Bar
-// const nav = document.querySelector('.navbar');
-// let lastScrollY = window.scrollY;
-// window.addEventListener("scroll", () => {
-//   if (lastScrollY < window.scrollY) {
-//     nav.classList.add('navbar--hidden');
-//   } else {
-//     nav.classList.remove('navbar--hidden');
-//   }
-//   lastScrollY = window.scrollY;
-// });
+
 
 // Scroll Appear in Website
 const observer = new IntersectionObserver((entries) => {
@@ -172,4 +162,27 @@ document.addEventListener('DOMContentLoaded', function() {
   // searchInput.addEventListener('input', function() {
   //   filterBoxes(searchInput.value);
   // });
+});
+
+
+
+// Scrolling Navbar Background - BLOG
+document.addEventListener("DOMContentLoaded", function() {
+  const toggleButton = document.getElementsByClassName('toggle-button')[0];
+  const navbarLinks = document.getElementsByClassName('navbar-links-blog')[0];
+  const navbar = document.querySelector('.navbar-blog');
+
+  toggleButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    navbarLinks.classList.toggle('active');
+    navbar.classList.toggle('black-background');
+  });
+
+  const links = navbarLinks.getElementsByTagName('a');
+  for (let i = 0; i < links.length; i++) {
+    links[i].addEventListener('click', () => {
+      navbarLinks.classList.remove('active');
+      navbar.classList.remove('black-background');
+    });
+  }
 });
