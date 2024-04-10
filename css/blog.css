@@ -58,14 +58,16 @@ button:hover{
 
 /* Nav Bar */
 .navbar-blog{
-    top: 0;
-    position: sticky;
+    top: -100px;
+    position: fixed;
     z-index: 999;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     background-color: var(--back-color);
     color: black;
     border-bottom: 1px solid #ccc; 
+    transition: top .3s;
 }
 .navbar-links-blog li a{
     color: black;
@@ -256,6 +258,11 @@ li {
     filter: blur(0);
     transform: translateX(0);
 } 
+
+/* Nav Bar */
+.nav-show{
+    top: 0; 
+}
 
 
 /* Footer Links */

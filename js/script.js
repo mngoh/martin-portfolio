@@ -164,8 +164,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // });
 });
 
-
-
 // Scrolling Navbar Background - BLOG
 document.addEventListener("DOMContentLoaded", function() {
   const toggleButton = document.getElementsByClassName('toggle-button')[0];
@@ -184,4 +182,16 @@ document.addEventListener("DOMContentLoaded", function() {
       navbar.classList.remove('black-background');
     });
   }
+});
+
+// Scroll Function 
+let prevScrollPos = window.pageYOffset;
+window.addEventListener('scroll', function() {
+  const currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    document.querySelector('.navbar-blog').classList.add('nav-show');
+  } else {
+    document.querySelector('.navbar-blog').classList.remove('nav-show');
+  }
+  prevScrollPos = currentScrollPos;
 });
