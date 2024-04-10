@@ -111,18 +111,13 @@
     color: var(--primary-color);
     background-color: transparent;
   }
-
-
-  
-  /* lines for text */
   .line {
     font-weight: 700;
     color: var(--primary-color);
   }
 
 /* Change Navbar Background on Click */
-.navbar.black-background 
-.navbar-blog.black-background{
+.navbar.black-background {
   background-color: var(--background-color);
 }
 

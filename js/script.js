@@ -177,7 +177,6 @@ document.addEventListener("DOMContentLoaded", function() {
     navbarLinks.classList.toggle('active');
     navbar.classList.toggle('black-background');
   });
-
   const links = navbarLinks.getElementsByTagName('a');
   for (let i = 0; i < links.length; i++) {
     links[i].addEventListener('click', () => {
