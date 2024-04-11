@@ -209,3 +209,7 @@ window.addEventListener('scroll', function() {
   }
   prevScrollPos = currentScrollPos;
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.navbar-blog').classList.add('nav-show');
+});
