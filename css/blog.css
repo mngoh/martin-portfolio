@@ -73,6 +73,7 @@ button:hover{
     color: black;
     font-family: var(--font-family);
     font-size: 25px;
+    z-index: 99999;
 }
 .navbar-links-blog ul {
     margin: 0;
@@ -83,7 +84,7 @@ button:hover{
     list-style: none;
   }
   .navbar-links-blog li a {
-    color:var(--black-color);
+    color:black;
     text-decoration: none;
     font-size: 25px;
     padding: 1rem;

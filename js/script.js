@@ -135,9 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-
-
-
 // Search Bar for Blog
 document.addEventListener('DOMContentLoaded', function() {
   const searchInput = document.querySelector('.search-input');
