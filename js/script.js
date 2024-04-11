@@ -76,13 +76,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const toggleButton = document.getElementsByClassName('toggle-button')[0];
     const navbarLinks = document.getElementsByClassName('navbar-links')[0];
     const navbar = document.querySelector('.navbar');
-
     toggleButton.addEventListener('click', (event) => {
       event.preventDefault();
       navbarLinks.classList.toggle('active');
       navbar.classList.toggle('black-background');
     });
-
     const links = navbarLinks.getElementsByTagName('a');
     for (let i = 0; i < links.length; i++) {
       links[i].addEventListener('click', () => {
@@ -94,46 +92,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Scroll Appear in Website
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) =>{
-    console.log(entry)
-    if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-    } else {
-      entry.target.classList.remove('show')
-    }
-  })
-});
-
-// Profile
-const hiddenProfile = document.querySelectorAll('.profile');
-hiddenProfile.forEach((el) => observer.observe(el));
-// About
-const hiddenAbout = document.querySelectorAll('.about');
-hiddenAbout.forEach((el) => observer.observe(el));
-// Project
-const hiddenProject = document.querySelectorAll('.projects');
-hiddenProject.forEach((el) => observer.observe(el));
-// Contact
-const hiddenContact = document.querySelectorAll('.contact-container');
-hiddenContact.forEach((el) => observer.observe(el));
-
-// Blog 
 document.addEventListener('DOMContentLoaded', () => {
-  const elements = document.querySelectorAll('.box');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       console.log(entry);
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
-        observer.unobserve(entry.target); 
+        observer.unobserve(entry.target);
+      } else {
+        entry.target.classList.remove('show');
       }
     });
   });
-  elements.forEach((element) => {
-    observer.observe(element);
+  const selectors = ['.profile', '.about', '.projects', '.contact-container', '.box'];
+  selectors.forEach(selector => {
+    const elements = document.querySelectorAll(selector);
+    elements.forEach(element => observer.observe(element));
   });
 });
+
 
 // Search Bar for Blog
 document.addEventListener('DOMContentLoaded', function() {
@@ -209,4 +186,23 @@ window.addEventListener('scroll', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
   document.querySelector('.navbar-blog').classList.add('nav-show');
+});
+
+
+// Filter Blog 
+document.addEventListener('DOMContentLoaded', () => {
+  const filterDropdown = document.querySelector('.filter');
+  const boxes = document.querySelectorAll('.box');
+
+  filterDropdown.addEventListener('change', (e) => {
+    const selectedCategory = e.target.value;
+    boxes.forEach(box => {
+      const category = box.getAttribute('data-category');
+      if (selectedCategory === 'all' || category === selectedCategory) {
+        box.style.display = 'block';
+      } else {
+        box.style.display = 'none';
+      }
+    });
+  });
 });

@@ -14,24 +14,22 @@
     margin: 0 auto;
     margin-top: -3%;
     color: black;
-    gap: 50px;
+    gap: 20px;
     font-family: var(--font-family);
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-style: italic;
 }
 .search {
     display: flex;
 }
-.search-input {
+.search-input, .filter {
     padding: 10px; 
     border: 1px solid #ccc; 
     border-radius: 4px; 
     margin-right: 5px; 
     font-size: 15px;
+    cursor: pointer;
 }
 button[type="submit"] {
-    padding: 8px 26px;
+    padding: 10px 26px;
     background-color: black; 
     color: white; 
     border: none; 
@@ -40,7 +38,11 @@ button[type="submit"] {
 }
 button:hover{
     background-color: #ccc;
-    color: white;
+    color: black;
+    cursor: pointer;
+}
+.filter:hover{
+    cursor: pointer;
 }
 
 /* Name */
@@ -209,6 +211,7 @@ button:hover{
     color: var(--font-color);
     font-family: var(--font-family);
 }
+
 .box img{
     height: 40%;
     width: 85%;
@@ -286,6 +289,10 @@ li {
         align-items: center;
         margin: 0px auto;
         gap: 60px;
+    }
+    .search-bar{
+        display: flex;
+        flex-direction: column;
     }
     .navbar-blog{
         flex-direction: column;

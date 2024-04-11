@@ -34,66 +34,77 @@
         <li><a href="https://www.instagram.com/martinngoh"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
       </ul>
     </nav>
-
   <!-- Home -->
   <section id="Home" class="section-background">
     <div class="blog_home">
-    <div class="search-bar">
-      <span> Search for Content</span>
+      <div class="search-bar">
       <form class="search" action=""> 
-        <input type="search" class='search-input' placeholder="Keyword Search..." required>
+        <input type="search" class='search-input' placeholder="Search for Content" required>
         <button type="submit">Search</button>
       </form>   
+      <select name="category" class="filter">
+        <option value="all">Choose Category</option>
+        <option value="ml">Machine Learning</option>
+        <option value="career">Career Advice</option>
+        <option value="ds">Data Science</option>
+      </select>
     </div>
+    
     <div class="blogs">
-      <div class="box" onclick="window.location.href = '../blogs/gradient_boosting.html';">
+      <div class="box" type="ml" onclick="window.location.href = '../blogs/gradient_boosting.html';">
         <img src="../blog_images/gbm.jpg">
         <h2>What is Gradient Boosting?</h2>
+        <p class="date-time">Posted: 04/10/2024</p>
         <p> 
           Gradient Boosting is a fundamental Machine Learning (ML) technique that attempts to 
           sequentially boost the performance of Decision Trees.
         </p>
       </div>
 
-      <div class="box" onclick="window.location.href = '../blogs/post2.html';">
+      <div class="box" data-category="ml" onclick="window.location.href = '../blogs/post2.html';">
         <img src="../blog_images/lr.jpg">
         <h2>Linear Regression Simplified</h2>
+        <p class="date-time">Posted: 04/10/2024</p>
         <p> 
           Linear Regression is a good starting point for those getting started with Data Science and AI. This 
           post simplifies linear regression while covering the key concepts.
         </p>
       </div>
 
-      <div class="box" onclick="window.location.href = '../blogs/post3.html';">
+      <div class="box" data-category="ml" onclick="window.location.href = '../blogs/post3.html';">
         <img src="../blog_images/rf_gb.jpg">
         <h2>Random Forest VS Gradient Boosting</h2>
+        <p class="date-time">Posted: 04/10/2024</p>
         <p> 
           Gradient Boosting and Random Forest ML algorithms both use decision trees to improve their predictions but have key differences. This post 
           explains the differences
         </p>
       </div>
 
-      <div class="box" onclick="window.location.href = '../blogs/post3.html';">
+      <div class="box" data-category="ml" onclick="window.location.href = '../blogs/post3.html';">
         <img src="../blog_images/lg.jpg">
         <h2>Logistic Regression</h2>
+        <p class="date-time">Posted: 04/10/2024</p>
         <p> 
           Logistic Regression is another fundamental machine learning (ML) algorithm that applies similar techniques as Linear Regression but 
           predicting categorical outputs.
         </p>
       </div>
 
-      <div class="box" onclick="window.location.href = '../blogs/undergrad.html';">
+      <div class="box" data-category="career" onclick="window.location.href = '../blogs/undergrad.html';">
         <img src="../blog_images/grad.jpg">
         <h2>How I Earned my Undergrad Degree in 2.5 Years</h2>
+        <p class="date-time">Posted: 04/10/2024</p>
         <p> 
           Take a look into how I graduated with my undergraduate degree in just 2.5 years. Hopefully this can inspire those who are also 
           considering graduated early.
         </p>
       </div>
 
-      <div class="box" onclick="window.location.href = '../blogs/post3.html';">
+      <div class="box" data-category="ml" onclick="window.location.href = '../blogs/post3.html';">
         <img src="../blog_images/dt.jpg">
         <h2>Decision Trees Explained</h2>
+        <p class="date-time">Posted: 04/10/2024</p>
         <p> 
           Decision Trees are key Algorithms you should learn before getting into the weeds of gradient boosting and random forests. Decision Trees are very 
           intuitive and I explain the concept in detail.
