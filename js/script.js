@@ -117,9 +117,23 @@ hiddenProject.forEach((el) => observer.observe(el));
 // Contact
 const hiddenContact = document.querySelectorAll('.contact-container');
 hiddenContact.forEach((el) => observer.observe(el));
+
 // Blog 
-const hiddenBlogs = document.querySelectorAll('.box');
-hiddenBlogs.forEach((el) => observer.observe(el));
+document.addEventListener('DOMContentLoaded', () => {
+  const elements = document.querySelectorAll('.box');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry);
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target); 
+      }
+    });
+  });
+  elements.forEach((element) => {
+    observer.observe(element);
+  });
+});
 
 
 
