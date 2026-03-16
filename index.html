@@ -6,7 +6,6 @@
   <script src="js/script.js" defer></script>
   <link rel="shortcut icon" type="image/x-icon" href="logo/favicon.ico" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/contact.css">
   <link rel="stylesheet" type="text/css" href="css/projects.css">
   <link rel="stylesheet" type="text/css" href="css/about.css">
   <link rel="stylesheet" type="text/css" href="css/home.css">
@@ -14,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/background.css">
   <link rel="stylesheet" type="text/css" href="css/button.css">
   <script src="https://kit.fontawesome.com/b2fb9e30a3.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Grotesk:wght@700;800&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
@@ -31,79 +30,85 @@
           <li><a href="#Home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#projects">PROJECTS</a></li>
-          <li><a href="#contact">CONTACT</a></li>
         </ul>
     </div>
     </nav>
   <!-- Home -->
+  <canvas id="particle-canvas"></canvas>
   <section id="Home" class="section-background">
-    <div class="background-pattern-home"></div>
     <div class="profile">
         <div class='profile-text'>
-            <h1 class="hi">Hi, I'm </h1> 
+            <h1 class="hi">Hi, I'm </h1>
             <h1 class="hi">Martin Ngoh</h1>
           </div>
-        <div class="bot-line  ">
-            <h1 class="bot"> AI <span class="line">|</span> Data Science <span class="line">|</span> Machine Learning </h1>
+        <div class="bot-line">
+            <h1 class="bot"><span id="typewriter"></span><span class="cursor">|</span></h1>
         </div>
           <div class='profile-intro'>
           </div>
-      <div class="bottom-row  ">
-        <div class="home-buttons">
-          <a class="button-link" data-scroll-to="#about"><b>Learn More</b></a>
-          <a class="button-hire" data-scroll-to="#contact"><b>Work With Me</b></a>
-        </div>
-        <div class="socials">
-            <li><a href="mailto:ngohlmartin@gmail.com"><i class="fa-regular fa-envelope fa-2xl" id="mail"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/mngoh"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-            <li><a href="https://github.com/mngoh"><i class="fa-brands fa-github fa-2xl" id="github"></i></a></li>
-        </div>   
+      <div class="socials">
+          <li><a href="mailto:ngohlmartin@gmail.com"><i class="fa-regular fa-envelope fa-2xl" id="mail"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/mngoh"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+          <li><a href="https://github.com/mngoh"><i class="fa-brands fa-github fa-2xl" id="github"></i></a></li>
       </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
   </section>
 
  <!-- ABOUT -->
   <section id="about" class="section-background">
     <h1>ABOUT</h1>
-    <div class="about-summary">
-      <h2>
-        I'm passionate about data. I have 4+ years of experience leveraging data to drive business growth, through AI solutions.
-      </h2>
+
+    <!-- Stats Row -->
+    <div class="stats-row">
+      <div class="stat">
+        <span class="stat-number">4+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">2</span>
+        <span class="stat-label">Degrees</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">3</span>
+        <span class="stat-label">Industries</span>
+      </div>
     </div>
-    <div class="about">
-      <!-- Education -->
-      <div class="about text">
-        <h2>Education</h2>
-        <div class="icons-about">
-          <!-- <i class="fa-solid fa-school"></i></i> -->
-          <i class="fa-solid fa-graduation-cap"></i>
+
+    <!-- Timeline -->
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2021 — Present</div>
+        <div class="timeline-content">
+          <h3>Data Scientist</h3>
+          <p>Building AI solutions that drive business growth for clients across industries.</p>
         </div>
-        <p> B.S. Supply Chain Management and Analytics - VCU
-          M.S. Business Analytics - Georgetown University
-        </p>
-      </div> 
-      <!-- Experience -->
-      <div class="about text">
-        <h2>Experience</h2>
-        <div class="icons-about">
-          <i class="fa-solid fa-briefcase"></i>
-          <!-- <i class="icon fas fa-file-csv"></i> -->
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2022</div>
+        <div class="timeline-content">
+          <h3>M.S. Business Analytics</h3>
+          <p>Georgetown University</p>
         </div>
-        <p> I specialize in working with clients to build AI solutions that meet their business needs.
-        </p>
-      </div> 
-      <!-- Programming -->
-      <div class="about text">
-        <h2>Programming</h2>
-        <div class="icons-about">
-          <!-- <i class="fa-solid fa-code"></i> -->
-          <i class="fa-brands fa-python"></i>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2020</div>
+        <div class="timeline-content">
+          <h3>B.S. Supply Chain Management & Analytics</h3>
+          <p>Virginia Commonwealth University</p>
         </div>
-        <p> 
-          I'm highly proficient in Python and SQL, with extensive experience in both languages. 
-          I built this website from scratch using HTML and CSS.
-        </p>
-      </div> 
+      </div>
     </div>
   </section> 
 
@@ -113,90 +118,75 @@
   <h2 class="proj-head">A few personal projects of mine...</h2>
   </div>
   <div class="projects" id="grid-container">
-    <div class="projects box" onclick="window.open('https://github.com/mngoh', '_blank');">
-      <div class="box-text"> 
-            <h2>Financial Customer Segementation</h2>
-            <img src="images/capco.jpg">
-            <p>
-              I worked with a major financial firm to analyze data from 30,000 individuals and use unsupervised ML techniques to identify five distinct customer segments, 
-              refining product targeting.
-            </p>
-            <div class="text-line-project"></div>
-            <p>Python, Tableu, Jupyter Notebook</p>
+    <div class="box" onclick="window.open('https://github.com/mngoh', '_blank');">
+      <div class="box-text">
+        <img src="images/capco.jpg">
+        <div class="box-overlay">
+          <h2>Financial Customer Segmentation</h2>
+          <p>I worked with a major financial firm to analyze data from 30,000 individuals and use unsupervised ML techniques to identify five distinct customer segments, refining product targeting.</p>
+          <div class="pill-container">
+            <span class="pill">Python</span>
+            <span class="pill">Tableau</span>
+            <span class="pill">Jupyter</span>
           </div>
-      </div>
-      <div class="projects box" onclick="window.open('https://github.com/mngoh', '_blank');">
-        <div class="box-text"> 
-              <h2>Soccer Prediction Model (SPM)</h2>
-              <img src="images/spm.png">
-            <p> Forecasted goals scored for the top 5 soccer leagues in Europe. Used ML models such as Catboost, LightGBM, 
-              Neural Network, and Random Forest. The Model is currently being tested on the current season.
-            </p>
-            <div class="text-line-project"></div>
-            <p> Python, Jupyter Notebook, SQL</p>
-          </div>
-      </div>
-      <div class="projects box" onclick="window.open('https://github.com/mngoh', '_blank');">
-        <div class="box-text"> 
-              <h2>Personal Portfolio Website (This Site)</h2>
-              <img src="images/website.jpeg">
-              <p> 
-                I built this portfolio website after learning HTML, CSS, 
-                and JavaScript on my own.
-              </p>
-              <div class="text-line-project"></div>
-              <p>HTML, JavaScript, CSS</p>
-            </div>
         </div>
-        <div class="projects box" onclick="window.open('https://github.com/mngoh/mlsmodel', '_blank');">
-          <div class="box-text"> 
-              <h2>Major League Soccer (MLS) Statistics</h2>
-              <img src="images/trend_age.png">
-              <p> 
-                I scraped web data using Python to generate plots and metrics regarding the trends in statistics for th MLS 
-                I also looked at team specific data such as D.C United's trends in goals scored and asissts over the years 2010-2017.
-              </p>
-              <div class="text-line-project"></div>
-              <p>Python, JupyterNotebook, PyCharm</p>
-            </div>
-        </div> 
+      </div>
+    </div>
+    <div class="box" onclick="window.open('https://github.com/mngoh', '_blank');">
+      <div class="box-text">
+        <img src="images/spm.png">
+        <div class="box-overlay">
+          <h2>Soccer Prediction Model (SPM)</h2>
+          <p>Forecasted goals scored for the top 5 soccer leagues in Europe using CatBoost, LightGBM, Neural Network, and Random Forest models.</p>
+          <div class="pill-container">
+            <span class="pill">Python</span>
+            <span class="pill">SQL</span>
+            <span class="pill">Jupyter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box" onclick="window.open('https://github.com/mngoh', '_blank');">
+      <div class="box-text">
+        <img src="images/website.jpeg">
+        <div class="box-overlay">
+          <h2>Personal Portfolio Website</h2>
+          <p>Built this portfolio from scratch after learning HTML, CSS, and JavaScript on my own.</p>
+          <div class="pill-container">
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="box" onclick="window.open('https://github.com/mngoh/mlsmodel', '_blank');">
+      <div class="box-text">
+        <img src="images/trend_age.png">
+        <div class="box-overlay">
+          <h2>MLS Statistics</h2>
+          <p>Scraped web data using Python to generate plots and metrics on MLS trends, including D.C. United's goals and assists from 2010–2017.</p>
+          <div class="pill-container">
+            <span class="pill">Python</span>
+            <span class="pill">Jupyter</span>
+            <span class="pill">PyCharm</span>
+          </div>
+        </div>
+      </div>
+    </div> 
     </div>
 </section>
     
-  <!-- Contact Section -->
-  <section id="contact" class="section-background">
-    <h1>CONTACT</h1>
-    <h2>Let's get to work</h2>
-      <div class= "contact-container" id="ContactForm">
-        <form action="https://formspree.io/f/xnqkvwle" method="POST" id="myform">
-        <!-- <form action="pages/thankyou.html" name="contact" netlify>   -->
-          <h3>Provide your details:</h3>
-          <input type="text" id="name" name="name" placeholder="Name" required>
-          <input type="email" id="email" name="email" placeholder="Email" required>
-          <textarea id="message" name="message" rows="4" placeholder="Send me a message!" required style="resize: none;"></textarea>
-          <div class="contact-links">
-              <button id="submit" type="submit">Send</button> 
-              <div class="resume">
-                <li><a href="resume/MartinNgohResume.pdf" id="download-resume">Resume</a></li>
-              </div>
-          </div>
-        </form>
-      </div>
-  </section>
-
   <!-- Footer section -->
   <section id="copyright" class="copyright-background">
       <div class="footer-container">
-        <!-- <div class="links"><h2>Links</h2></div> -->
-        <ul class="footer-text">
-          <li><a href="index.html">Home</a></li>
-        </ul>
-        <ul class="footer-links">
-          <li><a href="mailto:ngohlmartin@gmail.com"><i class="fa-regular fa-envelope fa-2xl" id="mail"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/mngoh"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-          <li><a href="https://github.com/mngoh"><i class="fa-brands fa-github fa-2xl" id="github"></i></a></li>
-          <!-- <li><a href="https://www.instagram.com/martinngoh"><i class="fa-brands fa-instagram fa-2xl"></i></a></li> -->
-        </ul>
+        <p class="footer-heading">Let's Collaborate</p>
+      <div class="footer-links">
+          <a href="mailto:ngohlmartin@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/mngoh"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/mngoh"><i class="fa-brands fa-github"></i></a>
+          <a href="resume/MartinNgohResume.pdf" id="download-resume">Resume</a>
+        </div>
         <p>&copy; 2026 Martin Ngoh. All Rights Reserved.</p>
       </div>
   </section>

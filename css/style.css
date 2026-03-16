@@ -29,7 +29,8 @@
   --primary-color: rgba(192, 192, 195, 0.7);
   --secondary-color: #F4F3EE;
   --text-color: #ffffff;
-  --background-color: #000000;
+  --background-color: #0d0d0d;
+  --section-bg: linear-gradient(135deg, #000000 0%, #0d0d0d 50%, #1a1a1a 100%);
   --box-color: rgb(21, 21, 145, .4);
   --box-color: rgba(62, 62, 71, 0.4);
   /* --name-color: rgb(255, 255, 2555, .7); */
@@ -70,24 +71,10 @@
 /* HOME Background */
 #Home.section-background {
   position: relative;
-  background-image: url('../images/key_back.jpg'); 
-  background-image: url('../images/back2.jpg'); 
-  background-image: url('../images/zion.jpeg'); 
-  background-size: cover;
-  background-position: center;
+  background: transparent;
   width: auto;
   z-index: 1;
   height: 100vh;
-}
-#Home.section-background::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); 
-  z-index: -2; 
 } 
 
 /* Home Section Name
@@ -101,7 +88,8 @@
 
 /* Body */
 body {
-  background-color: var(--background-color);
+  background: linear-gradient(135deg, #000000 0%, #0d0d0d 50%, #1a1a1a 100%);
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
   font-family: var(--primary-font);
@@ -169,12 +157,28 @@ body {
     list-style: none;
   }
   .navbar-links li a, .name {
-    color:var(--text-color);
+    color: var(--text-color);
     text-decoration: none;
     font-size: 25px;
     padding: 1rem;
     display: block;
     transition: .3s;
+    position: relative;
+  }
+  .navbar-links li a::after {
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 1rem;
+    right: 1rem;
+    height: 2px;
+    background-color: var(--text-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease;
+  }
+  .navbar-links li a:hover::after {
+    transform: scaleX(1);
   }
   .nav-name{
     padding: 5rem;
@@ -182,9 +186,10 @@ body {
   }
   .navbar-links a:hover,
   .navbar-links a.active {
-    text-decoration: none; 
+    text-decoration: none;
     display: block;
     color: var(--primary-color);
+    cursor: pointer;
   }
  
 
@@ -208,13 +213,13 @@ body {
 
 /* SECTION */
   section {
-    padding: 100px 0;
+    padding: 120px 0;
   }
   section h1 {
     text-align: center;
     font-size: var(--primary-font-size);
     margin-bottom: 1%;
-    margin-top: -2%;
+    margin-top: 0;
     font-weight: var(--main-weight);
   }
   section h2{

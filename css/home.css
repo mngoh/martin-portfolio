@@ -3,45 +3,62 @@
   --width-profile-shrink: 85%;
 }
 
-.profile{
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 1.4s;
-}
 .show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
+  opacity: 1 !important;
+  filter: blur(0) !important;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.profile-text {
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+.bot-line {
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+.socials {
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 1s;
+  opacity: 0;
 }
 
 /* Profile */
 .profile {
-    /* position: relative; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    width: var(--width-profile);
-    height: 100%;
-    margin: 0 auto;
-    }
-    .profile-text{
-      width: 100%;
-  
-    }
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0;
+  width: var(--width-profile);
+  height: 100%;
+  margin: 0 auto;
+}
+.profile-text{
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
     .intro{
       font-size: var(--secondary-font-size);
       font-weight: var(--third-weight);
     }
     .profile .hi, .profile .name{
       font-weight: var(--main-weight);
-      letter-spacing: .3rem; 
+      letter-spacing: .3rem;
+      font-family: 'Space Grotesk', sans-serif;
     }
     .profile-text .hi {
       font-size: 6.5rem;
       text-align: left;
+      margin: 0;
+      line-height: 1.1;
     }
     .profile-text span{
       color: var(--primary-color);
@@ -49,19 +66,23 @@
     .bot-line{
       text-align: left;
       width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 2.5rem;
     }
     .bot-line .bot {
-      font-size: var(--secondary-font-size);
-      letter-spacing: .15em; 
+      font-size: 2.2rem;
+      letter-spacing: .15em;
       font-weight: var(--third-weight);
+      font-family: 'Space Grotesk', sans-serif;
       text-align: left;
-    }   
+      margin: 0;
+    }
     /* Bottom Row */
     .bottom-row{
       width: 100%;
       display: flex;
-      align-items: left;
-      gap: 130px;
+      align-items: center;
+      gap: 3rem;
     }
     .home-buttons{
       display: flex;
@@ -116,6 +137,58 @@
     color: var(--primary-color);
   }
 
+/* Particle Canvas */
+#particle-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Typewriter cursor */
+.cursor {
+  display: inline-block;
+  font-weight: 300;
+  color: rgba(255,255,255,0.6);
+  animation: blink 0.8s step-end infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  z-index: 1;
+}
+.scroll-indicator span {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid rgba(255,255,255,0.6);
+  border-bottom: 2px solid rgba(255,255,255,0.6);
+  transform: rotate(45deg);
+  animation: scroll-bounce 1.4s ease infinite;
+}
+.scroll-indicator span:nth-child(2) { animation-delay: 0.2s; }
+.scroll-indicator span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes scroll-bounce {
+  0% { opacity: 0; transform: rotate(45deg) translate(-4px, -4px); }
+  50% { opacity: 1; }
+  100% { opacity: 0; transform: rotate(45deg) translate(4px, 4px); }
+}
+
 /* Change Navbar Background on Click */
 .navbar.black-background {
   background-color: var(--background-color);
@@ -129,37 +202,21 @@
 }
 @media(max-width:850px){
     .profile-text .hi{
-      font-size: 6.5rem;
+      font-size: 4.5rem;
     }
     .bot-line .bot{
-      font-size: 2.3rem;
+      font-size: 1.4rem;
     }
     .profile{
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       width: var(--width-profile-shrink);
     }
-    .profile p{ 
-      font-size: 1.3rem;
-    }
-    .home-buttons a {
-      font-size: 1.1rem;
-      width: 13rem;
-      padding: 20px;
-    }
-    .bottom-row{
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      align-items: left;
-      gap: 40px;
-    }
     .socials{
-      width: 40%;
-      justify-content: space-between;
+      gap: 1.5rem;
     }
     .socials i {
-      font-size: 3rem;
+      font-size: 1.5rem;
     }
 }
 @media(max-width:650px){

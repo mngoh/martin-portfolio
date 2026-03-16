@@ -1,208 +1,169 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const navLinks = document.querySelectorAll("nav ul li a, .profile-text button");
-  const learnMoreButton = document.querySelector(".button-link");
-  const hireButton = document.querySelector(".button-hire");
-  const aboutButton = document.querySelector(".button-about"); 
-  const projectButton = document.querySelector(".button-project");
-  const articlesButton = document.querySelector(".button-articles");
-  const aboutSection = document.getElementById("about");
-  const projectSection = document.getElementById("projects");
-  const contactSection = document.getElementById("contact"); 
 
-  // Function to handle smooth scrolling
+  // ── Smooth Scroll ──────────────────────────────────────────
   function smoothScroll(targetOffset, scrollDuration) {
     const start = window.pageYOffset;
-    const startTime = "now" in window.performance ? performance.now() : new Date().getTime();
+    const startTime = performance.now();
     function scroll() {
-      const currentTime = "now" in window.performance ? performance.now() : new Date().getTime();
-      const elapsed = currentTime - startTime;
-      const scrollProgress = Math.min(elapsed / scrollDuration, 1);
-      const scrollPosition = start + (targetOffset - start) * easeInOutCubic(scrollProgress);
-      window.scrollTo(0, scrollPosition);
-      if (scrollProgress < 1) {
-        requestAnimationFrame(scroll);
-      }
-    }
-    function easeInOutCubic(t) {
-      return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+      const elapsed = performance.now() - startTime;
+      const progress = Math.min(elapsed / scrollDuration, 1);
+      const ease = progress < 0.5 ? 4 * progress ** 3 : (progress - 1) * (2 * progress - 2) * (2 * progress - 2) + 1;
+      window.scrollTo(0, start + (targetOffset - start) * ease);
+      if (progress < 1) requestAnimationFrame(scroll);
     }
     requestAnimationFrame(scroll);
   }
-  // Add event listeners to each link/button
-  for (const link of navLinks) {
-    link.addEventListener("click", function(event) {
-      event.preventDefault();
-      const targetId = link.getAttribute("href");
-      const targetElement = document.querySelector(targetId);
-      const targetOffset = targetElement.offsetTop;
-      const scrollDuration = 2000;
-      smoothScroll(targetOffset, scrollDuration);
-    });
-  }
-  learnMoreButton.addEventListener("click", function(event) {
-    event.preventDefault();
-    const targetOffset = aboutSection.offsetTop;
-    const scrollDuration = 2000;
-    smoothScroll(targetOffset, scrollDuration);
-  });
-  hireButton.addEventListener("click", function(event) {
-    event.preventDefault();
-    const targetOffset = contactSection.offsetTop;
-    const scrollDuration = 2000;
-    smoothScroll(targetOffset, scrollDuration);
-  });
-  aboutButton.addEventListener("click", function(event) {
-    event.preventDefault();
-    const targetOffset = projectSection.offsetTop;
-    const scrollDuration = 2000;
-    smoothScroll(targetOffset, scrollDuration);
-  });
-  projectButton.addEventListener("click", function(event) {
-    event.preventDefault();
-    const targetOffset = contactSection.offsetTop;
-    const scrollDuration = 2000;
-    smoothScroll(targetOffset, scrollDuration);
-  });
-  articlesButton.addEventListener("click", function(event) {
-    event.preventDefault();
-    const targetOffset = contactSection.offsetTop;
-    const scrollDuration = 2000;
-    smoothScroll(targetOffset, scrollDuration);
-  });
-});
 
-// Scrolling Navbar Background
-document.addEventListener("DOMContentLoaded", function() {
-    const toggleButton = document.getElementsByClassName('toggle-button')[0];
-    const navbarLinks = document.getElementsByClassName('navbar-links')[0];
-    const navbar = document.querySelector('.navbar');
-    toggleButton.addEventListener('click', (event) => {
-      event.preventDefault();
-      navbarLinks.classList.toggle('active');
-      navbar.classList.toggle('black-background');
-    });
-    const links = navbarLinks.getElementsByTagName('a');
-    for (let i = 0; i < links.length; i++) {
-      links[i].addEventListener('click', () => {
-        navbarLinks.classList.remove('active');
-        navbar.classList.remove('black-background');
-      });
-    }
+  const aboutSection = document.getElementById("about");
+  const projectSection = document.getElementById("projects");
+
+  document.querySelector(".button-link")?.addEventListener("click", e => {
+    e.preventDefault();
+    smoothScroll(aboutSection.offsetTop, 2000);
+  });
+  document.querySelector(".button-hire")?.addEventListener("click", e => {
+    e.preventDefault();
+    smoothScroll(projectSection.offsetTop, 2000);
   });
 
-
-// Scroll Appear in Website
-document.addEventListener('DOMContentLoaded', () => {
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      console.log(entry);
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-        observer.unobserve(entry.target);
-      } else {
-        entry.target.classList.remove('show');
-      }
+  document.querySelectorAll("nav ul li a").forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) smoothScroll(target.offsetTop, 2000);
     });
   });
-  const selectors = ['.profile', '.about', '.projects', '.contact-container', '.box'];
-  selectors.forEach(selector => {
-    const elements = document.querySelectorAll(selector);
-    elements.forEach(element => observer.observe(element));
-  });
-});
 
+  // ── Navbar Toggle ──────────────────────────────────────────
+  const toggleButton = document.querySelector('.toggle-button');
+  const navbarLinks = document.querySelector('.navbar-links');
+  const navbar = document.querySelector('.navbar');
 
-// Search Bar for Blog
-document.addEventListener('DOMContentLoaded', function() {
-  const searchInput = document.querySelector('.search-input');
-  const searchForm = document.querySelector('.search');
-  const boxes = document.querySelectorAll('.box');
-  const noResultsMessage = document.querySelector('.no-results-message');
-
-  function filterBoxes(searchTerm) {
-      searchTerm = searchTerm.trim().toLowerCase();
-      let foundMatch = false;
-      boxes.forEach(function(box) {
-          const boxText = box.textContent.toLowerCase();
-          if (boxText.includes(searchTerm)) {
-              box.style.display = 'block'; // Show the box
-              foundMatch = true;
-          } else {
-              box.style.display = 'none'; // Hide the box
-          }
-      });
-
-      // Display "No Matching Results" message if no matches found
-      if (!foundMatch) {
-          noResultsMessage.style.display = 'block';
-      } else {
-          noResultsMessage.style.display = 'none';
-      }
-  }
-
-  // Event listener for the form submit
-  searchForm.addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent default form submission
-      filterBoxes(searchInput.value);
-  });
-
-  // Event listener for the input change
-  // searchInput.addEventListener('input', function() {
-  //   filterBoxes(searchInput.value);
-  // });
-});
-
-// Scrolling Navbar Background - BLOG
-document.addEventListener("DOMContentLoaded", function() {
-  const toggleButton = document.getElementsByClassName('toggle-button')[0];
-  const navbarLinks = document.getElementsByClassName('navbar-links-blog')[0];
-  const navbar = document.querySelector('.navbar-blog');
-
-  toggleButton.addEventListener('click', (event) => {
-    event.preventDefault();
+  toggleButton?.addEventListener('click', e => {
+    e.preventDefault();
     navbarLinks.classList.toggle('active');
     navbar.classList.toggle('black-background');
   });
-  const links = navbarLinks.getElementsByTagName('a');
-  for (let i = 0; i < links.length; i++) {
-    links[i].addEventListener('click', () => {
+
+  navbarLinks?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
       navbarLinks.classList.remove('active');
       navbar.classList.remove('black-background');
     });
-  }
-});
+  });
 
-// Scroll Function 
-let prevScrollPos = window.pageYOffset;
-window.addEventListener('scroll', function() {
-  const currentScrollPos = window.pageYOffset;
-  if (prevScrollPos > currentScrollPos) {
-    document.querySelector('.navbar-blog').classList.add('nav-show');
-  } else {
-    document.querySelector('.navbar-blog').classList.remove('nav-show');
-  }
-  prevScrollPos = currentScrollPos;
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-  document.querySelector('.navbar-blog').classList.add('nav-show');
-});
-
-
-// Filter Blog 
-document.addEventListener('DOMContentLoaded', () => {
-  const filterDropdown = document.querySelector('.filter');
-  const boxes = document.querySelectorAll('.box');
-
-  filterDropdown.addEventListener('change', (e) => {
-    const selectedCategory = e.target.value;
-    boxes.forEach(box => {
-      const category = box.getAttribute('data-category');
-      if (selectedCategory === 'all' || category === selectedCategory) {
-        box.style.display = 'block';
-      } else {
-        box.style.display = 'none';
+  // ── Scroll Appear ──────────────────────────────────────────
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
       }
     });
   });
+  ['.profile', '.about', '.projects', '.box'].forEach(sel => {
+    document.querySelectorAll(sel).forEach(el => observer.observe(el));
+  });
+
+  // ── Typewriter ─────────────────────────────────────────────
+  const words = ["AI", "Data Science", "Machine Learning"];
+  const el = document.getElementById("typewriter");
+  let wordIndex = 0, charIndex = 0, deleting = false;
+
+  function type() {
+    const current = words[wordIndex];
+    if (deleting) {
+      el.textContent = current.substring(0, --charIndex);
+    } else {
+      el.textContent = current.substring(0, ++charIndex);
+    }
+
+    let delay = deleting ? 60 : 100;
+    if (!deleting && charIndex === current.length) {
+      delay = 1800;
+      deleting = true;
+    } else if (deleting && charIndex === 0) {
+      deleting = false;
+      wordIndex = (wordIndex + 1) % words.length;
+      delay = 400;
+    }
+    setTimeout(type, delay);
+  }
+  type();
+
+  // ── Card Tilt ──────────────────────────────────────────────
+  document.querySelectorAll('.box').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const cx = rect.width / 2;
+      const cy = rect.height / 2;
+      const rotateX = ((y - cy) / cy) * -2.5;
+      const rotateY = ((x - cx) / cx) * 2.5;
+      const shadowX = ((x - cx) / cx) * 15;
+      const shadowY = ((y - cy) / cy) * 15;
+      card.style.transform = `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+      card.style.boxShadow = `${shadowX}px ${shadowY}px 30px rgba(0,0,0,0.7)`;
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)';
+      card.style.boxShadow = '0 4px 15px rgba(0,0,0,0.5)';
+    });
+  });
+
+  // ── Particles ──────────────────────────────────────────────
+  const canvas = document.getElementById("particle-canvas");
+  const ctx = canvas.getContext("2d");
+
+  function resize() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  }
+  resize();
+  window.addEventListener("resize", resize);
+
+  const PARTICLE_COUNT = 60;
+  const particles = Array.from({ length: PARTICLE_COUNT }, () => ({
+    x: Math.random() * canvas.width,
+    y: Math.random() * canvas.height,
+    r: Math.random() * 1.5 + 0.5,
+    dx: (Math.random() - 0.5) * 0.4,
+    dy: (Math.random() - 0.5) * 0.4,
+    alpha: Math.random() * 0.4 + 0.1,
+  }));
+
+  function drawParticles() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(p => {
+      p.x += p.dx;
+      p.y += p.dy;
+      if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+      if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255,255,255,${p.alpha})`;
+      ctx.fill();
+    });
+
+    // Draw connecting lines between close particles
+    for (let i = 0; i < particles.length; i++) {
+      for (let j = i + 1; j < particles.length; j++) {
+        const dx = particles[i].x - particles[j].x;
+        const dy = particles[i].y - particles[j].y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 120) {
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.strokeStyle = `rgba(255,255,255,${0.08 * (1 - dist / 120)})`;
+          ctx.lineWidth = 0.5;
+          ctx.stroke();
+        }
+      }
+    }
+    requestAnimationFrame(drawParticles);
+  }
+  drawParticles();
 });
