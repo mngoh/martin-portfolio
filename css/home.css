@@ -76,6 +76,10 @@
       font-family: 'Space Grotesk', sans-serif;
       text-align: left;
       margin: 0;
+      background: linear-gradient(90deg, #93c5fd, #0d1f3c, #000000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
     /* Bottom Row */
     .bottom-row{
@@ -152,7 +156,7 @@
 .cursor {
   display: inline-block;
   font-weight: 300;
-  color: rgba(255,255,255,0.6);
+  color: rgb(147, 197, 253);
   animation: blink 0.8s step-end infinite;
 }
 @keyframes blink {
