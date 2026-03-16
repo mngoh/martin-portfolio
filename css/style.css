@@ -19,7 +19,7 @@
   /* Font Size - Shrink*/
   --home-font-size-shrink: 5rem;
   --primary-font-size-shrink: 2.9rem;
-  --secondary-font-size-shrink: 1.1rem;
+  --secondary-font-size-shrink: 1.3rem;
   --third-font-size-shrink: 1rem;
   --button-font-size-shrink:1rem;
 
@@ -199,26 +199,38 @@ body {
  
 
 /* Toggle Button */
-.toggle-button{
-  position: absolute;
-  top: 1.5rem;
-  right: 1rem;
+.toggle-button {
   display: none;
   flex-direction: column;
   justify-content: space-between;
-  width: 30px;
-  height: 21px;
-  }
-  .toggle-button .bar{
-    height: 3px;
-    width: 100%;
-    background-color: var(--text-color);
-    border-radius: 2rem;
-  }
+  width: 26px;
+  height: 18px;
+  margin-right: 1.2rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.toggle-button .bar {
+  height: 2px;
+  width: 100%;
+  background-color: var(--text-color);
+  border-radius: 2rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+/* Animate to X */
+.toggle-button.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.toggle-button.open .bar:nth-child(2) {
+  opacity: 0;
+}
+.toggle-button.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
 
 /* SECTION */
   section {
-    padding: 120px 0;
+    padding: 90px 0;
   }
   section h1 {
     text-align: center;
@@ -238,45 +250,64 @@ body {
 /* Media Container for NAV bar and Body Text */
 @media(max-width:850px){
   /* Nav Bar Styling */
-  .toggle-button{
+  .toggle-button {
     display: flex;
   }
-  .navbar-links{
-    display: none;
-    width: 100%;
-  }
-  .navbar{
-    flex-direction: column;
-    align-items: flex-start;
-    /* background-color: rgba(0, 0, 0, 1); */
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     z-index: 99999;
+    background: transparent;
+    transition: background 0.3s ease;
   }
-  .navbar .nav-name{
-    font-size: 1.5rem;
-    margin-left: 5%;
-    padding: 0px;
+  .navbar.nav-open {
+    background: rgba(0, 0, 0, 0.92);
+  }
+  .navbar .nav-name {
+    font-size: 1.3rem;
+    margin-left: 1.2rem;
+    padding: 0;
+  }
+  .navbar-links {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.92);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, padding 0.35s ease;
+    z-index: 99998;
+  }
+  .navbar-links.active {
+    max-height: 300px;
+    padding-bottom: 1rem;
   }
   .navbar-links ul {
     width: 100%;
-    flex-direction: column;   
+    flex-direction: column;
+    padding: 0.5rem 0;
   }
   .navbar-links li {
     text-align: center;
   }
   .navbar-links li a {
-    padding: .5rem 1rem;
+    font-size: 1.1rem;
+    padding: 0.85rem 1rem;
+    letter-spacing: 0.1em;
   }
-  .navbar-links.active, .navbar.active{
-    display: flex;
-    background-color: var(--background-color);
+  .navbar-links li a::after {
+    display: none;
   }
   /* Body Styling */
-  section h1{
+  section h1 {
     margin-top: 2%;
     margin-bottom: 3%;
     font-size: var(--primary-font-size-shrink);
   }
-  section h2{
+  section h2 {
     margin-bottom: 4%;
     font-size: var(--secondary-font-size-shrink);
   }

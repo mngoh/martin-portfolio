@@ -177,12 +177,12 @@
   }
   .box-overlay {
     opacity: 1;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
     justify-content: flex-end;
     padding: 1rem;
   }
   .box-overlay h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .box-overlay p {
     display: none;

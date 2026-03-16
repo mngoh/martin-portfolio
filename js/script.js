@@ -42,13 +42,15 @@ document.addEventListener("DOMContentLoaded", function() {
   toggleButton?.addEventListener('click', e => {
     e.preventDefault();
     navbarLinks.classList.toggle('active');
-    navbar.classList.toggle('black-background');
+    toggleButton.classList.toggle('open');
+    navbar.classList.toggle('nav-open');
   });
 
   navbarLinks?.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       navbarLinks.classList.remove('active');
-      navbar.classList.remove('black-background');
+      toggleButton.classList.remove('open');
+      navbar.classList.remove('nav-open');
     });
   });
 
