@@ -206,10 +206,10 @@
 }
 @media(max-width:850px){
     .profile-text .hi{
-      font-size: 3.5rem;
+      font-size: 4.5rem;
     }
     .bot-line .bot{
-      font-size: 1.1rem;
+      font-size: 1.4rem;
     }
     .profile{
       justify-content: center;
@@ -252,10 +252,10 @@
   }
   .profile-text .name,
   .profile-text .hi{
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .bot-line .bot{
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .socials{
     display: flex;
