@@ -26,6 +26,10 @@ document.addEventListener("DOMContentLoaded", function() {
     smoothScroll(projectSection.offsetTop, 2000);
   });
 
+  document.querySelector('.scroll-indicator')?.addEventListener('click', () => {
+    smoothScroll(aboutSection.offsetTop, 2000);
+  });
+
   document.querySelectorAll("nav ul li a").forEach(link => {
     link.addEventListener("click", function(e) {
       e.preventDefault();

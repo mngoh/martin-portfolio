@@ -166,6 +166,7 @@
 
 /* Scroll Indicator */
 .scroll-indicator {
+  cursor: pointer;
   position: absolute;
   bottom: 2rem;
   left: 50%;
