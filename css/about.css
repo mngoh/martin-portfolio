@@ -7,6 +7,15 @@
   z-index: 1;
 }
 
+.about-summary {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #a0a0a0;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.6;
+}
+
 /* Stats Row */
 .stats-row {
   display: flex;
@@ -160,6 +169,11 @@
 }
 
 @media (max-width: 850px) {
+  .about-summary {
+    font-size: 0.95rem;
+    width: 85%;
+    padding: 0 1rem;
+  }
   .skills-container {
     width: 85%;
   }
@@ -181,6 +195,7 @@
   }
   .stat-label {
     font-size: 0.9rem;
+    text-align: center;
   }
   .timeline-container {
     width: 85%;

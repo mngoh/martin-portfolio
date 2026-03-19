@@ -24,7 +24,7 @@
   <link rel="stylesheet" type="text/css" href="css/background.css">
   <link rel="stylesheet" type="text/css" href="css/button.css">
   <script src="https://kit.fontawesome.com/b2fb9e30a3.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Space+Grotesk:wght@700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Space+Grotesk:wght@500;600;700;800&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
@@ -72,6 +72,7 @@
  <!-- ABOUT -->
   <section id="about" class="section-background">
     <h1>ABOUT</h1>
+    <p class="about-summary">Senior Data Scientist with 4+ years developing, deploying, and delivering AI that leverages data for business growth.</p>
 
     <!-- Stats Row -->
     <div class="stats-row">
@@ -88,8 +89,8 @@
         <span class="stat-label">Projects</span>
       </div>
       <div class="stat">
-        <span class="stat-number">3</span>
-        <span class="stat-label">Industries</span>
+        <span class="stat-number">5+</span>
+        <span class="stat-label">Models Deployed</span>
       </div>
     </div>
 
@@ -151,6 +152,11 @@
         <span class="skill-pill skill-tech">Hugging Face</span>
         <span class="skill-pill skill-tech">Prophet</span>
         <span class="skill-pill skill-tech">OpenAI</span>
+        <span class="skill-pill skill-tech">Claude API</span>
+        <span class="skill-pill skill-tech">XGBoost</span>
+        <span class="skill-pill skill-tech">RAG</span>
+        <span class="skill-pill skill-tech">Vector Search</span>
+        <span class="skill-pill skill-tech">Embeddings</span>
       </div>
     </div>
   </section>
@@ -158,7 +164,7 @@
   <!-- Projects -->
 <section id="projects" class="section-background">
   <h1>PROJECTS</h1>
-  <h2 class="proj-head">A few personal projects of mine...</h2>
+  <h2 class="proj-head">AI Tools That I've Built and Shipped</h2>
   <div class="projects" id="grid-container">
     <div class="box" onclick="window.open('https://resume-bot-production-8bd9.up.railway.app/', '_blank');">
       <div class="box-text">
@@ -177,6 +183,7 @@
             <span class="pill pill-ml">Embeddings</span>
             <span class="pill pill-ml">Reranking</span>
           </div>
+          <p class="live-badge"><span class="live-dot"></span> live</p>
         </div>
       </div>
     </div>
@@ -185,7 +192,7 @@
         <img src="images/spm2.png">
         <div class="box-overlay">
           <h2>Soccer Prediction Model (SPM)</h2>
-          <p>Forecasted goals scored for the top 5 soccer leagues in Europe using CatBoost, LightGBM, Neural Network, and Random Forest models.</p>
+          <p>Player-level goals prediction model built on 2,786 players across 104 countries. Tested 8 models with full GridSearch tuning — best was Linear Regression with R²=0.680 and RMSE=0.249 on the test set.</p>
           <div class="pill-container">
             <span class="pill">Python</span>
             <span class="pill">SQL</span>
@@ -216,6 +223,7 @@
             <span class="pill pill-ml">Vector Search</span>
             <span class="pill pill-ml">LLM</span>
           </div>
+          <p class="live-badge"><span class="live-dot"></span> live</p>
         </div>
       </div>
     </div>
@@ -224,7 +232,7 @@
         <img src="images/championsleague.png">
         <div class="box-overlay">
           <h2>Champions League 2024</h2>
-          <p>Scraped web data using Python to analyze Champions League trends from 2008–2024. Built multiple regression models to test and evaluate team performance over time.</p>
+          <p>Scraped web data using Python to analyze Champions League goal-scoring trends from 2008–2024. Best model was XGBoost with 0.647 training RMSE and 0.854 on unseen 2023–24 season data.</p>
           <div class="pill-container">
             <span class="pill">Python</span>
             <span class="pill">Jupyter</span>
@@ -245,14 +253,14 @@
   <!-- Footer section -->
   <section id="copyright" class="copyright-background">
       <div class="footer-container">
-        <p class="footer-heading">Let's Collaborate</p>
+        <p class="footer-heading">let's chat.</p>
       <div class="footer-links">
           <a href="mailto:ngohlmartin@gmail.com"><i class="fa-regular fa-envelope"></i></a>
           <a href="https://www.linkedin.com/in/mngoh"><i class="fa-brands fa-linkedin"></i></a>
           <a href="https://github.com/mngoh"><i class="fa-brands fa-github"></i></a>
           <a href="resume/MartinNgohResume.pdf" id="download-resume">Resume</a>
         </div>
-        <p>&copy; 2026 Martin Ngoh. All Rights Reserved.</p>
+        <p>designed & built by Martin Ngoh</p>
       </div>
   </section>
 </body>
