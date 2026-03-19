@@ -170,8 +170,8 @@
 
 @media (max-width: 850px) {
   .about-summary {
-    font-size: 0.95rem;
-    width: 85%;
+    font-size: 1.1rem;
+    width: 90%;
     padding: 0 1rem;
   }
   .skills-container {
