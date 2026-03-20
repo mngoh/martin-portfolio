@@ -307,12 +307,14 @@
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({ name: `${first} ${last}`, email })
-    });
+    }).catch(function(){});
     modal.style.display = 'none';
     const a = document.createElement('a');
     a.href = resumeUrl;
     a.download = 'MartinNgohResume.pdf';
+    document.body.appendChild(a);
     a.click();
+    document.body.removeChild(a);
   });
 </script>
 </body>
