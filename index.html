@@ -262,10 +262,57 @@
           <a href="mailto:ngohlmartin@gmail.com"><i class="fa-regular fa-envelope"></i></a>
           <a href="https://www.linkedin.com/in/mngoh"><i class="fa-brands fa-linkedin"></i></a>
           <a href="https://github.com/mngoh"><i class="fa-brands fa-github"></i></a>
-          <a href="resume/MartinNgohResume.pdf" id="download-resume">Resume</a>
+          <a href="#" id="download-resume">Resume</a>
         </div>
         <p>designed & built by Martin Ngoh</p>
       </div>
   </section>
+<!-- Resume Email Modal -->
+<div id="resume-modal" style="display:none;position:fixed;inset:0;z-index:99999;background:rgba(0,0,0,0.75);display:none;align-items:center;justify-content:center;">
+  <div style="background:#111;border:1px solid rgba(255,255,255,0.1);border-radius:.6rem;padding:2.5rem 2rem;max-width:380px;width:90%;text-align:center;">
+    <h3 style="font-family:'Space Grotesk',sans-serif;margin:0 0 .5rem;font-size:1.4rem;">Before you go</h3>
+    <p style="color:rgba(255,255,255,0.5);font-size:.85rem;margin:0 0 1.5rem;">Drop your email and I'll send the resume your way.</p>
+    <form id="resume-form">
+      <input type="email" id="resume-email" placeholder="your@email.com" required
+        style="width:100%;box-sizing:border-box;padding:.75rem 1rem;border-radius:.3rem;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:#fff;font-size:.9rem;margin-bottom:1rem;outline:none;">
+      <button type="submit"
+        style="width:100%;padding:.75rem;border-radius:.3rem;border:none;background:#fff;color:#000;font-weight:700;font-size:.9rem;cursor:pointer;">Download Resume</button>
+      <p id="resume-form-skip" style="margin:.9rem 0 0;font-size:.78rem;color:rgba(255,255,255,0.35);cursor:pointer;">skip & download</p>
+    </form>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('resume-modal');
+  const form = document.getElementById('resume-form');
+  const skip = document.getElementById('resume-form-skip');
+  const resumeUrl = 'resume/MartinNgohResume.pdf';
+
+  document.getElementById('download-resume').addEventListener('click', function(e) {
+    e.preventDefault();
+    modal.style.display = 'flex';
+  });
+
+  modal.addEventListener('click', function(e) {
+    if (e.target === modal) modal.style.display = 'none';
+  });
+
+  skip.addEventListener('click', function() {
+    modal.style.display = 'none';
+    window.open(resumeUrl, '_blank');
+  });
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const email = document.getElementById('resume-email').value;
+    fetch('https://formspree.io/f/mdawbryk', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({ email })
+    });
+    modal.style.display = 'none';
+    window.open(resumeUrl, '_blank');
+  });
+</script>
 </body>
 </html>
