@@ -299,9 +299,10 @@
 
   form.addEventListener('submit', async function(e) {
     e.preventDefault();
-    const first = document.getElementById('resume-first').value;
-    const last = document.getElementById('resume-last').value;
-    const email = document.getElementById('resume-email').value;
+    const first = document.getElementById('resume-first').value.trim();
+    const last = document.getElementById('resume-last').value.trim();
+    const email = document.getElementById('resume-email').value.trim();
+    if (!first || !last || !email) return;
     fetch('https://formspree.io/f/mdawbryk', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
