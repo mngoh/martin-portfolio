@@ -297,24 +297,29 @@
   });
 
   document.getElementById('resume-submit').addEventListener('click', function() {
-    const first = document.getElementById('resume-first').value.trim();
-    const last = document.getElementById('resume-last').value.trim();
-    const email = document.getElementById('resume-email').value.trim();
+    const firstEl = document.getElementById('resume-first');
+    const lastEl = document.getElementById('resume-last');
+    const emailEl = document.getElementById('resume-email');
+    const first = firstEl.value.trim();
+    const last = lastEl.value.trim();
+    const email = emailEl.value.trim();
+
+    const err = 'border:1px solid #f87171;';
+    const ok = 'border:1px solid rgba(255,255,255,0.2);';
+    firstEl.style.cssText = firstEl.style.cssText.replace(/border:[^;]+;/, '') + (first ? ok : err);
+    lastEl.style.cssText = lastEl.style.cssText.replace(/border:[^;]+;/, '') + (last ? ok : err);
+    emailEl.style.cssText = emailEl.style.cssText.replace(/border:[^;]+;/, '') + (email ? ok : err);
+
     if (!first || !last || !email) return;
-    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    if (!emailValid) return;
+
     fetch('https://formspree.io/f/mdawbryk', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
       body: JSON.stringify({ name: `${first} ${last}`, email })
     }).catch(function(){});
+
     modal.style.display = 'none';
-    const a = document.createElement('a');
-    a.href = resumeUrl;
-    a.download = 'MartinNgohResume.pdf';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+    window.open(resumeUrl, '_blank');
   });
 </script>
 </body>
