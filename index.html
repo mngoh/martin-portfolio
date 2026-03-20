@@ -281,7 +281,7 @@
       </div>
       <input type="email" id="resume-email" placeholder="your@email.com" required
         style="width:100%;box-sizing:border-box;padding:.75rem 1rem;border-radius:.3rem;border:1px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.05);color:#fff;font-size:.9rem;margin-bottom:1rem;outline:none;">
-      <button type="submit"
+      <button type="button" id="resume-submit"
         style="width:100%;padding:.75rem;border-radius:.3rem;border:none;background:#fff;color:#000;font-weight:700;font-size:.9rem;cursor:pointer;">Download Resume</button>
     </form>
   </div>
@@ -289,7 +289,6 @@
 
 <script>
   const modal = document.getElementById('resume-modal');
-  const form = document.getElementById('resume-form');
   const resumeUrl = 'resume/MartinNgohResume.pdf';
 
   document.getElementById('download-resume').addEventListener('click', function(e) {
@@ -297,12 +296,13 @@
     modal.style.display = 'flex';
   });
 
-  form.addEventListener('submit', async function(e) {
-    e.preventDefault();
+  document.getElementById('resume-submit').addEventListener('click', function() {
     const first = document.getElementById('resume-first').value.trim();
     const last = document.getElementById('resume-last').value.trim();
     const email = document.getElementById('resume-email').value.trim();
     if (!first || !last || !email) return;
+    const emailValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!emailValid) return;
     fetch('https://formspree.io/f/mdawbryk', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
