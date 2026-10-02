@@ -259,23 +259,23 @@
         </div>
       </div>
     </a>
-    <a class="box" href="https://mngoh.github.io/SPM-Model/" target="_blank" rel="noopener">
+    <a class="box" href="https://mngoh.github.io/LA-Crime/" target="_blank" rel="noopener">
       <div class="box-text">
-        <img src="images/spm2.png" alt="SPM model performance charts">
+        <img src="images/laCrime.png" alt="Charts of assault victimization rates in Los Angeles by race and sex">
         <div class="box-overlay">
-          <h2>Soccer Prediction Model (SPM)</h2>
-          <p>Predicts non-penalty goals from season stats, built on data for 2,786 players in 104 countries. Of 8 models, Lasso regression had the best R² (0.680) and RMSE (0.249).</p>
-          <p class="how-built"><span>How I built it</span> Log-transformed and one-hot encoded 40 features, PCA to 95% variance, then compared linear, boosted-tree and neural models on a held-out test set.</p>
+          <h2>Assault Victims in Los Angeles</h2>
+          <p>100,946 LAPD assault reports as rates against census population. Black women are assaulted at 1,803 per 100,000 a year, about twice the rate of other women after adjusting for age, location, neighborhood and homelessness.</p>
+          <p class="how-built"><span>How I built it</span> Every assault geocoded to its census tract, denominators from ACS age bands, six rival explanations tested, then a Poisson adjustment ladder with ACS and LAHSA covariates.</p>
           <div class="pill-container">
             <span class="pill">Python</span>
-            <span class="pill">Jupyter</span>
-            <span class="pill">scikit-learn</span>
+            <span class="pill">pandas</span>
+            <span class="pill">statsmodels</span>
+            <span class="pill">Chart.js</span>
           </div>
           <div class="pill-container">
-            <span class="pill pill-ml">Lasso</span>
-            <span class="pill pill-ml">PCA</span>
-            <span class="pill pill-ml">Gradient Boosting</span>
-            <span class="pill pill-ml">Neural Network</span>
+            <span class="pill pill-ml">Poisson GLM</span>
+            <span class="pill pill-ml">Rate Standardization</span>
+            <span class="pill pill-ml">Geospatial</span>
           </div>
         </div>
       </div>
