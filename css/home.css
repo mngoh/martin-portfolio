@@ -23,6 +23,16 @@
   animation-delay: 0.6s;
   opacity: 0;
 }
+.profile-intro {
+  animation: fadeUp 0.8s ease forwards;
+  animation-delay: 0.8s;
+  opacity: 0;
+  max-width: 620px;
+  margin: 0 0 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.72);
+}
 .socials {
   animation: fadeUp 0.8s ease forwards;
   animation-delay: 1s;
@@ -67,7 +77,7 @@
       text-align: left;
       width: 100%;
       margin-top: 1rem;
-      margin-bottom: 2.5rem;
+      margin-bottom: 1.25rem;
     }
     .bot-line .bot {
       font-size: 2.2rem;
@@ -211,6 +221,10 @@
     }
     .bot-line .bot{
       font-size: 1.8rem;
+    }
+    .profile-intro{
+      font-size: 1.05rem;
+      margin-bottom: 2rem;
     }
     .profile{
       justify-content: center;

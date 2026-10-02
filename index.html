@@ -64,8 +64,7 @@
         <div class="bot-line">
             <h1 class="bot"><span id="typewriter"></span><span class="cursor">|</span></h1>
         </div>
-          <div class='profile-intro'>
-          </div>
+          <p class="profile-intro">Data scientist and AI engineer who ships products: three live apps, from a police-accountability publication to an AI lease reader.</p>
       <div class="socials">
           <li><a href="mailto:ngohlmartin@gmail.com"><i class="fa-regular fa-envelope fa-2xl" id="mail"></i></a></li>
           <li><a href="https://www.linkedin.com/in/mngoh"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
@@ -82,7 +81,7 @@
  <!-- ABOUT -->
   <section id="about" class="section-background">
     <h1>ABOUT</h1>
-    <p class="about-summary">Senior Data Scientist with 5+ years developing, deploying, and delivering AI that leverages data for business growth.</p>
+    <p class="about-summary">Senior Data Scientist with 5+ years building and shipping machine learning and LLM systems in production, for federal clients and on my own.</p>
 
     <!-- Stats Row -->
     <div class="stats-row">
@@ -153,43 +152,40 @@
     <!-- Skills -->
     <div class="skills-container">
       <h3 class="skills-heading">Skills</h3>
-      <div class="skill-pills">
-        <span class="skill-pill skill-proficient">Python</span>
-        <span class="skill-pill skill-proficient">PySpark</span>
-        <span class="skill-pill skill-proficient">SQL</span>
-        <span class="skill-pill skill-proficient">Git</span>
-        <span class="skill-pill skill-proficient">HTML</span>
-        <span class="skill-pill skill-experience">R</span>
-        <span class="skill-pill skill-experience">SAS</span>
-        <span class="skill-pill skill-experience">JavaScript</span>
-        <span class="skill-pill skill-experience">CSS</span>
+      <div class="skill-group">
+        <span class="skill-label">Languages</span>
+        <div class="skill-pills">
+          <span class="skill-pill skill-proficient">Python</span>
+          <span class="skill-pill skill-proficient">SQL</span>
+          <span class="skill-pill skill-proficient">PySpark</span>
+          <span class="skill-pill skill-experience">R</span>
+          <span class="skill-pill skill-experience">SAS</span>
+        </div>
       </div>
-      <div class="skill-pills">
-        <span class="skill-pill skill-tech">AWS</span>
-        <span class="skill-pill skill-tech">SageMaker</span>
-        <span class="skill-pill skill-tech">Azure</span>
-        <span class="skill-pill skill-tech">Tableau</span>
-        <span class="skill-pill skill-tech">TensorFlow</span>
-        <span class="skill-pill skill-tech">PyTorch</span>
-        <span class="skill-pill skill-tech">MLFlow</span>
-        <span class="skill-pill skill-tech">LangChain</span>
-        <span class="skill-pill skill-tech">NumPy</span>
-        <span class="skill-pill skill-tech">Pandas</span>
-        <span class="skill-pill skill-tech">Matplotlib</span>
-        <span class="skill-pill skill-tech">Seaborn</span>
-        <span class="skill-pill skill-tech">Sklearn</span>
-        <span class="skill-pill skill-tech">Hugging Face</span>
-        <span class="skill-pill skill-tech">Prophet</span>
-        <span class="skill-pill skill-tech">OpenAI</span>
-        <span class="skill-pill skill-tech">Claude API</span>
-        <span class="skill-pill skill-tech">XGBoost</span>
-        <span class="skill-pill skill-tech">RAG</span>
-        <span class="skill-pill skill-tech">Vector Search</span>
-        <span class="skill-pill skill-tech">Embeddings</span>
-        <span class="skill-pill skill-tech">Flask</span>
-        <span class="skill-pill skill-tech">FastAPI</span>
-        <span class="skill-pill skill-tech">Docker</span>
-        <span class="skill-pill skill-tech">PostgreSQL</span>
+      <div class="skill-group">
+        <span class="skill-label">ML &amp; AI</span>
+        <div class="skill-pills">
+          <span class="skill-pill skill-tech">Claude API</span>
+          <span class="skill-pill skill-tech">LLM pipelines</span>
+          <span class="skill-pill skill-tech">RAG</span>
+          <span class="skill-pill skill-tech">XGBoost</span>
+          <span class="skill-pill skill-tech">scikit-learn</span>
+          <span class="skill-pill skill-tech">PyTorch</span>
+          <span class="skill-pill skill-tech">Prophet</span>
+          <span class="skill-pill skill-tech">Bayesian inference</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <span class="skill-label">MLOps &amp; Data</span>
+        <div class="skill-pills">
+          <span class="skill-pill skill-tech">AWS</span>
+          <span class="skill-pill skill-tech">SageMaker</span>
+          <span class="skill-pill skill-tech">Docker</span>
+          <span class="skill-pill skill-tech">MLflow</span>
+          <span class="skill-pill skill-tech">FastAPI</span>
+          <span class="skill-pill skill-tech">PostgreSQL</span>
+          <span class="skill-pill skill-tech">Railway</span>
+        </div>
       </div>
     </div>
   </section>
@@ -205,6 +201,7 @@
         <div class="box-overlay">
           <h2>Justice Lens</h2>
           <p>An independent data publication testing whether DC policing is applied equitably: nine statistical analyses on 1.4M+ public police records.</p>
+          <p class="how-built"><span>How I built it</span> Daily ingest of DC Open Data into PostGIS, analyses recomputed on page load, veil-of-darkness and Bayesian threshold tests fitted with MCMC, ~500 automated tests.</p>
           <div class="pill-container">
             <span class="pill">Python</span>
             <span class="pill">FastAPI</span>
@@ -225,6 +222,7 @@
         <div class="box-overlay">
           <h2>Lease Screener</h2>
           <p>A live AI tool that reads your lease, flags risky clauses against DC and Virginia tenant law, and answers questions about it. 190+ leases analyzed.</p>
+          <p class="how-built"><span>How I built it</span> Lease chunked and indexed with BM25, reranked with a cross-encoder, answered by Claude Haiku with a Sonnet pass checking each report against the tenant-law texts.</p>
           <div class="pill-container">
             <span class="pill">Python</span>
             <span class="pill">FastAPI</span>
@@ -246,6 +244,7 @@
         <div class="box-overlay">
           <h2>Athro News</h2>
           <p>A live news digest: RSS feeds from outlets like BBC, NPR and Bloomberg, plus ESPN scores and film releases, condensed into bullet points by Claude.</p>
+          <p class="how-built"><span>How I built it</span> 20 feeds fetched in parallel, 8 Claude Haiku calls pick and summarize each section, results cached and refreshed on a schedule so pages load pre-rendered.</p>
           <div class="pill-container">
             <span class="pill">Python</span>
             <span class="pill">Flask</span>
@@ -267,6 +266,7 @@
         <div class="box-overlay">
           <h2>Soccer Prediction Model (SPM)</h2>
           <p>Predicts non-penalty goals from season stats, built on data for 2,786 players in 104 countries. Of 8 models, Lasso regression had the best R² (0.680) and RMSE (0.249).</p>
+          <p class="how-built"><span>How I built it</span> Log-transformed and one-hot encoded 40 features, PCA to 95% variance, then compared linear, boosted-tree and neural models on a held-out test set.</p>
           <div class="pill-container">
             <span class="pill">Python</span>
             <span class="pill">Jupyter</span>
