@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWR31TK4WC"></script>
   <script>
@@ -21,8 +22,6 @@
   <link rel="stylesheet" type="text/css" href="css/about.css">
   <link rel="stylesheet" type="text/css" href="css/home.css">
   <link rel="stylesheet" type="text/css" href="css/copyright.css">
-  <link rel="stylesheet" type="text/css" href="css/background.css">
-  <link rel="stylesheet" type="text/css" href="css/button.css">
   <script src="https://kit.fontawesome.com/b2fb9e30a3.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700;800&display=swap">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -72,12 +71,12 @@
  <!-- ABOUT -->
   <section id="about" class="section-background">
     <h1>ABOUT</h1>
-    <p class="about-summary">Senior Data Scientist with 4+ years developing, deploying, and delivering AI that leverages data for business growth.</p>
+    <p class="about-summary">Senior Data Scientist with 5+ years developing, deploying, and delivering AI that leverages data for business growth.</p>
 
     <!-- Stats Row -->
     <div class="stats-row">
       <div class="stat">
-        <span class="stat-number">4+</span>
+        <span class="stat-number">5+</span>
         <span class="stat-label">Years Experience</span>
       </div>
       <div class="stat">
@@ -89,8 +88,8 @@
         <span class="stat-label">Projects</span>
       </div>
       <div class="stat">
-        <span class="stat-number">5+</span>
-        <span class="stat-label">Models Deployed</span>
+        <span class="stat-number">3</span>
+        <span class="stat-label">Live Apps</span>
       </div>
     </div>
 
@@ -98,10 +97,18 @@
     <div class="timeline-container">
       <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">2021 — Present</div>
+        <div class="timeline-date">2024 — Present</div>
+        <div class="timeline-content">
+          <h3>Senior Data Scientist</h3>
+          <p>Accenture Federal Services · LLM document pipelines, forecasting and fraud detection</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2021 — 2024</div>
         <div class="timeline-content">
           <h3>Data Scientist</h3>
-          <p>Building AI solutions that drive business growth for clients across industries.</p>
+          <p>Deloitte Consulting · Fraud-detection models, MLflow model tracking and AI roadmaps</p>
         </div>
       </div>
       <div class="timeline-item">
@@ -168,62 +175,42 @@
   <h1>PROJECTS</h1>
   <h2 class="proj-head">AI products and data solutions</h2>
   <div class="projects" id="grid-container">
-    <div class="box" onclick="window.open('https://github.com/mngoh/Resume-Bot', '_blank');">
+    <div class="box" onclick="window.open('https://justicelensai.com', '_blank');">
       <div class="box-text">
-        <img src="images/resumeBot.png">
+        <img src="images/justiceLens.png">
         <div class="box-overlay">
-          <h2>Resume Bot</h2>
-          <p>Built an app that matches resumes to job descriptions through LLMs and transformers. 
-            Uses cosine similarity for matching and assessment.</p>
+          <h2>Justice Lens</h2>
+          <p>An independent data publication testing whether DC policing is applied equitably: nine statistical analyses on 1.4M+ public police records.</p>
           <div class="pill-container">
             <span class="pill">Python</span>
-            <span class="pill">Jupyter</span>
+            <span class="pill">FastAPI</span>
+            <span class="pill">PostGIS</span>
           </div>
           <div class="pill-container">
-            <span class="pill pill-ml">LLM</span>
-            <span class="pill pill-ml">Embeddings</span>
-            <span class="pill pill-ml">Transformers</span>
-            <span class="pill pill-ml">Cosine Similarity</span>
+            <span class="pill pill-ml">Bayesian MCMC</span>
+            <span class="pill pill-ml">Hypothesis Testing</span>
+            <span class="pill pill-ml">Geospatial</span>
           </div>
           <p class="live-badge"><span class="live-dot"></span> live</p>
         </div>
       </div>
     </div>
-    <div class="box" onclick="window.open('https://mngoh.github.io/SPM-Model/', '_blank');">
+    <div class="box" onclick="window.open('https://leasescreener.com', '_blank');">
       <div class="box-text">
-        <img src="images/spm2.png">
+        <img src="images/leaseScreener.png">
         <div class="box-overlay">
-          <h2>Soccer Prediction Model (SPM)</h2>
-          <p>Player-level goals prediction model built on 2,786 players across 104 countries. Tested 8 models with full GridSearch tuning — best was Linear Regression with R²=0.680 and RMSE=0.249 on the test set.</p>
+          <h2>Lease Screener</h2>
+          <p>A live AI tool that reads your lease, flags risky clauses against DC and Virginia tenant law, and answers questions about it. 190+ leases analyzed.</p>
           <div class="pill-container">
             <span class="pill">Python</span>
-            <span class="pill">SQL</span>
-            <span class="pill">Jupyter</span>
-          </div>
-          <div class="pill-container">
-            <span class="pill pill-ml">CatBoost</span>
-            <span class="pill pill-ml">LightGBM</span>
-            <span class="pill pill-ml">Random Forest</span>
-            <span class="pill pill-ml">Neural Network</span>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="box" onclick="window.open('https://github.com/mngoh/', '_blank');">
-      <div class="box-text">
-        <img src="images/leaseHelper.png">
-        <div class="box-overlay">
-          <h2>DC Lease Helper</h2>
-          <p>A deployed RAG app that reads your DC lease, compares it against the DC Tenant Bill of Rights, and lets you ask plain-language questions about your lease.</p>
-          <div class="pill-container">
-            <span class="pill">Python</span>
+            <span class="pill">FastAPI</span>
             <span class="pill">Claude API</span>
             <span class="pill">Railway</span>
           </div>
           <div class="pill-container">
             <span class="pill pill-ml">RAG</span>
-            <span class="pill pill-ml">Vector Search</span>
-            <span class="pill pill-ml">LLM</span>
+            <span class="pill pill-ml">BM25 + Reranking</span>
+            <span class="pill pill-ml">LLM-as-Judge</span>
           </div>
           <p class="live-badge"><span class="live-dot"></span> live</p>
         </div>
@@ -234,9 +221,11 @@
         <img src="images/athroNews.png">
         <div class="box-overlay">
           <h2>Athro News</h2>
-          <p>A deployed news aggregator that pulls from top sources and uses LLMs to summarize headlines into clean bullet points.</p>
+          <p>A live news digest: RSS feeds from outlets like BBC, NPR and Bloomberg, plus ESPN scores and film releases, condensed into bullet points by Claude.</p>
           <div class="pill-container">
             <span class="pill">Python</span>
+            <span class="pill">Flask</span>
+            <span class="pill">Claude API</span>
             <span class="pill">Railway</span>
           </div>
           <div class="pill-container">
@@ -247,7 +236,27 @@
           <p class="live-badge"><span class="live-dot"></span> live</p>
         </div>
       </div>
-    </div> 
+    </div>
+    <div class="box" onclick="window.open('https://mngoh.github.io/SPM-Model/', '_blank');">
+      <div class="box-text">
+        <img src="images/spm2.png">
+        <div class="box-overlay">
+          <h2>Soccer Prediction Model (SPM)</h2>
+          <p>Predicts non-penalty goals from season stats, built on data for 2,786 players in 104 countries. Of 8 models, Lasso regression had the best R² (0.680) and RMSE (0.249).</p>
+          <div class="pill-container">
+            <span class="pill">Python</span>
+            <span class="pill">Jupyter</span>
+            <span class="pill">scikit-learn</span>
+          </div>
+          <div class="pill-container">
+            <span class="pill pill-ml">Lasso</span>
+            <span class="pill pill-ml">PCA</span>
+            <span class="pill pill-ml">Gradient Boosting</span>
+            <span class="pill pill-ml">Neural Network</span>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
     <div class="github-more">
       <a href="https://github.com/mngoh" target="_blank">More on GitHub →</a>
