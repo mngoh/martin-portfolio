@@ -128,7 +128,7 @@
 <div class="wrap hero">
   <div class="eyebrow">Case study</div>
   <h1>Justice Lens</h1>
-  <p class="lede">A live publication that measures Washington, DC policing against MPD's own records: nine statistical analyses, two baselines, and results published whichever way they point.</p>
+  <p class="lede">A live publication that measures DC policing against MPD's own records. Nine analyses, two baselines, results published whichever way they point.</p>
   <div class="meta"><span>Live since 2026</span><span>1.4M+ public records</span><span>Python, FastAPI, PostgreSQL</span><span>500+ automated tests</span></div>
   <div class="actions">
     <a class="btn btn-primary" href="https://justicelensai.com" target="_blank" rel="noopener">Open justicelensai.com</a>
@@ -139,7 +139,7 @@
 <div class="wrap wide figure">
   <figure>
     <div class="frame"><img src="images/justiceLens.png" alt="Justice Lens home page with its key findings"></div>
-    <figcaption>The home page. Every number is recomputed from the latest data when the page loads, with the method and caveats beside it.</figcaption>
+    <figcaption>Every number is recomputed from the latest data on page load, with its method and caveats beside it.</figcaption>
   </figure>
 </div>
 
@@ -147,7 +147,7 @@
 
   <section>
     <h2>Why I built it</h2>
-    <p>I wanted to understand how policing in DC lands across race. MPD publishes its stop, search, arrest and incident records, but nobody was measuring them against baselines, continuously and in public. I hadn't seen anything like it, so I built it.</p>
+    <p>To understand how policing in DC lands across race. MPD publishes the records, but nobody was measuring them against baselines, continuously and in public. I hadn't seen anything like it.</p>
   </section>
 
   <section>
@@ -157,28 +157,27 @@
       <tbody>
         <tr><td>MPD stops of persons</td><td class="num">509,000+</td><td>July 2019 to 2025</td></tr>
         <tr><td>MPD adult arrests</td><td class="num">320,000+</td><td>2013 to 2025</td></tr>
-        <tr><td>Reported incidents</td><td class="num">588,000+</td><td>2008 to present, updated daily</td></tr>
-        <tr><td>Moving violations</td><td class="num">7.9M</td><td>2023 to 2025, 98.6% camera-issued</td></tr>
-        <tr><td>Population by census tract</td><td class="num">ACS</td><td>2019 to 2023 five-year estimates</td></tr>
+        <tr><td>Reported incidents</td><td class="num">588,000+</td><td>2008 to present, daily</td></tr>
+        <tr><td>Moving violations</td><td class="num">7.9M</td><td>2023 to 2025, 98.6% camera</td></tr>
+        <tr><td>Population by tract</td><td class="num">ACS</td><td>2019 to 2023</td></tr>
       </tbody>
     </table>
-    <p class="quiet">All from DC Open Data and the Census API. Incident data is ingested daily with a 14-day re-fetch window; stop, arrest and ticket releases are loaded as MPD publishes them. Counts as of the July 2026 releases.</p>
+    <p class="quiet">DC Open Data and the Census API. Counts as of the July 2026 releases.</p>
   </section>
 
   <section>
     <h2>Method</h2>
-    <p>Each analysis compares enforcement against one of two baselines: who lives in each police district, and the crime its residents report. The nine analyses:</p>
+    <p>Two baselines: who lives in each police district, and the crime its residents report. Nine analyses:</p>
     <div class="tests"><span>Stops by district</span><span>Disparity over time</span><span>Searches: the outcome test</span><span>Arrests by district</span><span>Camera vs officer enforcement</span><span>Veil-of-darkness test</span><span>Enforcement vs reported crime</span><span>Search-threshold test</span><span>Classification mix over time</span></div>
-    <p>Three of them do the heavy lifting.</p>
 
-    <h3>The outcome test</h3>
-    <p>If searches of Black and non-Black people find contraband at the same rate, the extra searches of one group are not finding more. The test pools July 2019 to 2025 citywide across consent, warrant and pat-down searches, and claims a direction only when a two-proportion z-test is significant at the 5% level.</p>
+    <h3>Outcome test</h3>
+    <p>If searches of Black and non-Black people find contraband at the same rate, the extra searches of one group are not finding more. Direction is claimed only when a two-proportion z-test is significant at 5%.</p>
 
-    <h3>The veil-of-darkness test</h3>
-    <p>If officers can see race before deciding whom to stop, daylight stops should skew Blacker than after-dark stops at the same clock time. The test uses stops in the 4:45 to 9:09 PM inter-twilight window, classifies each by NOAA sunset and civil dusk for its date, and pools a Mantel-Haenszel odds ratio across 30-minute clock strata.</p>
+    <h3>Veil-of-darkness test</h3>
+    <p>If officers see race before stopping someone, daylight stops should skew Blacker than after-dark stops at the same clock time. Stops in the 4:45 to 9:09 PM twilight window, lit by NOAA sunset times, pooled with a Mantel-Haenszel odds ratio across 30-minute strata.</p>
 
-    <h3>The search-threshold test</h3>
-    <p>Equal hit rates can hide discrimination if one group is searched on thinner suspicion. This model infers the evidence bar itself: for 14 cells (7 districts by Black and non-Black), an officer's assessed probability of contraband follows a Beta distribution and a search happens above a threshold. It is fitted offline with the emcee MCMC sampler and run until the chain is 50 autocorrelation times long.</p>
+    <h3>Search-threshold test</h3>
+    <p>Equal hit rates can hide searches made on thinner suspicion. A Bayesian model infers the evidence bar itself for 14 cells (7 districts by race), fitted with emcee MCMC.</p>
   </section>
 
 </div>
@@ -186,7 +185,7 @@
 <div class="wrap wide figure">
   <figure>
     <div class="frame"><img src="images/jl-districts.png" alt="Map of DC police districts shaded by how far Black residents' share of stops exceeds their share of the population"></div>
-    <figcaption>Stops by district, 2023 to 2025. Each district is shaded against its own population. The 2nd District is darkest at 6.67 times parity; the majority-Black districts east of the river sit near 1.</figcaption>
+    <figcaption>Stops by district, 2023 to 2025, each shaded against its own population.</figcaption>
   </figure>
 </div>
 
@@ -195,12 +194,12 @@
   <section>
     <h2>Findings, October 2026</h2>
     <div class="findings">
-      <div class="finding"><div class="num">6.67x</div><p>In the 2nd District, where 8% of residents are Black, Black people were 53% of everyone stopped. Citywide the figure is 1.82 times, and above the local share in all 7 districts.</p><div class="src">MPD stops 2023 to 2025, N = 26,116 known-race stops in District 2</div></div>
-      <div class="finding"><div class="num">4.5x</div><p>Black stopped people were pat-down searched at up to 4.5 times the rate of everyone else, yet searches found contraband at indistinguishable rates: 13.9% vs 12.5%.</p><div class="src">Hit rates on 14,487 searches with a recorded outcome, 2019 to 2025</div></div>
-      <div class="finding"><div class="num">0.05 vs 0.08</div><p>The inferred bar for searching Black people sits at about 0.05 against 0.08 for everyone else: searches of Black people proceed on thinner suspicion.</p><div class="src">Threshold model, gap 0.038, 95% interval 0.019 to 0.059</div></div>
-      <div class="finding"><div class="num">0.93</div><p>No daylight effect. At the same clock time, after-dark stops were slightly more likely to be of Black people, so the disparities are not explained by officers reacting to what they can see. This one favors MPD.</p><div class="src">Mantel-Haenszel odds ratio, 95% CI 0.90 to 0.96, N = 127,947 stops</div></div>
+      <div class="finding"><div class="num">6.67x</div><p>In the 2nd District, 8% of residents are Black but 53% of people stopped were. Citywide: 1.82x, and above parity in all 7 districts.</p><div class="src">MPD stops 2023 to 2025, N = 26,116</div></div>
+      <div class="finding"><div class="num">4.5x</div><p>Black stopped people were pat-down searched at up to 4.5x the rate of everyone else. Hit rates were the same: 13.9% vs 12.5%.</p><div class="src">14,487 searches with an outcome, 2019 to 2025</div></div>
+      <div class="finding"><div class="num">0.05 vs 0.08</div><p>The inferred bar for searching Black people is lower than for everyone else. Searches proceed on thinner suspicion.</p><div class="src">Threshold model, gap 0.038 (0.019 to 0.059)</div></div>
+      <div class="finding"><div class="num">0.93</div><p>No daylight effect. The disparities are not explained by officers reacting to what they can see. This one favors MPD.</p><div class="src">Mantel-Haenszel odds ratio, 95% CI 0.90 to 0.96, N = 127,947</div></div>
     </div>
-    <p class="quiet">Results that favor MPD are published at the same prominence as those that do not. The method reports whatever the data says.</p>
+    <p class="quiet">Results that favor MPD are published at the same prominence as those that do not.</p>
   </section>
 
 </div>
@@ -208,7 +207,7 @@
 <div class="wrap wide figure">
   <figure>
     <div class="frame"><img src="images/jl-veil.png" alt="Chart of the Black share of stops by clock time, daylight versus after dark, with the two lines nearly overlapping"></div>
-    <figcaption>The veil-of-darkness test. Daylight and after-dark stops track each other across every 30-minute stratum.</figcaption>
+    <figcaption>Veil of darkness: daylight and after-dark stops track each other in every stratum.</figcaption>
   </figure>
 </div>
 
@@ -217,10 +216,10 @@
   <section>
     <h2>Engineering</h2>
     <ul>
-      <li><strong>Stack:</strong> Python, FastAPI and asyncpg on PostgreSQL with PostGIS, deployed on Railway with Sentry for errors.</li>
-      <li><strong>Pages:</strong> server-rendered HTML. Charts and the district map are inline SVG drawn on the server, so pages load with no charting library.</li>
-      <li><strong>Pipelines:</strong> daily incident ingest, a daily drift check that emails when counts move 5% or more, and monthly crime-and-policing briefs for 54 areas (8 wards and 46 neighborhoods) as web pages and WeasyPrint PDFs, archived back to January 2026.</li>
-      <li><strong>Quality:</strong> about 520 automated tests in CI: mypy, 508 pytest tests plus database integration tests, and Playwright browser tests.</li>
+      <li><strong>Stack:</strong> Python, FastAPI, asyncpg, PostgreSQL with PostGIS, on Railway.</li>
+      <li><strong>Pages:</strong> server-rendered HTML with inline SVG charts. No charting library.</li>
+      <li><strong>Pipelines:</strong> daily ingest, a drift check that emails at 5%, monthly PDF briefs for 54 areas.</li>
+      <li><strong>Quality:</strong> about 520 tests in CI: mypy, pytest, Playwright.</li>
     </ul>
   </section>
 
@@ -228,15 +227,15 @@
     <h2>What I would change</h2>
     <div class="change">
       <h3>I removed the AI features</h3>
-      <p>Between July and September 2026 I retired the Ask AI chat, the map's natural-language query and the paid AI reports. They produced safety verdicts the data could not support, and the map duplicated DC Open Data's own. Trust and accuracy mattered more than the features, so the site now publishes only what the statistical tests show.</p>
+      <p>Between July and September 2026 I retired the Ask AI chat, the map's natural-language query and the paid AI reports. They gave verdicts the data could not support. Trust and accuracy mattered more.</p>
     </div>
     <div class="change">
       <h3>The population baseline</h3>
-      <p>Stop rates are compared to who lives in a district, not to who is on its streets. Downtown's daytime population is not its residents. The reported-crime baseline offsets this, but a street-population measure would be stronger.</p>
+      <p>Stop rates are compared to residents, not to who is on the street. Downtown's daytime population is not its residents.</p>
     </div>
     <div class="change">
       <h3>Small cells</h3>
-      <p>The non-Black hit rate in the outcome test rests on 1,081 searches, and the threshold model has 14 cells. Both report their intervals honestly, but more years of data would tighten them.</p>
+      <p>The non-Black hit rate rests on 1,081 searches. More years of data would tighten the intervals.</p>
     </div>
   </section>
 
